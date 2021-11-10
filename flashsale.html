@@ -19,6 +19,7 @@
             margin-left: 10%;
             margin-right: 10%;
             box-shadow: 1px 1px 5px 1px gray;
+            position: absolute;
         }
 
         .inner1_f {
@@ -57,6 +58,8 @@
             height: 430px;
             border-radius: 5px;
             padding: 1%;
+            display: none;
+           
         }
 
         .inner2_1_f:hover {
@@ -130,6 +133,59 @@
             /* border: 1px solid black;*/
             margin-left: 15%;
         }
+
+
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn {
+            font-size: 100px;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            border: 5px solid rgb(2, 2, 2);
+            left: 5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+
+        }
+
+        #trendingRightBtn {
+            font-size: 100px;
+            height: 50px;
+            position: absolute;
+            width: 50px;
+            top: 50%;
+            right: 1%;
+            border: 5px solid rgb(0, 0, 0);
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+
+        }
+
+        /* trending css ends here  */
     </style>
 </head>
 
@@ -142,10 +198,10 @@
             <button class="view_btn_f">View All</button>
         </div>
         <div class="inner2_f" id="inner2_f">
-            <button id="trendingLeftBtn"></button>
-            <button id="trendingRightBtn"></button>
 
         </div>
+        <button id="trendingLeftBtn"></button>
+        <button id="trendingRightBtn"></button>
     </div>
 
 
@@ -200,27 +256,47 @@
             product_cost: "₹6,599",
             premium_price: "₹6,499",
         },
-        /* {
-             flash_sale_img:"https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-             units:"35 units left",
-             product_img:"https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
-             price_off:"46% off",
-             product_name:"HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
-             rating:"  4.7 (1,547)",
-             product_cost:"₹499",
-             premium_price:"₹364",
-          },
-          {
-             flash_sale_img:"https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-             units:"5 units left",
-             product_img:"https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
-             price_off:"10% off",
-             product_name:"ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
-             rating:" 4.5 (547)",
-             product_cost:"₹6,599",
-             premium_price:"₹6,499",
-         },
-         */
+        {
+            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
+            units: "35 units left",
+            product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
+            price_off: "46% off",
+            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹499",
+            premium_price: "₹364",
+        },
+        {
+            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
+            units: "5 units left",
+            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (547)",
+            product_cost: "₹6,599",
+            premium_price: "₹6,499",
+        },
+        {
+            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
+            units: "35 units left",
+            product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
+            price_off: "46% off",
+            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹499",
+            premium_price: "₹364",
+        },
+        {
+            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
+            units: "5 units left",
+            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (547)",
+            product_cost: "₹6,599",
+            premium_price: "₹6,499",
+        }
+
     ]
 
     let inner2_f = document.getElementById('inner2_f')
@@ -371,16 +447,8 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('trending')
-    data.forEach(function (product) {
-        // console.log(product.name);
-        let div = document.createElement('div')
-        let name = document.createElement('p');
-        name.innerText = product.name;
-
-        div.append(name)
-        parent.append(div)
-    })
+    let parent = document.getElementById('inner2_f')
+   
     let trendingLeftBtn = document.getElementById('trendingLeftBtn');
 
 
@@ -389,7 +457,7 @@
     let leftTrending = 0;
     let rightTrending = 4;
 
-    let divsTrending = document.querySelectorAll('#trending>div')
+    let divsTrending = document.querySelectorAll('#inner2_f>div')
     console.log(divsTrending);
     function trendingSlide() {
         for (let i = leftTrending; i < rightTrending; i++) {
