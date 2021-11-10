@@ -50,7 +50,7 @@ function addDropDwn(x) {
         }
         function makeNavbar(){
             let hCons = getElement('hk');
-            let myDIV = getElement('myDIV');
+            let myDIV = getElement('myDIV'); 
             onMouseIn(hCons,myDIV)
             onMouserOut(hCons,myDIV)
         
