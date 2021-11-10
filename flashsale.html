@@ -49,6 +49,7 @@
             /* border: 1px solid  blue;*/
             background-color: #E0E0E0;
             padding: 1% 2%;
+            column-gap: 14px ;
         }
 
         .inner2_1_f {
@@ -155,34 +156,40 @@
 
         #trendingLeftBtn {
             font-size: 100px;
-            height: 50px;
-            width: 50px;
+            height: 25px;
+            width: 25px;
             position: absolute;
             top: 50%;
-            border: 5px solid rgb(2, 2, 2);
-            left: 5%;
+            border: 5px solid #00AFAE;
+            left: 1.5%;
             transform: translate(-50%, -50%) rotate(45deg);
             /* transform: rotate(45deg); */
             background-color: rgba(0, 0, 0, 0);
             border-right: none;
             border-top: none;
             display: none;
-
+            
         }
 
         #trendingRightBtn {
             font-size: 100px;
-            height: 50px;
+            height: 25px;
             position: absolute;
-            width: 50px;
+            width: 25px;
             top: 50%;
-            right: 1%;
-            border: 5px solid rgb(0, 0, 0);
+            right: -.6%;
+            border: 5px solid #00AFAE;
             transform: translate(-50%, -50%) rotate(45deg);
             background-color: rgba(0, 0, 0, 0);
             border-left: none;
             border-bottom: none;
-
+            
+        }
+        #trendingRightBtn img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
         }
 
         /* trending css ends here  */
@@ -201,7 +208,7 @@
 
         </div>
         <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"></button>
+        <button id="trendingRightBtn"> </button>
     </div>
 
 
