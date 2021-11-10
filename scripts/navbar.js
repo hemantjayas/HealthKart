@@ -15,6 +15,7 @@ function addDropDwn(x) {
     if (x.style.display === "none") {
       x.style.display = "grid";
       x.style.position ='absolute'
+      x.style.zIndex = '1'
     }
   }
   function removeDropDwn(x){
@@ -30,6 +31,7 @@ function addDropDwn(x) {
           x.style.display = "grid";
           x.style.position ='absolute';
           x.style.backgroundColor = 'white'
+          x.style.zIndex = '1'
         }
        }
       }
@@ -71,6 +73,7 @@ function addDropDwn(x) {
   genderSec.onmouseover = ()=>{
        let gendDroDwn = document.getElementById('gend-DroDwn')
        gendDroDwn.style.display = 'grid'
+       gendDroDwn.style.zIndex = '1'
   }
   genderSec.onmouseleave = ()=>{
        let gendDroDwn = document.getElementById('gend-DroDwn')
@@ -88,5 +91,10 @@ function addDropDwn(x) {
     window.location.href = 'women.html'
   }
 
+  let healthLogo = document.getElementById('logo');
+  healthLogo.onclick= ()=>
+{
+  window.location.href = 'navbar.html'
+}
     }
 export {makeNavbar}
