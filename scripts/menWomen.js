@@ -276,6 +276,9 @@ function appendProductForMen(homeWigCar,trend)
          button.append(cartIcon)
          span.textContent = "ADD"
          button.appendChild(span)
+         button.onclick =()=>{
+              addtoCart(product);
+         }
          priceCont.append(price,button)
          console.log(product.cartImg)
     
@@ -360,9 +363,34 @@ function appendProductForWomen(prodDesc){
      })   
 }
 
+function addtoCart(product) {
+    alert('product added')
+    if (localStorage.getItem("healthkart_cart") === null) {
+        localStorage.setItem("healthkart_cart", JSON.stringify([]));
+    }
+    let array = JSON.parse(localStorage.getItem("healthkart_cart"));
+    let present  = false;
+
+      array.forEach((pro)=>{
+        if(pro.name == product.name)
+        {  
+            pro["quantity"]++;
+            present = true;
+        }
+     })
+   if(present)
+   {
+    localStorage.setItem("healthkart_cart", JSON.stringify(array));
+   }else{
+      product["quantity"] = 1;
+      array.push(product);
+      localStorage.setItem("healthkart_cart", JSON.stringify(array));
+   }
+}
+
 function addScripts(){
 
-    var homeWigCar = document.getElementById('home-widgit-carousel');
+  var homeWigCar = document.getElementById('home-widgit-carousel');
   var trend = document.getElementById("trending");
   var topCat = document.getElementById("top-Categories");
   var essential = document.getElementById("essentials");
