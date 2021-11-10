@@ -43,8 +43,8 @@ function navbar(){
           <div id='accounts'>My Account & Orders
           <span class="ima"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/arrow-down.svg" alt="">&nbsp;|</span>
            <div id='dropTable'>
-               <div id='sI'>SignIn</div>
-               <div id='lO'>LogOut</div>
+               <div id='sI'>LogIn</div>
+               <div id='lO'>New user? / Sign up</div>
                <div id='insideDrop'>
                 <div id='f1'>
                     <div>My Account</div>
