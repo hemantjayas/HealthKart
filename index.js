@@ -151,7 +151,7 @@ trendingLeftBtn.onclick = function () {
     divsTrending[rightTrending].style.display = 'none'
 
     trendingSlide()
-    if (leftTrending == 0) {
+    if (leftTrending == 0) {  
         trendingLeftBtn.style.display = 'none'
     }
 
