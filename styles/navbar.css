@@ -41,8 +41,8 @@ body{
   display: flex;
   padding-left: 5px;
   width: auto;
-align-items: center;
-font-size: 14px;
+  align-items: center;
+  font-size: 14px;
 }
 #headCart>div{
     margin-left: 15px;
@@ -104,7 +104,7 @@ font-size: 14px;
     display: none;
 }
 #myDIV{
-    background:  rgb(219, 217, 217);
+    background:  #fff;
     border: 1px solid transparent;
     font-size: 12px;
     text-align: left;
@@ -114,6 +114,9 @@ font-size: 14px;
 #myDIV p{
     padding: 10px;
     font-weight: lighter;
+}
+#myDIV>p:hover{
+     color: #007aff;
 }
 #myDIV h1{
     padding: 10px;
@@ -134,7 +137,7 @@ font-size: 14px;
     width: 323px;
     color: black;
     text-align: center;
-    background-color: cornsilk;
+    background-color: #fff;
 }
 #dropTable #sI,#lO{
     margin: auto;
@@ -167,8 +170,14 @@ font-size: 14px;
     line-height: 32px;
 }
 #f1 > div:nth-child(1){
-    color: #007aff;
+    color: #009393;
 }#f2 > div:nth-child(1){
+    color: #009393;
+}
+#f1 >div:hover{
+    color: #007aff;
+}
+#f2 >div:hover{
     color: #007aff;
 }
 #catogBestSeller{
@@ -241,4 +250,10 @@ font-size: 14px;
 #div_cat_Women:hover{
     border: 1px solid blue;
     color: blueviolet;
+}
+#hk{
+    background-color: #d8faf9 !important;
+}
+#hk:hover{
+   background-color: rgb(60, 187, 238) !important;
 }
