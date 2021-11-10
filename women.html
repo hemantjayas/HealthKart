@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/women.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
+    <div id='header-Navbar'>
+    </div>
     <div class="slider-Box">
         <div id="slider">
             <img src="./image/bnr_4.jpg" alt="">
@@ -154,6 +157,11 @@
        </div>
     </div>
     <script type="module">
+        let nav_div = document.getElementById("header-Navbar");
+      import navbar from './components/navbar.js'
+    nav_div.innerHTML = navbar();
+    import {makeNavbar} from './scripts/navbar.js'
+    makeNavbar();
 
 var prodDesc = document.getElementById('proDesc');
 
