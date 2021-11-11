@@ -165,7 +165,8 @@
    
 
 
-    <div id="navbar"></div>
+    <div id='header-Navbar'>
+    </div>
 
     <div id="slide">
         <button id="left"></button>
@@ -220,5 +221,8 @@
 
 </html>
 <script src="index.js" type="module">
-
+ import navbar from './components/navbar.js'
+    nav_div.innerHTML = navbar();
+    import {makeNavbar} from './scripts/navbar.js'
+    makeNavbar();
 </script>
