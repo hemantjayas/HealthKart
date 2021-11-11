@@ -126,7 +126,7 @@
     <div id="box_popular_in_weight">
         <div class="inner1_pop"> Popular in Weight Loss</div> 
         <div class="inner2_pop" >
-              <div class="inner2_1_pop" id="inner2_1_pop">
+              <div class="inner2_1_pop" id="inner2_1_popular_in_weight">
                 <button id="trendingLeftBtn_popular_in_weight"></button>
                 <button id="trendingRightBtn_popular_in_weight"> </button>
               </div>
@@ -174,7 +174,7 @@
       },
   ]
   
-  let inner2_1 = document.getElementById('inner2_1_pop')
+  let inner2_1_popular_in_weight = document.getElementById('inner2_1_popular_in_weight')
     function show_popular_in_weight(products ){
 
       products.forEach((product)=>{
@@ -196,7 +196,7 @@
       //  let div2 =document.createElement('div')
        // div2.setAttribute('class','B_pop')
 
-       inner2_1.append(divmain)
+       inner2_1_popular_in_weight.append(divmain)
         
       })   
     }
@@ -218,9 +218,9 @@
     let leftTrending_popular_in_weight = 0;
     let rightTrending_popular_in_weight = 4;
 
-    let divsTrending_popular_in_weight = document.querySelectorAll('#inner2_1_pop>div')
+    let divsTrending_popular_in_weight = document.querySelectorAll('#inner2_1_popular_in_weight>div')
     console.log(divsTrending_popular_in_weight);
-    function trendingSlide() {
+    function popular_in_weight() {
         for (let i = leftTrending_popular_in_weight; i < rightTrending_popular_in_weight; i++) {
             divsTrending_popular_in_weight[i].style.display = 'block'
 
@@ -229,14 +229,14 @@
 
 
     }
-    trendingSlide()
+    popular_in_weight()
 
 
     trendingRightBtn_popular_in_weight.onclick = function () {
         divsTrending_popular_in_weight[leftTrending_popular_in_weight].style.display = 'none'
         leftTrending_popular_in_weight++
         rightTrending_popular_in_weight++
-        trendingSlide()
+        popular_in_weight()
 
         if (leftTrending_popular_in_weight > 0) {
             trendingLeftBtn_popular_in_weight.style.display = 'block'
@@ -253,7 +253,7 @@
         rightTrending_popular_in_weight--
         divsTrending_popular_in_weight[rightTrending_popular_in_weight].style.display = 'none'
 
-        trendingSlide()
+        popular_in_weight()
         if (leftTrending_popular_in_weight == 0) {
             trendingLeftBtn_popular_in_weight.style.display = 'none'
         }
