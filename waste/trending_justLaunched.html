@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a894dfd8d0.js" crossorigin="anonymous"></script>
+    <title>Just Launch Product</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #box_just_Lanch {
+            margin-top: 100px;
+            /*  border: 1px solid black;*/
+            height: 508px;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-shadow: 1px 1px 5px 1px gray;
+            position: absolute;
+        }
+
+        .inner1_f {
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red;*/
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0%;
+            padding: 1% 3%;
+            background-color: white;
+        }
+
+        .view_btn_f {
+            color: white;
+            background-color: #00AFAE;
+            border-radius: 5px;
+            border: none;
+            padding-left: 1%;
+            padding-right: 1%;
+
+        }
+
+        .inner2_f {
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid  blue;*/
+            background-color: #E0E0E0;
+            padding: 1% 2%;
+            column-gap: 14px ;
+        }
+
+        .inner2_1_f {
+            /* border: 1px solid black;*/
+            background-color: white;
+            width: 280px;
+            height: 430px;
+            border-radius: 5px;
+            padding: 1%;
+            display: none;
+           
+        }
+
+        .inner2_1_f:hover {
+            box-shadow: 3px 3px 5px 3px gray;
+        }
+
+        .inner2_1_1_f {
+            /* border: 1px solid black;*/
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5%;
+        }
+
+        .inner2_1_2_f {
+            /* border: 1px solid blue;*/
+
+        }
+
+        .inner2_1_3_f {
+            /* border: 1px solid black;*/
+        }
+
+        #inner2_1_3_1_fl {
+            border: 1px solid red;
+            color: red;
+            padding: 1%;
+
+        }
+
+        .inner2_1_3_2_f {
+            padding-top: 8%;
+        }
+
+        .inner2_1_3_4_f {
+            display: flex;
+            justify-content: space-between;
+            padding: 4%;
+        }
+
+        .inner2_1_3_4_1_f {
+            font-weight: 700;
+            padding-top: 4%;
+        }
+
+        #inner2_1_3_4_2_F {
+            padding: 4%;
+            background-color: #BBDEFB;
+            border: none;
+
+        }
+
+        #inner2_1_3_4_2_f:hover {
+            background-color: #00AFAE;
+            color: white;
+        }
+
+        .inner2_1_3_5_f {
+            /* border: 1px solid black;*/
+            background-color: #EAF8F8;
+            display: flex;
+            padding: 4%;
+
+        }
+
+        .inner2_1_3_5_2_f {
+            font-weight: 700;
+            padding-left: 3%;
+        }
+
+        .main_img {
+            /* border: 1px solid black;*/
+            margin-left: 15%;
+        }
+
+
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn_just_Lanch {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 50%;
+            border: 5px solid #00AFAE;
+            left: 1.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn_just_Lanch {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 50%;
+            right: -.6%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn_just_Lanch img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+
+        /* trending css ends here  */
+    </style>
+</head>
+
+<body>
+
+
+    <div id="box_just_Lanch">
+        <div class="inner1_f">
+            <div>Just Launched Product </div>
+            <button class="view_btn_f">View All</button>
+        </div>
+        <div class="inner2_f" id="inner2_just_Lanch">
+
+        </div>
+        <button id="trendingLeftBtn_just_Lanch"></button>
+        <button id="trendingRightBtn_just_Lanch"> </button>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<script>
+
+    /// show product in flash card ////
+
+    let just_Lanch_protiens = [
+        {
+            
+            product_img: "https://img3.hkrtcdn.com/16537/prd_1653642-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Kesar-Thandai_c_s.jpg",
+            price_off: "19% off",
+            product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
+            rating: " 4.5 (1,327)",
+            product_cost: "₹3,999",
+            premium_price: "₹4,849",
+        },
+        {
+            
+            product_img: "https://img9.hkrtcdn.com/16151/prd_1615078-MuscleBlaze-Biozyme-Performance-Whey-8.8-lb-Rich-Chocolate_c_s.jpg",
+            price_off: "16% off",
+            product_name: "MuscleTech BIozyme Performance Whey,4 lb Milk Chocolate",
+            rating: "4.5 (576)",
+            product_cost: "₹7,499",
+            premium_price: "₹7,245",
+        },
+        {
+           
+            product_img: "https://img2.hkrtcdn.com/14637/prd_1463611-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_c_s.jpg",
+            price_off: "19% off",
+            product_name: "MuscleBlaze Biozyme  Multivitamin with Multiminiral, Amino Acids",
+            rating: "  4.5 (1,547)",
+            product_cost: "₹3999",
+            premium_price: "₹3864",
+        },
+        {
+           
+            product_img: "https://img8.hkrtcdn.com/14207/prd_1420687-MuscleBlaze-Biozyme-Performance-Whey-2.2-lb-Rich-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "MuscleBlaze Biozyme Performance Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (5,547)",
+            product_cost: "₹2,199",
+            premium_price: "₹2,000",
+        },
+        {
+           
+            product_img: "https://img4.hkrtcdn.com/13528/prd_1352733_c_s.jpg",
+            price_off: "13% off",
+            product_name: "MuscleBlaze Raw Whey Isolate,with Amino Acids",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹1,899",
+            premium_price: "₹1,764",
+        },
+        {
+           
+            product_img: "https://img6.hkrtcdn.com/14889/prd_1488805-MB-Fuel-One-Whey-Protein-Immunity-8.8-lb-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "MB Fuel One Whey Protien Immunity+,8 lb",
+            rating: " 4.5 (547)",
+            product_cost: "₹6,499",
+            premium_price: "₹6,299",
+        },
+        {
+           
+            product_img: "https://img2.hkrtcdn.com/14645/prd_1464451-MuscleBlaze-Raw-Whey-Isolate-4.4-lb-Unflavoured_c_s.jpg",
+            price_off: "11% off",
+            product_name: "MuscleBlaze Raw Whey Isolate,4.4 lb ",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹3499",
+            premium_price: "₹3364",
+        },
+        {
+          
+            product_img: "https://img2.hkrtcdn.com/13488/prd_1348781-MB-Fuel-One-Whey-Protein-Immunity-2.2-lb-Chocolate_c_s.jpg",
+            price_off: "15% off",
+            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (547)",
+            product_cost: "₹1,599",
+            premium_price: "₹1,499",
+        }
+
+    ]
+
+    let inner2_just_Lanch = document.getElementById('inner2_just_Lanch')
+
+    function just_Lanch_Product(protiens) {
+
+        protiens.forEach((protien) => {
+
+            let inner2_1_f = document.createElement('div')
+            inner2_1_f.setAttribute('class', 'inner2_1_f')
+            inner2_1_f.setAttribute('id', 'inner2_1_f')
+
+           
+
+            let inner2_1_2_f = document.createElement('div')
+
+            let product_imgs = document.createElement('img')
+            product_imgs.src = protien.product_img
+            product_imgs.setAttribute('class', 'main_img')
+
+            let inner2_1_3_f = document.createElement('div')
+
+            let div1 = document.createElement('div')
+            let span1 = document.createElement('span')
+            span1.innerText = protien.price_off
+            span1.setAttribute('id', 'inner2_1_3_1_fl')
+
+            div1.append(span1)
+
+            let div2 = document.createElement('div')
+            div2.innerText = protien.product_name
+            span1.setAttribute('class', 'inner2_1_3_2_f')
+
+            let small = document.createElement('small')
+            small.innerText = protien.rating + '  '
+            small.setAttribute('class', 'inner2_1_3_3_f')
+
+            let star_font1 = document.createElement('i')
+            star_font1.setAttribute('class', 'fas fa-star')
+
+            let star_font2 = document.createElement('i')
+            star_font2.setAttribute('class', 'fas fa-star')
+
+            let star_font3 = document.createElement('i')
+            star_font3.setAttribute('class', 'fas fa-star')
+
+            let star_font4 = document.createElement('i')
+            star_font4.setAttribute('class', 'fas fa-star')
+
+            let star_font5 = document.createElement('i')
+            star_font5.setAttribute('class', 'fas fa-star-half-alt')
+
+            small.append(star_font1, star_font2, star_font3, star_font4, star_font5)
+
+            let div3 = document.createElement('div')
+            div3.setAttribute('class', 'inner2_1_3_4_f')
+
+            let div3_1 = document.createElement('div')
+            div3_1.innerText = protien.product_cost
+            div3_1.setAttribute('class', 'inner2_1_3_4_1_f')
+
+            let add_to_cart_btn = document.createElement('button')
+            add_to_cart_btn.setAttribute('id', 'inner2_1_3_4_2_f')
+
+            let shop_font = document.createElement('i')
+            shop_font.setAttribute('class', 'fas fa-shopping-cart')
+
+            add_to_cart_btn.innerText = 'ADD'
+            add_to_cart_btn.append(shop_font)
+
+            div3.append(div3_1, add_to_cart_btn)
+
+            let div4 = document.createElement('div')
+            div4.setAttribute('class', 'inner2_1_3_5_f')
+
+            let div4_1 = document.createElement('div')
+            div4_1.innerText = "Premium Price:"
+            div4_1.setAttribute('class', 'inner2_1_3_5_1_f')
+
+            let div4_2 = document.createElement('div')
+            div4_2.innerText = protien.premium_price
+            div4_2.setAttribute('class', 'inner2_1_3_5_2_f')
+
+            div4.append(div4_1, div4_2)
+
+          
+
+            inner2_1_2_f.append(product_imgs)
+
+            inner2_1_3_f.append(div1, div2, small, div3, div4)
+
+            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+
+            inner2_just_Lanch.append(inner2_1_f)
+        })
+
+
+
+
+
+    }
+
+
+    just_Lanch_Product(just_Lanch_protiens)
+
+
+
+
+    let trendingLeftBtn_just_Lanch = document.getElementById('trendingLeftBtn_just_Lanch');
+
+
+    let trendingRightBtn_just_Lanch = document.getElementById('trendingRightBtn_just_Lanch')
+
+    let leftTrending_just_Lanch = 0;
+    let rightTrending_just_Lanch = 4;
+
+    let divsTrending_just_Lanch = document.querySelectorAll('#inner2_just_Lanch>div')
+    console.log(divsTrending_just_Lanch);
+    function just_Lanch() {
+        for (let i = leftTrending_just_Lanch; i < rightTrending_just_Lanch; i++) {
+            divsTrending_just_Lanch[i].style.display = 'block'
+
+        }
+
+
+
+    }
+    just_Lanch()
+
+
+    trendingRightBtn_just_Lanch.onclick = function () {
+        divsTrending_just_Lanch[leftTrending_just_Lanch].style.display = 'none'
+        leftTrending_just_Lanch++
+        rightTrending_just_Lanch++
+        just_Lanch()
+
+        if (leftTrending_just_Lanch > 0) {
+            trendingLeftBtn_just_Lanch.style.display = 'block'
+        }
+        if (rightTrending_just_Lanch === divsTrending_just_Lanch.length) {
+            trendingRightBtn_just_Lanch.style.display = 'none'
+
+        }
+
+    }
+
+    trendingLeftBtn_just_Lanch.onclick = function () {
+        leftTrending_just_Lanch--
+        rightTrending_just_Lanch--
+        divsTrending_just_Lanch[rightTrending_just_Lanch].style.display = 'none'
+
+        just_Lanch()
+        if (leftTrending_just_Lanch == 0) {
+            trendingLeftBtn_just_Lanch.style.display = 'none'
+        }
+
+        if (rightTrending_just_Lanch < divsTrending_just_Lanch.length) {
+            trendingRightBtn_just_Lanch.style.display = 'block'
+        }
+    }
+
+// java scrpit ending for multiple objects 
+
+</script>

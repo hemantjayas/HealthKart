@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> popular_in_sports_nutrition</title>
+    <style>
+          *{
+            box-sizing: border-box;
+        }
+        #box_popular_for_sport{
+           margin-top: 100px ;
+      /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 1px 1px 5px 1px gray;
+        }
+        .inner1_pop{
+           
+           /* border: 1px solid red;*/
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0%;
+            padding: 1% 3%;
+            background-color: white;
+        }
+        
+        .inner2_pop{
+           
+          /*  border: 1px solid  blue;*/
+            background-color: #E0E0E0;
+            padding: 1% 2%;
+        }
+       .inner2_1_pop{
+           
+           display: flex;
+           justify-content: space-between;
+         /*  border: 1px solid black;*/
+           background-color: white;
+           text-align: center;
+           padding-left: 5% ;
+           padding-right: 5%;
+           
+       }
+       .img1_pop{
+         /*  border: 1px solid black;*/
+           
+       }
+      
+      .p_pop{
+          font-weight: 700;
+         /* border: 1px solid black;*/
+      }
+      .B_pop{
+          border: 1px solid #BDBDBD; 
+          background-color: #BDBDBD;
+          margin-top: 5%;
+          margin-bottom: 5%;
+      }
+      .hide{
+          display: none;
+      }
+
+
+      /**/
+
+      
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn_popular_for_sport {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 35%;
+            border: 5px solid #00AFAE;
+            left: 11.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn_popular_for_sport {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 35%;
+            right: 10%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn_popular_for_sport img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+/**/
+    </style>
+</head>
+<body>
+
+    <div id="box_popular_for_sport">
+        <div class="inner1_pop"> Popular in Sports Nutrition</div> 
+        <div class="inner2_pop" >
+              <div class="inner2_1_pop" id="inner2_1_popular_for_sport">
+                <button id="trendingLeftBtn_popular_for_sport"></button>
+                <button id="trendingRightBtn_popular_for_sport"> </button>
+              </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        let popular_in_sports_nutrition=[
+{
+    img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png"    , 
+    name: "Whey Protiens"  ,
+},
+{
+    img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png"    , 
+    name: "Whey Protein Isolate"  ,
+},
+{
+    img: "https://img4.hkrtcdn.com/6544/bnr_654343_o.png"    , 
+    name: "Mass Gainers"  ,
+},
+{
+    img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png"    , 
+    name: "Amino Acids"  ,
+},
+{
+    img: "https://img10.hkrtcdn.com/6544/bnr_654349_o.png"    , 
+    name: "Pre-Workout"  ,
+},
+{
+    img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png"    , 
+    name: "Whey Protein Isolate"  ,
+},
+{
+    img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png"    , 
+    name: "Amino Acids"  ,
+},
+{
+    img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png"    , 
+    name: "Whey Protiens"  ,
+},
+]
+
+
+let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_sport')
+    function  popular_in_sports_nutritions(products ){
+
+      products.forEach((product)=>{
+           
+        let divmain = document.createElement('div')
+        divmain.setAttribute('class','hide')
+
+        let img = document.createElement('img')
+        img.src = product.img
+        img.setAttribute('class','img1_pop')
+
+        let div1 = document.createElement('div')
+        div1.innerText = product.name
+        div1.setAttribute('class','p_pop')
+
+        divmain.append(img,div1)
+
+
+       // let div2 =document.createElement('div')
+     //  div2.setAttribute('class','B_pop')
+
+       inner2_1_popular_for_sport.append(divmain)
+        
+      })   
+    }
+    popular_in_sports_nutritions( popular_in_sports_nutrition )
+
+
+
+
+
+    //  slide script for multiple products
+
+   
+    let trendingLeftBtn_popular_for_sport = document.getElementById('trendingLeftBtn_popular_for_sport');
+
+
+    let trendingRightBtn_popular_for_sport = document.getElementById('trendingRightBtn_popular_for_sport')
+
+    let leftTrending_popular_for_sport = 0;
+    let rightTrending_popular_for_sport = 4;
+
+    let divsTrending_popular_for_sport = document.querySelectorAll('#inner2_1_popular_for_sport>div')
+    console.log(divsTrending_popular_for_sport);
+    function popular_for_sport() {
+        for (let i = leftTrending_popular_for_sport; i < rightTrending_popular_for_sport; i++) {
+            divsTrending_popular_for_sport[i].style.display = 'block'
+
+        }
+
+
+
+    }
+    popular_for_sport()
+
+
+    trendingRightBtn_popular_for_sport.onclick = function () {
+        divsTrending_popular_for_sport[leftTrending_popular_for_sport].style.display = 'none'
+        leftTrending_popular_for_sport++
+        rightTrending_popular_for_sport++
+        popular_for_sport()
+
+        if (leftTrending_popular_for_sport > 0) {
+            trendingLeftBtn_popular_for_sport.style.display = 'block'
+        }
+        if (rightTrending_popular_for_sport === divsTrending_popular_for_sport.length) {
+            trendingRightBtn_popular_for_sport.style.display = 'none'
+
+        }
+
+    }
+
+    trendingLeftBtn_popular_for_sport.onclick = function () {
+        leftTrending_popular_for_sport--
+        rightTrending_popular_for_sport--
+        divsTrending_popular_for_sport[rightTrending_popular_for_sport].style.display = 'none'
+
+        popular_for_sport()
+        if (leftTrending_popular_for_sport == 0) {
+            trendingLeftBtn_popular_for_sport.style.display = 'none'
+        }
+
+        if (rightTrending_popular_for_sport < divsTrending_popular_for_sport.length) {
+            trendingRightBtn_popular_for_sport.style.display = 'block'
+        }
+    }
+
+// java scrpit ending for multiple objects 
+
+
+    </script>
+</body>
+</html>

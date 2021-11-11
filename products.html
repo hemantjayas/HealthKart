@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
+    <div id='header-Navbar'>
+    </div>
     <div id='page_container'>
         <div id='sort_funcs'>
             <div id='sort_By_Price'>
-                
             </div>
         </div>
         <div id ='products_Container'>
@@ -38,4 +40,9 @@
          products_Cont.innerHTML = '';
         appendProducts(products_Cont ,sort_By_Price.value)
      }
+     let nav_div = document.getElementById("header-Navbar");
+      import navbar from './components/navbar.js'
+    nav_div.innerHTML = navbar();
+    import {makeNavbar} from './scripts/navbar.js'
+    makeNavbar();
 </script>

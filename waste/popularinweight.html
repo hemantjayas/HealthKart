@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #box_popular_in_weight{
+           margin-top: 100px ;
+      /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 1px 1px 5px 1px gray;
+        }
+        .inner1_pop{
+           
+           /* border: 1px solid red;*/
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0%;
+            padding: 1% 3%;
+            background-color: white;
+        }
+        
+        .inner2_pop{
+           
+          /*  border: 1px solid  blue;*/
+            background-color: #E0E0E0;
+            padding: 1% 2%;
+        }
+       .inner2_1_pop{
+           
+           display: flex;
+           justify-content: space-between;
+         /*  border: 1px solid black;*/
+           background-color: white;
+           text-align: center;
+           padding-left: 5% ;
+           padding-right: 5%;
+       }
+       .img1_pop{
+         /*  border: 1px solid black;*/
+           
+       }
+      
+      .p_pop{
+          font-weight: 700;
+         /* border: 1px solid black;*/
+      }
+      .B_pop{
+          border: 1px solid #BDBDBD; 
+          background-color: #BDBDBD;
+          margin-top: 5%;
+          margin-bottom: 5%;
+      }
+      .hide{
+          display: none;
+      }
+      /**/
+
+
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn_popular_in_weight {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 35%;
+            border: 5px solid #00AFAE;
+            left: 11.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn_popular_in_weight {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 35%;
+            right: 10%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn_popular_in_weight img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+      /**/
+    </style>
+</head>
+<body>
+    <div id="box_popular_in_weight">
+        <div class="inner1_pop"> Popular in Weight Loss</div> 
+        <div class="inner2_pop" >
+              <div class="inner2_1_pop" id="inner2_1_popular_in_weight">
+                <button id="trendingLeftBtn_popular_in_weight"></button>
+                <button id="trendingRightBtn_popular_in_weight"> </button>
+              </div>
+        </div>
+    </div>
+    <script>
+     
+     
+  let popular_in_weights=[
+      {
+          img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png"    , 
+          name: "Meal Replacement"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png"    , 
+          name: "Energy Drinks"  ,
+      },
+      {
+          img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png"    , 
+          name: "Green coffee Bean Extract"  ,
+      },
+      {
+          img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png"    , 
+          name: "Garcinia Cambogia"  ,
+      },
+      {
+          img: "https://img10.hkrtcdn.com/6543/bnr_654229_o.png"    , 
+          name: "Fat Loss Supplements"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png"    , 
+          name: "Energy Drinks"  ,
+      },
+      {
+          img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png"    , 
+          name: "Green coffee Bean Extract"  ,
+      },
+      {
+          img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png"    , 
+          name: "Garcinia Cambogia"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png"    , 
+          name: "Meal Replacement"  ,
+      },
+  ]
+  
+  let inner2_1_popular_in_weight = document.getElementById('inner2_1_popular_in_weight')
+    function show_popular_in_weight(products ){
+
+      products.forEach((product)=>{
+           
+        let divmain = document.createElement('div')
+        divmain.setAttribute('class','hide')
+
+        let img = document.createElement('img')
+        img.src = product.img
+        img.setAttribute('class','img1_pop')
+
+        let div1 = document.createElement('div')
+        div1.innerText = product.name
+        div1.setAttribute('class','p_pop')
+
+        divmain.append(img,div1)
+
+
+      //  let div2 =document.createElement('div')
+       // div2.setAttribute('class','B_pop')
+
+       inner2_1_popular_in_weight.append(divmain)
+        
+      })   
+    }
+    show_popular_in_weight(popular_in_weights )
+
+
+/// 
+
+   
+    //  slide script for multiple products
+
+  
+   
+    let trendingLeftBtn_popular_in_weight = document.getElementById('trendingLeftBtn_popular_in_weight');
+
+
+    let trendingRightBtn_popular_in_weight = document.getElementById('trendingRightBtn_popular_in_weight')
+
+    let leftTrending_popular_in_weight = 0;
+    let rightTrending_popular_in_weight = 4;
+
+    let divsTrending_popular_in_weight = document.querySelectorAll('#inner2_1_popular_in_weight>div')
+    console.log(divsTrending_popular_in_weight);
+    function popular_in_weight() {
+        for (let i = leftTrending_popular_in_weight; i < rightTrending_popular_in_weight; i++) {
+            divsTrending_popular_in_weight[i].style.display = 'block'
+
+        }
+
+
+
+    }
+    popular_in_weight()
+
+
+    trendingRightBtn_popular_in_weight.onclick = function () {
+        divsTrending_popular_in_weight[leftTrending_popular_in_weight].style.display = 'none'
+        leftTrending_popular_in_weight++
+        rightTrending_popular_in_weight++
+        popular_in_weight()
+
+        if (leftTrending_popular_in_weight > 0) {
+            trendingLeftBtn_popular_in_weight.style.display = 'block'
+        }
+        if (rightTrending_popular_in_weight === divsTrending_popular_in_weight.length) {
+            trendingRightBtn_popular_in_weight.style.display = 'none'
+
+        }
+
+    }
+
+    trendingLeftBtn_popular_in_weight.onclick = function () {
+        leftTrending_popular_in_weight--
+        rightTrending_popular_in_weight--
+        divsTrending_popular_in_weight[rightTrending_popular_in_weight].style.display = 'none'
+
+        popular_in_weight()
+        if (leftTrending_popular_in_weight == 0) {
+            trendingLeftBtn_popular_in_weight.style.display = 'none'
+        }
+
+        if (rightTrending_popular_in_weight < divsTrending_popular_in_weight.length) {
+            trendingRightBtn_popular_in_weight.style.display = 'block'
+        }
+    }
+
+// java scrpit ending for multiple objects 
+
+
+
+  ///
+
+
+
+  //////
+
+    </script>
+</body>
+</html>
