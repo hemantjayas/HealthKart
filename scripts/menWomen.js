@@ -5,7 +5,7 @@ let productsMen = [
         imgProduct:'./image/MuscleBlaze.jpg',
         name:'MuscleBlaze Raw Whey Isolate,  2.2 lb  Unflavoured',
         rating:4.7,
-        price:1899,
+        price:1028,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
          
@@ -16,7 +16,7 @@ let productsMen = [
         imgProduct:'./image/Double-Rich-Chocolate.jpg',
         name:'ON (Optimum Nutrition) Gold Standard 100% Whey Protein,  5 lb  Double Rich Chocolate ',
         rating:4.3,
-        price:1899,
+        price:400,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
     },
@@ -26,7 +26,7 @@ let productsMen = [
         imgProduct:'./image/Fruit-Splash-Watermelon.jpg',
         name:'MuscleBlaze BCAA Pro,  2 Piece(s)/Pack  16 Servings  Fruit Splash & Watermelon ',
         rating:3.7,
-        price:1899,
+        price:457,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -36,7 +36,7 @@ let productsMen = [
         imgProduct:'./image/Peanut-Butter.jpg',
         name:'MuscleBlaze Peanut Butter,  1 kg  Crunchy ',
         rating:4.1,
-        price:1899,
+        price:4578,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -46,7 +46,7 @@ let productsMen = [
         imgProduct:'./image/whey.jpg',
         name:'Ultimate Nutrition Prostar 100% Whey Protein,  5.28 lb  Chocolate Creme ',
         rating:3.8,
-        price:1899,
+        price:2442,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -56,7 +56,7 @@ let productsMen = [
         imgProduct:'./image/bGreen.jpg',
         name:'bGREEN Plant Protein by MuscleBlaze,  Chocolate  2.2 lb ',
         rating:3.9,
-        price:1899,
+        price:1944,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -66,7 +66,7 @@ let productsMen = [
         imgProduct:'./image/Bold-Care-Surge-60-tablets.jpg',
         name:'Bold Care Surge,  60 tablet(s) ',
         rating:4.4,
-        price:1899,
+        price:7457,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -77,7 +77,7 @@ let productsMen = [
         imgProduct:'./image/goldProtein.jpg',
         name:'MuscleBlaze Whey Gold Protein,  4.4 lb  Rich Milk Chocolate ',
         rating:4.5,
-        price:1899,
+        price:4521,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true
@@ -89,7 +89,7 @@ let productsMen = [
         imgProduct:'./image/MuscleBlaze-Biozyme.jpg',
         name:'MuscleBlaze Biozyme Whey Protein,  4.4 lb  Rich Milk Chocolate ',
         rating:4.3,
-        price:1899,
+        price:4578,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true
@@ -101,7 +101,7 @@ let productsMen = [
         imgProduct:'./image/MuscleTech-NitroTech.jpg',
         name:'MuscleTech NitroTech Performance Series,  4 lb  Milk Chocolate ',
         rating:4.2,
-        price:1899,
+        price:4547,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true
@@ -112,7 +112,7 @@ let productsMen = [
         imgProduct:'./image/Myprotein-Impact.jpg',
         name:'Myprotein Impact Whey Isolate,  1.1 lb  Chocolate Smooth ',
         rating:4.1,
-        price:1899,
+        price:3482,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true
@@ -123,7 +123,7 @@ let productsMen = [
         imgProduct:'./image/Optimum-Nutrition-Serious.jpg',
         name:'ON (Optimum Nutrition) Serious Mass,  6 lb  Chocolate ',
         rating:4.5,
-        price:1899,
+        price:3751,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true
@@ -277,7 +277,14 @@ function appendProductForMen(homeWigCar,trend)
          span.textContent = "ADD"
          button.appendChild(span)
          button.onclick =()=>{
-              addtoCart(product);
+            console.log(product);
+            addtoCart(product)
+              span.textContent = 'CART'
+              button.appendChild(cartIcon)
+              cartIcon.src = 'https://img2.hkrtcdn.com/react/static/media/common/cart-arrow.svg'
+              button.onclick = ()=>{
+                  window.location.href = 'cart.html'
+              }
          }
          priceCont.append(price,button)
          console.log(product.cartImg)
@@ -364,7 +371,7 @@ function appendProductForWomen(prodDesc){
 }
 
 function addtoCart(product) {
-    alert('product added')
+    
     if (localStorage.getItem("healthkart_cart") === null) {
         localStorage.setItem("healthkart_cart", JSON.stringify([]));
     }
@@ -445,4 +452,113 @@ var i =0;
          btn1.classList.remove('active')
      }
 }
-export {appendProductForMen ,appendBackground ,appendProductForWomen,addScripts}
+
+function appendProducts(products_cont,valueSort){
+    
+   let proMEN =  sortBy(productsMen,valueSort);
+   console.log(proMEN);
+      proMEN.forEach(pro=>{
+        
+            let container = document.createElement('div');
+            let discount = document.createElement('div');
+            discount.textContent= Math.floor((Math.random() * 70) + 5) +"% off";
+            discount.setAttribute('class',"discount")
+            
+            let name = document.createElement('div');
+             name.textContent = pro.name;
+             name.style.textAlign = 'center'
+             name.style.fontSize = '14px'
+             name.style.color = 'grey'
+
+            let img_Cont = document.createElement('div');
+            let image = document.createElement('img')
+            image.src = pro.imgProduct;
+            image.style.width = '190px'
+            image.style.height='190px'
+            img_Cont.setAttribute('class',"img_Cont")
+            img_Cont.appendChild(image)
+ 
+            let rating =  document.createElement('div');
+            rating.textContent = "Rating: "+ pro.rating;
+            rating.setAttribute('class','rating_text')
+            
+            let price_quickBuy = document.createElement('div');
+            price_quickBuy.style.display = 'flex'
+            price_quickBuy.style.marginLeft = '5px'
+            price_quickBuy.style.alignItems = 'center'
+            let price = document.createElement('div');
+            price.textContent = "₹"+ pro.price;
+            price.setAttribute('class',"price_Pro")
+            
+            let quickBuy = document.createElement('button');
+            quickBuy.setAttribute('class','quick_btn');
+            let image_buy = document.createElement('img')
+            image_buy.src ='https://static1.hkrtcdn.com/hknext/static/media/pdp/thunder-buy.svg'
+            let txt = document.createElement('span')
+            txt.textContent = 'Quick Buy'
+            quickBuy.onclick = ()=>
+            {
+                addtoCart(pro)
+                window.location.href ='cart.html'
+            }
+            quickBuy.append(image_buy,txt)
+            
+            price_quickBuy.append(price,quickBuy)
+            container.append(discount,img_Cont,name,rating,price_quickBuy)
+            products_cont.appendChild(container)
+      })
+}
+
+function sortBy(products,value)
+{
+    console.log(value);
+    if(value == '')
+    {
+        return products;
+    }
+  else if(value == 'ltoH'|| value=='htoL')
+  {
+    for(let i = 0; i<products.length; i++)
+    {
+      for(let j = 0; j<products.length-i-1; j++)
+      {
+          if(products[j].price > products[j+1].price)
+          {
+              let temp = products[j]
+              products[j] = products[j+1]
+              products[j+1] = temp;
+          }
+      }
+    }
+    if(value == 'htoL')
+    {
+        return products.reverse()
+    }else if(value == 'ltoH')
+    {
+        return products;
+    }
+  }else if(value == 'r_ltoH'||value == 'r_htoL')
+  {
+    for(let i = 0; i<products.length; i++)
+    {
+      for(let j = 0; j<products.length-i-1; j++)
+      {
+          if(products[j].rating > products[j+1].rating)
+          {
+              let temp = products[j]
+              products[j] = products[j+1]
+              products[j+1] = temp;
+          }
+      }
+    }
+    if(value == 'r_htoL')
+    {
+        return products.reverse()
+    }else if(value == 'r_ltoH')
+    {
+        return products;
+    }
+  }
+}
+
+export {appendProductForMen ,appendBackground ,appendProductForWomen,addScripts,appendProducts}
