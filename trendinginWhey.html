@@ -154,7 +154,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_whey_protiens {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_whey_protiens {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,7 +185,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_whey_protiens img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -207,8 +207,8 @@
         <div class="inner2_f" id="inner2_trending_whey">
 
         </div>
-        <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"> </button>
+        <button id="trendingLeftBtn_whey_protiens"></button>
+        <button id="trendingRightBtn_whey_protiens"> </button>
     </div>
 
 
@@ -412,58 +412,58 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_f')
+   // let parent = document.getElementById('inner2_f')
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    let trendingLeftBtn_whey_protiens = document.getElementById('trendingLeftBtn_whey_protiens');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_whey_protiens = document.getElementById('trendingRightBtn_whey_protiens')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_whey_protiens = 0;
+    let rightTrending_whey_protiens = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_trending_whey>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_whey_protiens = document.querySelectorAll('#inner2_trending_whey>div')
+    console.log(divsTrending_whey_protiens);
+    function trendingSlide_whey_protiens() {
+        for (let i = leftTrending_whey_protiens; i < rightTrending_whey_protiens; i++) {
+            divsTrending_whey_protiens[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    trendingSlide_whey_protiens()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_whey_protiens.onclick = function () {
+        divsTrending_whey_protiens[leftTrending_whey_protiens].style.display = 'none'
+        leftTrending_whey_protiens++
+        rightTrending_whey_protiens++
+        trendingSlide_whey_protiens()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_whey_protiens > 0) {
+            trendingLeftBtn_whey_protiens.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_whey_protiens === divsTrending_whey_protiens.length) {
+            trendingRightBtn_whey_protiens.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_whey_protiens.onclick = function () {
+        leftTrending_whey_protiens--
+        rightTrending_whey_protiens--
+        divsTrending_whey_protiens[rightTrending_whey_protiens].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        trendingSlide_whey_protiens()
+        if (leftTrending_whey_protiens == 0) {
+            trendingLeftBtn_whey_protiens.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_whey_protiens < divsTrending_whey_protiens.length) {
+            trendingRightBtn_whey_protiens_whey_protiens.style.display = 'block'
         }
     }
 
