@@ -859,6 +859,57 @@
              
         }
 /* popular in sports */
+
+/* popular in health */
+#box_popular_in_health{
+           margin-top: 100px ;
+      /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 12%;
+        margin-right: 11%;
+        box-shadow: 1px 1px 5px 1px gray;
+        }
+
+        #trendingLeftBtn_popular_in_health {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 35%;
+            border: 5px solid #00AFAE;
+            left: 11.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn_popular_in_health {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 35%;
+            right: 10%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn_popular_in_health img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+
+
+/* popular in health */
 </style>
 
 <body>
@@ -1035,6 +1086,21 @@
 
 
 <!-- popular in sports -->
+
+<!---  popular in health -->
+
+<div id="box_popular_in_health">
+    <div class="inner1_pop"> Popular in Health Foods & Drinks</div> 
+    <div class="inner2_pop" >
+          <div class="inner2_1_pop" id="inner2_1_popular_in_health">
+            <button id="trendingLeftBtn_popular_in_health"></button>
+            <button id="trendingRightBtn_popular_in_health"> </button>
+          </div>
+    </div>
+</div>
+
+
+<!---  popular in health -->
 
     <div id="category">
         <h1>What are you looking for, User?</h1>
@@ -2949,6 +3015,133 @@ let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_s
 
 
 //////////////// popular in sports ///////////
+
+
+///////////////////// popular in health ///////
+
+
+let popular_in_Health_Foods_Drinks=[
+      {
+          img: "https://img2.hkrtcdn.com/6543/bnr_654291_o.png"    , 
+          name: "Apple Cider Vinegar"  ,
+      },
+      {
+          img: "https://img4.hkrtcdn.com/6543/bnr_654293_o.png"    , 
+          name: "Peanut Butter"  ,
+      },
+      {
+          img: "https://img2.hkrtcdn.com/6544/bnr_654301_o.png"    , 
+          name: "Protien Bars"  ,
+      },
+      {
+          img: "https://img10.hkrtcdn.com/6543/bnr_654299_o.png"    , 
+          name: "Cereals"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/6543/bnr_654295_o.png"    , 
+          name: "Nutrition for Children"  ,
+      },
+      {
+          img: "https://img8.hkrtcdn.com/9523/bnr_952247_o.png"    , 
+          name: "Protien Shake"  ,
+      },
+      {
+          img: "https://img8.hkrtcdn.com/4044/bnr_404387_o.png"    , 
+          name: "Pressed Oil"  ,
+      },
+  ]
+
+  let inner2_1_popular_in_health = document.getElementById('inner2_1_popular_in_health')
+    function  popular_in_Health_Foods_Drink(products ){
+
+      products.forEach((product)=>{
+           
+        let divmain = document.createElement('div')
+        divmain.setAttribute('class','hide')
+        
+        let img = document.createElement('img')
+        img.src = product.img
+        img.setAttribute('class','img1_pop')
+
+        let div1 = document.createElement('div')
+        div1.innerText = product.name
+        div1.setAttribute('class','p_pop')
+
+        divmain.append(img,div1)
+
+
+       // let div2 =document.createElement('div')
+      //  div2.setAttribute('class','B_pop')
+
+       inner2_1_popular_in_health.append(divmain)
+        
+      })   
+    }
+    popular_in_Health_Foods_Drink( popular_in_Health_Foods_Drinks )
+
+
+/**/
+
+
+    //  slide script for multiple products
+
+    
+   
+    let trendingLeftBtn_popular_in_health = document.getElementById('trendingLeftBtn_popular_in_health');
+
+
+    let trendingRightBtn_popular_in_health = document.getElementById('trendingRightBtn_popular_in_health')
+
+    let leftTrending_popular_in_health = 0;
+    let rightTrending_popular_in_health = 4;
+
+    let divsTrending_popular_in_health = document.querySelectorAll('#inner2_1_popular_in_health>div')
+    console.log(divsTrending_popular_in_health);
+    function Health_Foods_Drink() {
+        for (let i = leftTrending_popular_in_health; i < rightTrending_popular_in_health; i++) {
+            divsTrending_popular_in_health[i].style.display = 'block'
+
+        }
+
+
+
+    }
+    Health_Foods_Drink()
+
+
+    trendingRightBtn_popular_in_health.onclick = function () {
+        divsTrending_popular_in_health[leftTrending_popular_in_health].style.display = 'none'
+        leftTrending_popular_in_health++
+        rightTrending_popular_in_health++
+        Health_Foods_Drink()
+
+        if (leftTrending_popular_in_health > 0) {
+            trendingLeftBtn_popular_in_health.style.display = 'block'
+        }
+        if (rightTrending_popular_in_health === divsTrending_popular_in_health.length) {
+            trendingRightBtn_popular_in_health.style.display = 'none'
+
+        }
+
+    }
+
+    trendingLeftBtn_popular_in_health.onclick = function () {
+        leftTrending_popular_in_health--
+        rightTrending_popular_in_health--
+        divsTrending_popular_in_health[rightTrending_popular_in_health].style.display = 'none'
+
+        Health_Foods_Drink()
+        if (leftTrending_popular_in_health == 0) {
+            trendingLeftBtn_popular_in_health.style.display = 'none'
+        }
+
+        if (rightTrending_popular_in_health < divsTrending_popular_in_health.length) {
+            trendingRightBtn_popular_in_health.style.display = 'block'
+        }
+    }
+
+
+//////////////////popular in health //////////////
 </script>
 
 <script type="module">
