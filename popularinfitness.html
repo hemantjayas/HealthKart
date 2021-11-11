@@ -65,7 +65,7 @@
     <div id="box_popular_in_fitness">
         <div class="inner1_pop">popular in Fitness</div> 
         <div class="inner2_pop" >
-              <div class="inner2_1_pop" id="inner2_1_pop">
+              <div class="inner2_1_pop" id="inner2_1_popular_in_fitness">
 
               </div>
         </div>
@@ -97,7 +97,7 @@ let popular_in_Fitness=[
   ]
 
  
-  let inner2_1 = document.getElementById('inner2_1_pop')
+  let inner2_1_popular_in_fitness = document.getElementById('inner2_1_popular_in_fitness')
     function popular_in_Fitnes(products ){
 
       products.forEach((product)=>{
@@ -118,7 +118,7 @@ let popular_in_Fitness=[
         let div2 =document.createElement('div')
         div2.setAttribute('class','B_pop')
 
-       inner2_1.append(divmain,div2)
+       inner2_1_popular_in_fitness.append(divmain,div2)
         
       })   
     }
