@@ -154,7 +154,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_just_Lanch {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_just_Lanch {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,7 +185,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_just_Lanch img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -201,14 +201,14 @@
 
     <div id="box_just_Lanch">
         <div class="inner1_f">
-            <div>  Trending in Whey Protien </div>
+            <div>Just Launched Product </div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_f">
+        <div class="inner2_f" id="inner2_just_Lanch">
 
         </div>
-        <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"> </button>
+        <button id="trendingLeftBtn_just_Lanch"></button>
+        <button id="trendingRightBtn_just_Lanch"> </button>
     </div>
 
 
@@ -222,7 +222,7 @@
 
     /// show product in flash card ////
 
-    let protiens = [
+    let just_Lanch_protiens = [
         {
             
             product_img: "https://img3.hkrtcdn.com/16537/prd_1653642-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Kesar-Thandai_c_s.jpg",
@@ -298,9 +298,9 @@
 
     ]
 
-    let inner2_f = document.getElementById('inner2_f')
+    let inner2_just_Lanch = document.getElementById('inner2_just_Lanch')
 
-    function flashProduct(protiens) {
+    function just_Lanch_Product(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -389,7 +389,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_f.append(inner2_1_f)
+            inner2_just_Lanch.append(inner2_1_f)
         })
 
 
@@ -399,93 +399,61 @@
     }
 
 
-    flashProduct(protiens)
-
-
-    ///     timer of product //////
-    const startingMinutes = 59;
-    let time = startingMinutes * 60;
-
-    const countdownEl = document.getElementById('timers')
-    // const countdownEl = document.getElementsByClassName('timer')
-
-    setInterval(updateCountdown, 1000)
-
-
-    function updateCountdown() {
-        const minutes = Math.floor(time / 60)
-        let seconds = time % 60
-        // let seconds = seconds <10 ? '0' + seconds : seconds;
-
-        countdownEl.innerHTML = `12:${minutes}:${seconds}`;
-        time--;
-
-        if (time === 0) {
-            time = startingMinutes * 60
-        }
-    }
+    just_Lanch_Product(just_Lanch_protiens)
 
 
 
 
+    let trendingLeftBtn_just_Lanch = document.getElementById('trendingLeftBtn_just_Lanch');
 
 
+    let trendingRightBtn_just_Lanch = document.getElementById('trendingRightBtn_just_Lanch')
 
+    let leftTrending_just_Lanch = 0;
+    let rightTrending_just_Lanch = 4;
 
-    //  slide script for multiple products
-
-    let parent = document.getElementById('inner2_f')
-   
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
-
-
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
-
-    let leftTrending = 0;
-    let rightTrending = 4;
-
-    let divsTrending = document.querySelectorAll('#inner2_f>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_just_Lanch = document.querySelectorAll('#inner2_just_Lanch>div')
+    console.log(divsTrending_just_Lanch);
+    function just_Lanch() {
+        for (let i = leftTrending_just_Lanch; i < rightTrending_just_Lanch; i++) {
+            divsTrending_just_Lanch[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    just_Lanch()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_just_Lanch.onclick = function () {
+        divsTrending_just_Lanch[leftTrending_just_Lanch].style.display = 'none'
+        leftTrending_just_Lanch++
+        rightTrending_just_Lanch++
+        just_Lanch()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_just_Lanch > 0) {
+            trendingLeftBtn_just_Lanch.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_just_Lanch === divsTrending_just_Lanch.length) {
+            trendingRightBtn_just_Lanch.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_just_Lanch.onclick = function () {
+        leftTrending_just_Lanch--
+        rightTrending_just_Lanch--
+        divsTrending_just_Lanch[rightTrending_just_Lanch].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        just_Lanch()
+        if (leftTrending_just_Lanch == 0) {
+            trendingLeftBtn_just_Lanch.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_just_Lanch < divsTrending_just_Lanch.length) {
+            trendingRightBtn_just_Lanch.style.display = 'block'
         }
     }
 

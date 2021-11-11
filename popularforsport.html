@@ -85,7 +85,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_popular_for_sport {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -102,7 +102,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_popular_for_sport {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -116,7 +116,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_popular_for_sport img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -130,9 +130,9 @@
     <div id="box_popular_for_sport">
         <div class="inner1_pop"> Popular in Sports Nutrition</div> 
         <div class="inner2_pop" >
-              <div class="inner2_1_pop" id="inner2_1_pop">
-                <button id="trendingLeftBtn"></button>
-                <button id="trendingRightBtn"> </button>
+              <div class="inner2_1_pop" id="inner2_1_popular_for_sport">
+                <button id="trendingLeftBtn_popular_for_sport"></button>
+                <button id="trendingRightBtn_popular_for_sport"> </button>
               </div>
             
         </div>
@@ -178,7 +178,7 @@
 ]
 
 
-let inner2_1 = document.getElementById('inner2_1_pop')
+let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_sport')
     function  popular_in_sports_nutritions(products ){
 
       products.forEach((product)=>{
@@ -200,7 +200,7 @@ let inner2_1 = document.getElementById('inner2_1_pop')
        // let div2 =document.createElement('div')
      //  div2.setAttribute('class','B_pop')
 
-       inner2_1.append(divmain)
+       inner2_1_popular_for_sport.append(divmain)
         
       })   
     }
@@ -212,58 +212,57 @@ let inner2_1 = document.getElementById('inner2_1_pop')
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_1_pop')
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    let trendingLeftBtn_popular_for_sport = document.getElementById('trendingLeftBtn_popular_for_sport');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_popular_for_sport = document.getElementById('trendingRightBtn_popular_for_sport')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_popular_for_sport = 0;
+    let rightTrending_popular_for_sport = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_1_pop>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_popular_for_sport = document.querySelectorAll('#inner2_1_popular_for_sport>div')
+    console.log(divsTrending_popular_for_sport);
+    function popular_for_sport() {
+        for (let i = leftTrending_popular_for_sport; i < rightTrending_popular_for_sport; i++) {
+            divsTrending_popular_for_sport[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    popular_for_sport()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_popular_for_sport.onclick = function () {
+        divsTrending_popular_for_sport[leftTrending_popular_for_sport].style.display = 'none'
+        leftTrending_popular_for_sport++
+        rightTrending_popular_for_sport++
+        popular_for_sport()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_popular_for_sport > 0) {
+            trendingLeftBtn_popular_for_sport.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_popular_for_sport === divsTrending_popular_for_sport.length) {
+            trendingRightBtn_popular_for_sport.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_popular_for_sport.onclick = function () {
+        leftTrending_popular_for_sport--
+        rightTrending_popular_for_sport--
+        divsTrending_popular_for_sport[rightTrending_popular_for_sport].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        popular_for_sport()
+        if (leftTrending_popular_for_sport == 0) {
+            trendingLeftBtn_popular_for_sport.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_popular_for_sport < divsTrending_popular_for_sport.length) {
+            trendingRightBtn_popular_for_sport.style.display = 'block'
         }
     }
 
