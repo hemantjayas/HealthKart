@@ -58,6 +58,70 @@
           margin-top: 5%;
           margin-bottom: 5%;
       }
+      .hide{
+          display: none;
+      }
+      /**/
+
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 35%;
+            border: 5px solid #00AFAE;
+            left: 11.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 35%;
+            right: 10%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+
+
+
+      /**/
     </style>
 </head>
 <body>
@@ -67,7 +131,8 @@
         <div class="inner1_pop"> Popular in Health Foods & Drinks</div> 
         <div class="inner2_pop" >
               <div class="inner2_1_pop" id="inner2_1_pop">
-
+                <button id="trendingLeftBtn"></button>
+                <button id="trendingRightBtn"> </button>
               </div>
         </div>
     </div>
@@ -100,6 +165,14 @@ let popular_in_Health_Foods_Drinks=[
           img: "https://img6.hkrtcdn.com/6543/bnr_654295_o.png"    , 
           name: "Nutrition for Children"  ,
       },
+      {
+          img: "https://img8.hkrtcdn.com/9523/bnr_952247_o.png"    , 
+          name: "Protien Shake"  ,
+      },
+      {
+          img: "https://img8.hkrtcdn.com/4044/bnr_404387_o.png"    , 
+          name: "Pressed Oil"  ,
+      },
   ]
 
   let inner2_1 = document.getElementById('inner2_1_pop')
@@ -108,7 +181,8 @@ let popular_in_Health_Foods_Drinks=[
       products.forEach((product)=>{
            
         let divmain = document.createElement('div')
-
+        divmain.setAttribute('class','hide')
+        
         let img = document.createElement('img')
         img.src = product.img
         img.setAttribute('class','img1_pop')
@@ -120,17 +194,82 @@ let popular_in_Health_Foods_Drinks=[
         divmain.append(img,div1)
 
 
-        let div2 =document.createElement('div')
-        div2.setAttribute('class','B_pop')
+       // let div2 =document.createElement('div')
+      //  div2.setAttribute('class','B_pop')
 
-       inner2_1.append(divmain,div2)
+       inner2_1.append(divmain)
         
       })   
     }
     popular_in_Health_Foods_Drink( popular_in_Health_Foods_Drinks )
 
 
+/**/
 
+
+    //  slide script for multiple products
+
+    let parent = document.getElementById('inner2_1_pop')
+   
+    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+
+
+    let trendingRightBtn = document.getElementById('trendingRightBtn')
+
+    let leftTrending = 0;
+    let rightTrending = 4;
+
+    let divsTrending = document.querySelectorAll('#inner2_1_pop>div')
+    console.log(divsTrending);
+    function trendingSlide() {
+        for (let i = leftTrending; i < rightTrending; i++) {
+            divsTrending[i].style.display = 'block'
+
+        }
+
+
+
+    }
+    trendingSlide()
+
+
+    trendingRightBtn.onclick = function () {
+        divsTrending[leftTrending].style.display = 'none'
+        leftTrending++
+        rightTrending++
+        trendingSlide()
+
+        if (leftTrending > 0) {
+            trendingLeftBtn.style.display = 'block'
+        }
+        if (rightTrending === divsTrending.length) {
+            trendingRightBtn.style.display = 'none'
+
+        }
+
+    }
+
+    trendingLeftBtn.onclick = function () {
+        leftTrending--
+        rightTrending--
+        divsTrending[rightTrending].style.display = 'none'
+
+        trendingSlide()
+        if (leftTrending == 0) {
+            trendingLeftBtn.style.display = 'none'
+        }
+
+        if (rightTrending < divsTrending.length) {
+            trendingRightBtn.style.display = 'block'
+        }
+    }
+
+// java scrpit ending for multiple objects 
+
+
+
+
+///
 
 
     </script>
