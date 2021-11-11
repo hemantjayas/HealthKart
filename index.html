@@ -220,7 +220,7 @@
 </body>
 
 </html>
-<script src="index.js" type="module">
+<script type="module">
    
         let nav_div = document.getElementById("header-Navbar");
         import navbar from './components/navbar.js'
@@ -230,14 +230,17 @@
     
 </script>
 
-<script>
+<script type="module">
 var prodDesc = document.getElementById('proDesc');
 import {appendProductForMen ,appendBackground,addScripts} from './scripts//menWomen.js'
 
 addScripts()
 
+import {startSlide} from './scripts/index.js'
+let slide = document.getElementById('slide')
 
-
+slide.innerHTML =  startSlide()
+// console.log(object);
 
 
 </script>
