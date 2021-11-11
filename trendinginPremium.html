@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-        .box_f {
+        #box_trending_premium {
             margin-top: 100px;
             /*  border: 1px solid black;*/
             height: 508px;
@@ -154,7 +154,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_trending_premium {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_trending_premium {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,7 +185,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_trending_premium img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -199,16 +199,16 @@
 <body>
 
 
-    <div class="box_f ">
+    <div id="box_trending_premium">
         <div class="inner1_f">
             <div>  Trending in Premium Supplements </div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_f">
+        <div class="inner2_f" id="inner2_trending_premium">
 
         </div>
-        <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"> </button>
+        <button id="trendingLeftBtn_trending_premium"></button>
+        <button id="trendingRightBtn_trending_premium"> </button>
     </div>
 
 
@@ -222,7 +222,7 @@
 
     /// show product in flash card ////
 
-    let protiens = [
+    let trending_premium_protiens = [
         {
             
             product_img: "https://img8.hkrtcdn.com/11795/prd_1179417-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_c_s.jpg",
@@ -298,9 +298,9 @@
 
     ]
 
-    let inner2_f = document.getElementById('inner2_f')
+    let inner2_trending_premium = document.getElementById('inner2_trending_premium')
 
-    function flashProduct(protiens) {
+    function trending_premium_Product(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -389,7 +389,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_f.append(inner2_1_f)
+            inner2_trending_premium.append(inner2_1_f)
         })
 
 
@@ -399,7 +399,7 @@
     }
 
 
-    flashProduct(protiens)
+    trending_premium_Product(trending_premium_protiens)
 
 
 
@@ -410,58 +410,57 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_f')
-   
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    
+    let trendingLeftBtn_trending_premium = document.getElementById('trendingLeftBtn_trending_premium');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_trending_premium = document.getElementById('trendingRightBtn_trending_premium')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_trending_premium = 0;
+    let rightTrending_trending_premium = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_f>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_trending_premium = document.querySelectorAll('#inner2_trending_premium>div')
+    console.log(divsTrending_trending_premium);
+    function trending_premium() {
+        for (let i = leftTrending_trending_premium; i < rightTrending_trending_premium; i++) {
+            divsTrending_trending_premium[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    trending_premium()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_trending_premium.onclick = function () {
+        divsTrending_trending_premium[leftTrending_trending_premium].style.display = 'none'
+        leftTrending_trending_premium++
+        rightTrending_trending_premium++
+        trending_premium()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_trending_premium > 0) {
+            trendingLeftBtn_trending_premium.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_trending_premium === divsTrending_trending_premium.length) {
+            trendingRightBtn_trending_premium.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_trending_premium.onclick = function () {
+        leftTrending_trending_premium--
+        rightTrending_trending_premium--
+        divsTrending_trending_premium[rightTrending_trending_premium].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        trending_premium()
+        if (leftTrending_trending_premium == 0) {
+            trendingLeftBtn_trending_premium.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_trending_premium < divsTrending_trending_premium.length) {
+            trendingRightBtn_trending_premium.style.display = 'block'
         }
     }
 
