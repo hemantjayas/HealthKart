@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-        #box_trending_now {
+        .box_f {
             margin-top: 100px;
             /*  border: 1px solid black;*/
             height: 508px;
@@ -153,8 +153,8 @@
             display: none;
 
         }
-/*   */
-        #trendingLeftBtn_trendingNow {
+
+        #trendingLeftBtn {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn_trendingNow {
+        #trendingRightBtn {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,13 +185,13 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn_trendingNow img{
+        #trendingRightBtn img{
              width: 100%;
              height: 100%;
              object-fit: cover;
              
         }
-/*     */
+
         /* trending css ends here  */
     </style>
 </head>
@@ -199,16 +199,16 @@
 <body>
 
 
-    <div id="box_trending_now">
+    <div class="box_f ">
         <div class="inner1_f">
-            <div>  Trending Now</div>
+            <div>  Trending in Premium Supplements </div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_trendingNow">
+        <div class="inner2_f" id="inner2_f">
 
         </div>
-        <button id="trendingLeftBtn_trendingNow"></button>
-        <button id="trendingRightBtn_trendingNow"> </button>
+        <button id="trendingLeftBtn"></button>
+        <button id="trendingRightBtn"> </button>
     </div>
 
 
@@ -222,10 +222,10 @@
 
     /// show product in flash card ////
 
-    let trendingNow_protiens = [
+    let protiens = [
         {
             
-            product_img: "https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
+            product_img: "https://img8.hkrtcdn.com/11795/prd_1179417-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
             rating: " 4.6 (1,327)",
@@ -234,73 +234,73 @@
         },
         {
             
-            product_img: "https://img2.hkrtcdn.com/11963/prd_1196281-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_c_s.jpg",
-            price_off: "24% off",
-            product_name: "MuscleTech NitroTech Performance Series,4 lb Milk Chocolate",
-            rating: "4.5 (576)",
-            product_cost: "₹4,899",
-            premium_price: "₹4,745",
-        },
-        {
-           
-            product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
-            price_off: "46% off",
-            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
-            rating: "  4.7 (1,547)",
-            product_cost: "₹499",
-            premium_price: "₹364",
-        },
-        {
-           
-            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            product_img: "https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_c_s.jpg",
             price_off: "10% off",
-            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
-            rating: " 4.5 (547)",
-            product_cost: "₹6,599",
-            premium_price: "₹6,499",
+            product_name: "TrueBasics Ultra Omega-3(EPA 525mg & DHA 400mg),90 capsules",
+            rating: "4.5 (9,576)",
+            product_cost: "₹1,599",
+            premium_price: "₹1,445",
         },
         {
            
-            product_img: "https://img6.hkrtcdn.com/12134/prd_1213315-MuscleBlaze-Whey-Performance-70-Protein-8.8-lb-Chocolate_c_s.jpg",
-            price_off: "46% off",
-            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
-            rating: "  4.7 (1,547)",
-            product_cost: "₹499",
-            premium_price: "₹364",
-        },
-        {
-           
-            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            product_img: "https://img4.hkrtcdn.com/6865/prd_686463-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_c_s.jpg",
             price_off: "10% off",
-            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
-            rating: " 4.5 (547)",
-            product_cost: "₹6,599",
-            premium_price: "₹6,499",
+            product_name: "TrueBasics MUltivit Sport one Daily Multivitamins ,90 tablets",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹1,499",
+            premium_price: "₹1,364",
         },
         {
            
-            product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
-            price_off: "46% off",
-            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+            product_img: "https://img2.hkrtcdn.com/7691/prd_769051-TrueBasics-Advanced-Calcium-90-tablets-Unflavoured_c_s.jpg",
+            price_off: "10% off",
+            product_name: "TrueBasic Multivit Sport One Daily Multivitamin,90 tablets",
+            rating: " 4.5 (547)",
+            product_cost: "₹1,599",
+            premium_price: "₹1,499",
+        },
+        {
+           
+            product_img: "https://img2.hkrtcdn.com/7694/prd_769311-TrueBasics-Joint-Gold-with-1500mg-of-Glucosamine-1200mg-of-Chondroitin-90-tablets_c_s.jpg",
+            price_off: "10% off",
+            product_name: "TrueBasics Advance Calcium Vitamin D3 & K2MK7,90 tablets",
             rating: "  4.7 (1,547)",
-            product_cost: "₹499",
-            premium_price: "₹364",
+            product_cost: "₹899",
+            premium_price: "₹764",
+        },
+        {
+           
+            product_img: "https://img6.hkrtcdn.com/9597/prd_959655-TrueBasics-Liver-Detox-90-tablets_c_s.jpg",
+            price_off: "10% off",
+            product_name: "TrueBasics Ashwagandha with 600 mg of KSM-66",
+            rating: " 4.5 (547)",
+            product_cost: "₹899",
+            premium_price: "₹599",
+        },
+        {
+           
+            product_img: "https://img8.hkrtcdn.com/7953/prd_795247-TrueBasics-UC-II-Collagen-30-capsules_c_s.jpg",
+            price_off: "10% off",
+            product_name: "TrueBasics Vegan Omega 3 6 9",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹1499",
+            premium_price: "₹1364",
         },
         {
           
-            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            product_img: "https://img10.hkrtcdn.com/10574/prd_1057329-TrueBasics-Vegan-Omega-870mg-of-Vegetarian-Omega-Fatty-Acids-90-softgels_c_s.jpg",
             price_off: "10% off",
-            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            product_name: "TrueBasics Liver with Silybin milk Thirstle Exact",
             rating: " 4.5 (547)",
-            product_cost: "₹6,599",
-            premium_price: "₹6,499",
+            product_cost: "₹1,599",
+            premium_price: "₹1,499",
         }
 
     ]
 
-    let inner2_trendingNow = document.getElementById('inner2_trendingNow')
+    let inner2_f = document.getElementById('inner2_f')
 
-    function trendingNow_Product(protiens) {
+    function flashProduct(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -389,7 +389,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_trendingNow.append(inner2_1_f)
+            inner2_f.append(inner2_1_f)
         })
 
 
@@ -399,7 +399,9 @@
     }
 
 
-    trendingNow_Product(trendingNow_protiens)
+    flashProduct(protiens)
+
+
 
 
 
@@ -408,58 +410,58 @@
 
     //  slide script for multiple products
 
-    //let parent = document.getElementById('inner2_f')
+    let parent = document.getElementById('inner2_f')
    
-    let trendingLeftBtn_trendingNow = document.getElementById('trendingLeftBtn_trendingNow');
+    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
 
 
-    let trendingRightBtn_trendingNow = document.getElementById('trendingRightBtn_trendingNow')
+    let trendingRightBtn = document.getElementById('trendingRightBtn')
 
-    let leftTrending_trendingNow = 0;
-    let rightTrending_trendingNow = 4;
+    let leftTrending = 0;
+    let rightTrending = 4;
 
-    let divsTrending_trendingNow = document.querySelectorAll('#inner2_trendingNow>div')
-    console.log(divsTrending_trendingNow);
-    function trendingSlide_trendingNow() {
-        for (let i = leftTrending_trendingNow; i < rightTrending_trendingNow; i++) {
-            divsTrending_trendingNow[i].style.display = 'block'
+    let divsTrending = document.querySelectorAll('#inner2_f>div')
+    console.log(divsTrending);
+    function trendingSlide() {
+        for (let i = leftTrending; i < rightTrending; i++) {
+            divsTrending[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide_trendingNow()
+    trendingSlide()
 
 
-    trendingRightBtn_trendingNow.onclick = function () {
-        divsTrending_trendingNow[leftTrending_trendingNow].style.display = 'none'
-        leftTrending_trendingNow++
-        rightTrending_trendingNow++
-        trendingSlide_trendingNow()
+    trendingRightBtn.onclick = function () {
+        divsTrending[leftTrending].style.display = 'none'
+        leftTrending++
+        rightTrending++
+        trendingSlide()
 
-        if (leftTrending_trendingNow > 0) {
-            trendingLeftBtn_trendingNow.style.display = 'block'
+        if (leftTrending > 0) {
+            trendingLeftBtn.style.display = 'block'
         }
-        if (rightTrending_trendingNow === divsTrending_trendingNow.length) {
-            trendingRightBtn_trendingNow.style.display = 'none'
+        if (rightTrending === divsTrending.length) {
+            trendingRightBtn.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn_trendingNow.onclick = function () {
-        leftTrending_trendingNow--
-        rightTrending_trendingNow--
-        divsTrending_trendingNow[rightTrending_trendingNow].style.display = 'none'
+    trendingLeftBtn.onclick = function () {
+        leftTrending--
+        rightTrending--
+        divsTrending[rightTrending].style.display = 'none'
 
-        trendingSlide_trendingNow()
-        if (leftTrending_trendingNow == 0) {
-            trendingLeftBtn_trendingNow.style.display = 'none'
+        trendingSlide()
+        if (leftTrending == 0) {
+            trendingLeftBtn.style.display = 'none'
         }
 
-        if (rightTrending_trendingNow < divsTrending_trendingNow.length) {
-            trendingRightBtn_trendingNow.style.display = 'block'
+        if (rightTrending < divsTrending.length) {
+            trendingRightBtn.style.display = 'block'
         }
     }
 
