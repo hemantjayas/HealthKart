@@ -19,6 +19,7 @@
             margin-left: 10%;
             margin-right: 10%;
             box-shadow: 1px 1px 5px 1px gray;
+            position: absolute;
         }
 
         .inner1_f {
@@ -48,6 +49,7 @@
             /* border: 1px solid  blue;*/
             background-color: #E0E0E0;
             padding: 1% 2%;
+            column-gap: 14px ;
         }
 
         .inner2_1_f {
@@ -57,6 +59,8 @@
             height: 430px;
             border-radius: 5px;
             padding: 1%;
+            display: none;
+           
         }
 
         .inner2_1_f:hover {
@@ -130,6 +134,65 @@
             /* border: 1px solid black;*/
             margin-left: 15%;
         }
+
+
+        /* trending css start here  */
+        #trending {
+            border: 2px solid red;
+            display: flex;
+            height: 300px;
+            font-size: 3em;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        #trending>div {
+            border: 2px solid red;
+            width: 22%;
+            height: 100%;
+            display: none;
+
+        }
+
+        #trendingLeftBtn {
+            font-size: 100px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 50%;
+            border: 5px solid #00AFAE;
+            left: 1.5%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            /* transform: rotate(45deg); */
+            background-color: rgba(0, 0, 0, 0);
+            border-right: none;
+            border-top: none;
+            display: none;
+            
+        }
+
+        #trendingRightBtn {
+            font-size: 100px;
+            height: 25px;
+            position: absolute;
+            width: 25px;
+            top: 50%;
+            right: -.6%;
+            border: 5px solid #00AFAE;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(0, 0, 0, 0);
+            border-left: none;
+            border-bottom: none;
+            
+        }
+        #trendingRightBtn img{
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             
+        }
+
+        /* trending css ends here  */
     </style>
 </head>
 
@@ -138,14 +201,14 @@
 
     <div class="box_f ">
         <div class="inner1_f">
-            <div><i class="fas fa-bolt"></i> Flash Sale</div>
+            <div>  Trending Now</div>
             <button class="view_btn_f">View All</button>
         </div>
         <div class="inner2_f" id="inner2_f">
-            <button id="trendingLeftBtn"></button>
-            <button id="trendingRightBtn"></button>
 
         </div>
+        <button id="trendingLeftBtn"></button>
+        <button id="trendingRightBtn"> </button>
     </div>
 
 
@@ -161,28 +224,25 @@
 
     let protiens = [
         {
-            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-            units: "148 units left",
-            product_img: "https://img2.hkrtcdn.com/12133/prd_1213281-MuscleBlaze-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
-            price_off: "21% off",
-            product_name: "MuscleBlaze Whey Protein, 4.4 lb Rich Milk Chocolate",
-            rating: " 4.4 (3,547)",
-            product_cost: "₹4,499",
-            premium_price: "₹4,364",
+            
+            product_img: "https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
+            price_off: "16% off",
+            product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
+            rating: " 4.6 (1,327)",
+            product_cost: "₹4,999",
+            premium_price: "₹4,849",
         },
         {
-            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-            units: "138 units left",
-            product_img: "https://img2.hkrtcdn.com/9815/prd_981431-MuscleBlaze-BCAA-Gold-811-0.99-lb-Green-Apple_c_s.jpg",
-            price_off: "30% off",
-            product_name: "MuscleBlaze BCAA Gold 8:1:1, 0.99 lb 30 Servings Green Apple",
-            rating: "4.6 (2,476)",
-            product_cost: "₹1,949",
-            premium_price: "₹1,745",
+            
+            product_img: "https://img2.hkrtcdn.com/11963/prd_1196281-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_c_s.jpg",
+            price_off: "24% off",
+            product_name: "MuscleTech NitroTech Performance Series,4 lb Milk Chocolate",
+            rating: "4.5 (576)",
+            product_cost: "₹4,899",
+            premium_price: "₹4,745",
         },
         {
-            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-            units: "35 units left",
+           
             product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -191,8 +251,7 @@
             premium_price: "₹364",
         },
         {
-            flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-            units: "5 units left",
+           
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -200,27 +259,43 @@
             product_cost: "₹6,599",
             premium_price: "₹6,499",
         },
-        /* {
-             flash_sale_img:"https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-             units:"35 units left",
-             product_img:"https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
-             price_off:"46% off",
-             product_name:"HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
-             rating:"  4.7 (1,547)",
-             product_cost:"₹499",
-             premium_price:"₹364",
-          },
-          {
-             flash_sale_img:"https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",
-             units:"5 units left",
-             product_img:"https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
-             price_off:"10% off",
-             product_name:"ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
-             rating:" 4.5 (547)",
-             product_cost:"₹6,599",
-             premium_price:"₹6,499",
-         },
-         */
+        {
+           
+            product_img: "https://img6.hkrtcdn.com/12134/prd_1213315-MuscleBlaze-Whey-Performance-70-Protein-8.8-lb-Chocolate_c_s.jpg",
+            price_off: "46% off",
+            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹499",
+            premium_price: "₹364",
+        },
+        {
+           
+            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (547)",
+            product_cost: "₹6,599",
+            premium_price: "₹6,499",
+        },
+        {
+           
+            product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
+            price_off: "46% off",
+            product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+            rating: "  4.7 (1,547)",
+            product_cost: "₹499",
+            premium_price: "₹364",
+        },
+        {
+          
+            product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
+            price_off: "10% off",
+            product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+            rating: " 4.5 (547)",
+            product_cost: "₹6,599",
+            premium_price: "₹6,499",
+        }
+
     ]
 
     let inner2_f = document.getElementById('inner2_f')
@@ -233,19 +308,7 @@
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-            let inner2_1_1_f = document.createElement('div')
-            inner2_1_1_f.setAttribute('class', 'inner2_1_1_f')
-
-            let flash_sale_imgs = document.createElement('img')
-            flash_sale_imgs.src = protien.flash_sale_img
-            flash_sale_imgs.setAttribute('class', 'img2')
-
-            let unit = document.createElement('div')
-            unit.innerText = protien.units
-
-            let timer = document.createElement('div')
-            timer.setAttribute('class', 'timer')
-            timer.setAttribute('id', 'timers')
+           
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -318,13 +381,13 @@
 
             div4.append(div4_1, div4_2)
 
-            inner2_1_1_f.append(flash_sale_imgs, unit, timer)
+          
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append(inner2_1_1_f, inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
             inner2_f.append(inner2_1_f)
         })
@@ -371,16 +434,8 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('trending')
-    data.forEach(function (product) {
-        // console.log(product.name);
-        let div = document.createElement('div')
-        let name = document.createElement('p');
-        name.innerText = product.name;
-
-        div.append(name)
-        parent.append(div)
-    })
+    let parent = document.getElementById('inner2_f')
+   
     let trendingLeftBtn = document.getElementById('trendingLeftBtn');
 
 
@@ -389,7 +444,7 @@
     let leftTrending = 0;
     let rightTrending = 4;
 
-    let divsTrending = document.querySelectorAll('#trending>div')
+    let divsTrending = document.querySelectorAll('#inner2_f>div')
     console.log(divsTrending);
     function trendingSlide() {
         for (let i = leftTrending; i < rightTrending; i++) {

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> popular_in_sports_nutrition</title>
+    <title> Popular in Health Foods & Drinks</title>
     <style>
-          *{
+   *{
             box-sizing: border-box;
         }
         .box_pop{
@@ -61,9 +61,10 @@
     </style>
 </head>
 <body>
+    
 
     <div class="box_pop">
-        <div class="inner1_pop"> Popular in Sports Nutrition</div> 
+        <div class="inner1_pop"> Popular in Health Foods & Drinks</div> 
         <div class="inner2_pop" >
               <div class="inner2_1_pop" id="inner2_1_pop">
 
@@ -73,33 +74,36 @@
 
 
 
+
+
     <script>
-        let popular_in_sports_nutrition=[
-{
-    img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png"    , 
-    name: "Whey Protiens"  ,
-},
-{
-    img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png"    , 
-    name: "Whey Protein Isolate"  ,
-},
-{
-    img: "https://img4.hkrtcdn.com/6544/bnr_654343_o.png"    , 
-    name: "Mass Gainers"  ,
-},
-{
-    img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png"    , 
-    name: "Amino Acids"  ,
-},
-{
-    img: "https://img10.hkrtcdn.com/6544/bnr_654349_o.png"    , 
-    name: "Pre-Workout"  ,
-},
-]
 
 
-let inner2_1 = document.getElementById('inner2_1_pop')
-    function  popular_in_sports_nutritions(products ){
+let popular_in_Health_Foods_Drinks=[
+      {
+          img: "https://img2.hkrtcdn.com/6543/bnr_654291_o.png"    , 
+          name: "Apple Cider Vinegar"  ,
+      },
+      {
+          img: "https://img4.hkrtcdn.com/6543/bnr_654293_o.png"    , 
+          name: "Peanut Butter"  ,
+      },
+      {
+          img: "https://img2.hkrtcdn.com/6544/bnr_654301_o.png"    , 
+          name: "Protien Bars"  ,
+      },
+      {
+          img: "https://img10.hkrtcdn.com/6543/bnr_654299_o.png"    , 
+          name: "Cereals"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/6543/bnr_654295_o.png"    , 
+          name: "Nutrition for Children"  ,
+      },
+  ]
+
+  let inner2_1 = document.getElementById('inner2_1_pop')
+    function  popular_in_Health_Foods_Drink(products ){
 
       products.forEach((product)=>{
            
@@ -123,7 +127,8 @@ let inner2_1 = document.getElementById('inner2_1_pop')
         
       })   
     }
-    popular_in_sports_nutritions( popular_in_sports_nutrition )
+    popular_in_Health_Foods_Drink( popular_in_Health_Foods_Drinks )
+
 
 
 
