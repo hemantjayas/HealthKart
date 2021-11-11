@@ -204,7 +204,7 @@
             <div>  Trending in Whey Protien </div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_f">
+        <div class="inner2_f" id="inner2_trending_whey">
 
         </div>
         <button id="trendingLeftBtn"></button>
@@ -222,7 +222,7 @@
 
     /// show product in flash card ////
 
-    let protiens = [
+    let trending_whey_protiens = [
         {
             
             product_img: "https://img10.hkrtcdn.com/12133/prd_1213269-MuscleBlaze-Whey-Protein-8.8-lb-Rich-Milk-Chocolate_c_s.jpg",
@@ -298,9 +298,9 @@
 
     ]
 
-    let inner2_f = document.getElementById('inner2_f')
+    let inner2_trending_whey = document.getElementById('inner2_trending_whey')
 
-    function flashProduct(protiens) {
+    function trending_whey(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -391,7 +391,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_f.append(inner2_1_f)
+            inner2_trending_whey.append(inner2_1_f)
         })
 
 
@@ -401,7 +401,7 @@
     }
 
 
-    flashProduct(protiens)
+    trending_whey(trending_whey_protiens)
 
 
 
@@ -422,7 +422,7 @@
     let leftTrending = 0;
     let rightTrending = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_f>div')
+    let divsTrending = document.querySelectorAll('#inner2_trending_whey>div')
     console.log(divsTrending);
     function trendingSlide() {
         for (let i = leftTrending; i < rightTrending; i++) {
