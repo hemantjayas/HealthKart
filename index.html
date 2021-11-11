@@ -13,7 +13,8 @@
         margin: 0;
         padding: 0;
     }
-/*
+
+    /*
     #navbar {
         background-color: rgb(134, 118, 118);
         height: 173px;
@@ -22,15 +23,13 @@
     /* sliding images css start  */
     #slide {
         /* background-color: rgb(139, 88, 97); */
-        border: 1px solid black;
-        height: 460px;
+        height: 363px;
         display: flex;
         position: relative;
 
     }
 
     #slide>div {
-        border: 2ps solid red;
         width: 100%;
         height: 100%;
         display: none;
@@ -72,17 +71,18 @@
         border-bottom: none;
 
     }
-/* sliding image css ends here  */
 
-/* trending css start here  */
-    #trending {
+    /* sliding image css ends here  */
+
+    /* trending css start here  */
+    /* #trending {
         border: 2px solid red;
         display: flex;
         height: 300px;
         font-size: 3em;
         justify-content: space-around;
         position: relative;
-    }
+    } 
 
     #trending>div {
         border: 2px solid red;
@@ -101,7 +101,7 @@
         border: 5px solid rgb(2, 2, 2);
         left: 5%;
         transform: translate(-50%, -50%) rotate(45deg);
-        /* transform: rotate(45deg); */
+       
         background-color: rgba(0, 0, 0, 0);
         border-right: none;
         border-top: none;
@@ -122,47 +122,46 @@
         border-left: none;
         border-bottom: none;
 
+    } */
+
+    /* trending css ends here  */
+
+
+    /* features css starts here  */
+    #features {
+        display: flex;
+        height: 240px;
+        width: 77%;
+        margin: auto;
+        justify-content: space-evenly;
+
+
     }
-/* trending css ends here  */
+
+    #features>div {
+        border: 0.5px solid rgb(153, 149, 149);
+        justify-content: space-around;
+        width: 25%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 5px;
+
+    }
 
 
-/* features css starts here  */
-#features{
-    border: 2px solid red;
-    display: flex;
-    height: 240px;
-    width: 61%;
-    margin: auto;
-    /* column-gap: 1%; */
-    justify-content: space-evenly;
-    
-    
-}
 
-#features >div{
-    border: 1px solid rgb(56, 54, 54);
-    justify-content: space-around;
-    width: 24%;
-    background-color: green;
-    box-sizing: border-box;
-    text-align: center;
 
-}
-.box{
-    padding: 5px;
-    /* box-sizing: border-box; */
-}
-.box h3{
-   margin: 15px 0;
-}
-.box img{
-   margin: 20px 0 0;
-}
+    .box h3 {
+        margin: 15px 0;
+    }
 
+    .box img {
+        margin: 20px 0 0;
+    }
 </style>
 
 <body>
-   
+
 
 
     <div id='header-Navbar'>
@@ -195,34 +194,37 @@
             <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/hk-cash-icon.svg" alt="">
             <h3>Earn HK Cash</h3>
             <p>Shop with us and get HK Cash to redeem on your next purchase. Know more about HK Cash</p>
-           
+
         </div>
         <div class="box">
-            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/hk-cash-icon.svg" alt="">
-            <h3>Earn HK Cash</h3>
-            <p>Shop with us and get HK Cash to redeem on your next purchase. Know more about HK Cash</p>
-           
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/safe-payment-icon.svg" alt="">
+            <h3>Safe Payments</h3>
+            <p>Pay with the world’s most popular and secure payment methods.</p>
+
         </div>
         <div class="box">
-            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/hk-cash-icon.svg" alt="">
-            <h3>Earn HK Cash</h3>
-            <p>Shop with us and get HK Cash to redeem on your next purchase. Know more about HK Cash</p>
-           
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/authenticity-icon.svg" alt="">
+            <h3>Authenticity Guaranteed</h3>
+            <p>100% authentic products for our customers</p>
+
         </div>
         <div class="box">
-            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/hk-cash-icon.svg" alt="">
-            <h3>Earn HK Cash</h3>
-            <p>Shop with us and get HK Cash to redeem on your next purchase. Know more about HK Cash</p>
-           
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/andriod-icon.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/apple-icon.svg" alt="">
+            <h3>Download Healthkart App</h3>
+            <p>Get the best experience of Healthkart at your fingertips.</p>
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/playstore-icon.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/appstore-icon.svg" alt="">
+
         </div>
-      
+
     </div>
 </body>
 
 </html>
 <script src="index.js" type="module">
- import navbar from './components/navbar.js'
+    import navbar from './components/navbar.js'
     nav_div.innerHTML = navbar();
-    import {makeNavbar} from './scripts/navbar.js'
+    import { makeNavbar } from './scripts/navbar.js'
     makeNavbar();
 </script>
