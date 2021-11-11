@@ -16,7 +16,7 @@ let productsMen = [
         imgProduct:'./image/Double-Rich-Chocolate.jpg',
         name:'ON (Optimum Nutrition) Gold Standard 100% Whey Protein,  5 lb  Double Rich Chocolate ',
         rating:4.3,
-        price:400,
+        price:4000,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
     },
@@ -26,7 +26,7 @@ let productsMen = [
         imgProduct:'./image/Fruit-Splash-Watermelon.jpg',
         name:'MuscleBlaze BCAA Pro,  2 Piece(s)/Pack  16 Servings  Fruit Splash & Watermelon ',
         rating:3.7,
-        price:457,
+        price:5000,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -36,7 +36,7 @@ let productsMen = [
         imgProduct:'./image/Peanut-Butter.jpg',
         name:'MuscleBlaze Peanut Butter,  1 kg  Crunchy ',
         rating:4.1,
-        price:4578,
+        price:800,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -66,7 +66,7 @@ let productsMen = [
         imgProduct:'./image/Bold-Care-Surge-60-tablets.jpg',
         name:'Bold Care Surge,  60 tablet(s) ',
         rating:4.4,
-        price:7457,
+        price:757,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
     },
@@ -89,7 +89,7 @@ let productsMen = [
         imgProduct:'./image/MuscleBlaze-Biozyme.jpg',
         name:'MuscleBlaze Biozyme Whey Protein,  4.4 lb  Rich Milk Chocolate ',
         rating:4.3,
-        price:4578,
+        price:3200,
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600,
         trending:true

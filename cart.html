@@ -181,6 +181,28 @@ color: #212121;
     height: 20px;
     color: blue;
 }
+#appCode{
+
+    cursor: pointer;
+}
+#code_Box{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+#apply{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 15px;
+}
 </style>
 <body>
     <!-- Navbar Start -->
@@ -218,12 +240,38 @@ color: #212121;
             <div id="shipping"></div>
             <div id="totalAmount"></div>
         </div>
+        <label for="code" id='app'></label>
+    </div>
+    <div id='code_Box'>
+        <h1>CODE</h1>
+        <input type="text" placeholder="write code here" id='code'>
+        <button onclick="applyCoup()">Apply</button>
     </div>
     <!-- add products -->
 </body>
     <script>
         let cart_data = JSON.parse(localStorage.getItem("healthkart_cart"));
+        var total = 0;
 // let data_div = document.querySelector("#cart_data");
+ function applyCoup(){
+     if(document.getElementById('code').value === 'masai30')
+     {
+         localStorage.setItem('code_Health', true)
+         refresh()
+         alert('applied')
+     }else{
+         alert('INVALID')
+     }
+ }
+ function applyCODE(){
+    if(document.getElementById('code_Box').style.display ==='flex')
+    {
+        document.getElementById('code_Box').style.display ='none'
+    }else{
+        document.getElementById('code_Box').style.display ='flex'
+    }
+ }
+
 let totalAmount = document.getElementById('totalAmount');
 let proceedToPay = document.getElementById('proceedtopay');
 let cartItem = document.getElementById('cartItem');
@@ -233,7 +281,8 @@ let order = document.getElementById('order');
 let shipping = document.getElementById('shipping');
 let count = 0;
 let datadiv = document.getElementById("cart_data");
-let total = 0;
+
+cart_data = filter(cart_data);
 console.log(cart_data);
 function Cart_items() {
         cart_data.forEach(function (product) {
@@ -255,7 +304,7 @@ function Cart_items() {
                 buttonMinus.setAttribute('class','quantity_btn')
                 buttonPlus.setAttribute('class','quantity_btn')
                 quan.textContent = 'Quantity '+ product.quantity;
-                
+                total += product.price*product.quantity;
                 m_quantity.append(quan,buttonMinus,buttonPlus)
                 buttonPlus.onclick = ()=>{
                     
@@ -264,6 +313,7 @@ function Cart_items() {
                      localStorage.setItem('healthkart_cart',JSON.stringify(cart_data))
                      total += product.price;
                      totalAmount.textContent= `Final Payable ₹ ${total} `;
+                     proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
                 }
                 buttonMinus.onclick = ()=>{
                     
@@ -272,6 +322,7 @@ function Cart_items() {
                      localStorage.setItem('healthkart_cart',JSON.stringify(cart_data))
                      total =  total -product.price;
                      totalAmount.textContent= `Final Payable ₹ ${total}`;
+                     refresh()
                 } 
                 div.style.textAlign = 'center'
                 let imgProduct = document.createElement('img');
@@ -279,27 +330,55 @@ function Cart_items() {
                 divtxt.append(m_name, m_price1,m_quantity)
                 div.append(imgProduct, divtxt);
                 datadiv.append(div);
-                total += Number(product.price);
         });
         proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
         proceedToPay.addEventListener('click', function(){
                 location.href = "#";
         })
+        
+        if(localStorage.getItem('code_Health') == "true")
+                     {
+                         total = Math.floor(total*0.7);
+                         document.getElementById('app').textContent = 'Code Applied Click to Remove'
+                         proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
+                     }
         totalAmount.textContent = `Final Payable ₹ ${total} `;
+        
         cartItem.innerHTML = `My Cart`
         pincode.innerHTML = 'Pincode'
         coupon.innerHTML = 'Apply Code →'
+        coupon.onclick = ()=>{
+            applyCODE()
+        }
         order.innerHTML = "Order Summery";
         shipping.innerHTML = "Shipping Charges - Free"
 }
 Cart_items()
-
+document.getElementById('app').onclick =()=>{
+                            localStorage.setItem('code_Health', 'false')
+                            refresh()
+                         }
 // function increaseQuan(product){
     
-    
+    function filter(cart_data){
+
+        let arr = [];
+        cart_data.forEach(pro=>{
+
+            if(pro.quantity>0)
+            {
+                arr.push(pro)
+            }
+        })
+        localStorage.setItem('healthkart_cart',JSON.stringify(arr))
+        return arr;
+    }
 // }
 function decreaseQuan(product){
     product.quantity--;
+}
+function refresh(){
+    window.location.href = 'cart.html'
 }
     </script>
 </html>
