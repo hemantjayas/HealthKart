@@ -689,9 +689,10 @@
            margin-top: 3600px ;
       /*  border: 1px solid black;*/
         height: 249px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 12%;
+        margin-right: 11%;
         box-shadow: 1px 1px 5px 1px gray;
+       /* position: absolute;*/
         }
         .inner1_pop{
            
@@ -798,7 +799,16 @@
 
       /* popular in weights */
 
-
+/* popular in fitness */
+#box_popular_in_fitness{
+           margin-top: 100px ;
+      /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 12%;
+        margin-right: 11%;
+        box-shadow: 1px 1px 5px 1px gray;
+        }
+/* popular in fitness */
 </style>
 
 <body>
@@ -942,6 +952,21 @@
 
 
 <!-- popular in weight -->
+
+<!-- popular in fitness -->
+
+<div id="box_popular_in_fitness">
+    <div class="inner1_pop">popular in Fitness</div> 
+    <div class="inner2_pop" >
+          <div class="inner2_1_pop" id="inner2_1_popular_in_fitness">
+
+          </div>
+    </div>
+</div>
+
+
+
+<!-- popular in fitness -->
     <div id="category">
         <h1>What are you looking for, User?</h1>
         <div>
@@ -2669,6 +2694,62 @@ let popular_in_weights=[
 
 ////////////////  popular in weight ////////////////
 
+
+//////////////  popular in fitness ///////////////
+
+let popular_in_Fitness=[
+      {
+          img: "https://img2.hkrtcdn.com/3802/bnr_380131_o.png"    , 
+          name: "Gym Essentials"  ,
+      },
+      {
+          img: "https://img2.hkrtcdn.com/3801/bnr_380091_o.png"    , 
+          name: "Fitness Equipment"  ,
+      },
+      {
+          img: "https://img6.hkrtcdn.com/3802/bnr_380125_o.png"    , 
+          name: "Gym Accessories"  ,
+      },
+      {
+          img: "https://img10.hkrtcdn.com/3802/bnr_380129_o.png"    , 
+          name: "Gym Supports"  ,
+      },
+     
+  ]
+
+ 
+  let inner2_1_popular_in_fitness = document.getElementById('inner2_1_popular_in_fitness')
+    function popular_in_Fitnes(products ){
+
+      products.forEach((product)=>{
+           
+        let divmain = document.createElement('div')
+
+        let img = document.createElement('img')
+        img.src = product.img
+        img.setAttribute('class','img1_pop')
+
+        let div1 = document.createElement('div')
+        div1.innerText = product.name
+        div1.setAttribute('class','p_pop')
+
+        divmain.append(img,div1)
+
+
+        let div2 =document.createElement('div')
+        div2.setAttribute('class','B_pop')
+
+       inner2_1_popular_in_fitness.append(divmain,div2)
+        
+      })   
+    }
+    popular_in_Fitnes(popular_in_Fitness)
+
+
+
+
+
+//////////////// popular in fitness ////////////
 </script>
 
 <script type="module">
