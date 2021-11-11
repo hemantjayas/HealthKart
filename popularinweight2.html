@@ -82,7 +82,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_popular_in_weight {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -99,7 +99,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_popular_in_weight {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -113,7 +113,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_popular_in_weight img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -127,8 +127,8 @@
         <div class="inner1_pop"> Popular in Weight Loss</div> 
         <div class="inner2_pop" >
               <div class="inner2_1_pop" id="inner2_1_pop">
-                <button id="trendingLeftBtn"></button>
-                <button id="trendingRightBtn"> </button>
+                <button id="trendingLeftBtn_popular_in_weight"></button>
+                <button id="trendingRightBtn_popular_in_weight"> </button>
               </div>
         </div>
     </div>
@@ -208,21 +208,21 @@
    
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_1_pop')
+  
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    let trendingLeftBtn_popular_in_weight = document.getElementById('trendingLeftBtn_popular_in_weight');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_popular_in_weight = document.getElementById('trendingRightBtn_popular_in_weight')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_popular_in_weight = 0;
+    let rightTrending_popular_in_weight = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_1_pop>div')
-    console.log(divsTrending);
+    let divsTrending_popular_in_weight = document.querySelectorAll('#inner2_1_pop>div')
+    console.log(divsTrending_popular_in_weight);
     function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+        for (let i = leftTrending_popular_in_weight; i < rightTrending_popular_in_weight; i++) {
+            divsTrending_popular_in_weight[i].style.display = 'block'
 
         }
 
@@ -232,34 +232,34 @@
     trendingSlide()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
+    trendingRightBtn_popular_in_weight.onclick = function () {
+        divsTrending_popular_in_weight[leftTrending_popular_in_weight].style.display = 'none'
+        leftTrending_popular_in_weight++
+        rightTrending_popular_in_weight++
         trendingSlide()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_popular_in_weight > 0) {
+            trendingLeftBtn_popular_in_weight.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_popular_in_weight === divsTrending_popular_in_weight.length) {
+            trendingRightBtn_popular_in_weight.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_popular_in_weight.onclick = function () {
+        leftTrending_popular_in_weight--
+        rightTrending_popular_in_weight--
+        divsTrending_popular_in_weight[rightTrending_popular_in_weight].style.display = 'none'
 
         trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        if (leftTrending_popular_in_weight == 0) {
+            trendingLeftBtn_popular_in_weight.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_popular_in_weight < divsTrending_popular_in_weight.length) {
+            trendingRightBtn_popular_in_weight.style.display = 'block'
         }
     }
 

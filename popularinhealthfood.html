@@ -81,7 +81,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_popular_in_health {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -98,7 +98,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_popular_in_health {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -112,7 +112,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_popular_in_health img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -130,9 +130,9 @@
     <div id="box_popular_in_health">
         <div class="inner1_pop"> Popular in Health Foods & Drinks</div> 
         <div class="inner2_pop" >
-              <div class="inner2_1_pop" id="inner2_1_pop">
-                <button id="trendingLeftBtn"></button>
-                <button id="trendingRightBtn"> </button>
+              <div class="inner2_1_pop" id="inner2_1_popular_in_health">
+                <button id="trendingLeftBtn_popular_in_health"></button>
+                <button id="trendingRightBtn_popular_in_health"> </button>
               </div>
         </div>
     </div>
@@ -175,7 +175,7 @@ let popular_in_Health_Foods_Drinks=[
       },
   ]
 
-  let inner2_1 = document.getElementById('inner2_1_pop')
+  let inner2_1_popular_in_health = document.getElementById('inner2_1_popular_in_health')
     function  popular_in_Health_Foods_Drink(products ){
 
       products.forEach((product)=>{
@@ -197,7 +197,7 @@ let popular_in_Health_Foods_Drinks=[
        // let div2 =document.createElement('div')
       //  div2.setAttribute('class','B_pop')
 
-       inner2_1.append(divmain)
+       inner2_1_popular_in_health.append(divmain)
         
       })   
     }
@@ -209,58 +209,58 @@ let popular_in_Health_Foods_Drinks=[
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_1_pop')
+    
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    let trendingLeftBtn_popular_in_health = document.getElementById('trendingLeftBtn_popular_in_health');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_popular_in_health = document.getElementById('trendingRightBtn_popular_in_health')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_popular_in_health = 0;
+    let rightTrending_popular_in_health = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_1_pop>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_popular_in_health = document.querySelectorAll('#inner2_1_popular_in_health>div')
+    console.log(divsTrending_popular_in_health);
+    function Health_Foods_Drink() {
+        for (let i = leftTrending_popular_in_health; i < rightTrending_popular_in_health; i++) {
+            divsTrending_popular_in_health[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    Health_Foods_Drink()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_popular_in_health.onclick = function () {
+        divsTrending_popular_in_health[leftTrending_popular_in_health].style.display = 'none'
+        leftTrending_popular_in_health++
+        rightTrending_popular_in_health++
+        Health_Foods_Drink()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_popular_in_health > 0) {
+            trendingLeftBtn_popular_in_health.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_popular_in_health === divsTrending_popular_in_health.length) {
+            trendingRightBtn_popular_in_health.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_popular_in_health.onclick = function () {
+        leftTrending_popular_in_health--
+        rightTrending_popular_in_health--
+        divsTrending_popular_in_health[rightTrending_popular_in_health].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        Health_Foods_Drink()
+        if (leftTrending_popular_in_health == 0) {
+            trendingLeftBtn_popular_in_health.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_popular_in_health < divsTrending_popular_in_health.length) {
+            trendingRightBtn_popular_in_health.style.display = 'block'
         }
     }
 
