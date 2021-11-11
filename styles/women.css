@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f7;
+}
+.topCatogCont{ 
+   width: 1170px;
+   height: 330px; 
+   margin: auto;
+   border-radius: 7px;
+   background-color: white;
+   display: flex;
+}
+.container{
+     width: 1349px;
+     height: 590px;
+     background-color: #e1fafc;
+}
+.textCont{
+    height: 312px;
+    width: 316px;
+    margin: auto;
+}
+.paratit{
+    margin-top: 19px;
+   font-size: 16px;
+   line-height: 23px;
+   color: #020202;
+   opacity: .7;
+   background: gainsboro;
+  
+}
+.title{
+    font-size: 31px;
+    line-height: 39px;
+    font-weight: 400;
+    color: #020202;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.imageCont{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    width: 686px;
+    height: 312px;
+    margin: auto;
+    grid-gap:15px;  
+}
+.content{
+   
+    box-shadow: 0 3px 5px rgb(99 115 129 / 20%);
+    width: 214.38px;
+    height: 142px;
+}
+.content img{
+     width: 100%;
+     height: 100%;
+}
+.why-item-container{
+  
+    width: 1019px;
+    height: 114px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+}
+.whyItem{
+    width: 294px;
+    height: 100%;
+   
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.whyItem div img{
+    width: 52px;
+    height: 68px;
+}
+.whyItemtextContent{
+    width: 220px;
+    margin-left: 22px;
+   
+}
+.para1WhyItem{
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #101010;
+}
+.para2WhyItem{
+    font-size: 14px;
+    line-height: 21px;
+    color: #101010;
+    opacity: .7;
+}
+.spotlightContainer{
+    height: 376px;
+   max-width: 1170px;
+   margin: 0 auto;
+   margin-top: 50px;
+}
+ .spotlightPara{
+   height: 36px;
+   font-size: 28px;
+   color: #111;;
+   font-weight: 400;
+ }
+ #proDesc{
+     height: 315px;
+     margin-top: 24px;
+     display: flex;
+     justify-content: space-between;
+ }
+ #proDesc >div{
+     width: 267px;
+     height: 100%;
+     background-color: white;
+     border-radius: 9px;
+     cursor: pointer;
+     border: 1px solid #e0e0e0;
+     padding-bottom: 20px;
+ }
+ #proDesc >div >img{
+      width: 100%;
+ }
+
+ .imageOfPro img{  
+     margin-left: 40px;
+     margin-top: 20px;
+ }
+ .title,.reviewStars,.price{
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ .title{
+    margin: 0 0 8px;
+    font-size: 15px;
+    line-height: 22px!important;
+   color: #545454;
+   height: 44px;
+   font-weight: 400;
+   overflow: hidden;
+ }
+ .reviewStars{
+    line-height:40px;
+ }
+ .price{
+    font-size: 14px;
+    color: #212121;
+    outline: none;
+ }
+ #proCatog{
+     height: 226px;
+     margin-top: 24px;
+     border-radius: 9px;
+     background: #fff;
+     display: flex;
+     align-items: center;
+ }
+ #proCatog >div{
+     height: 163px;
+     width: 196px;
+     margin-left: 20px;
+ }
+ #proCatog >div>img{
+     height: 123px;
+    margin-left: 10px;
+ }
+ .prod-name{
+    font-size: 18px;
+    line-height: 23px;
+    color: #101010;
+     text-align: center;
+ }
+ #healthPlans ,#healthPlansTWO{
+     height: 402px;
+     border: 1px solid rebeccapurple;
+     margin-top: 19px;
+     border-radius: 7px;
+     border: 1px solid #e0e0e0;
+     padding: 20px 80px 27px;
+     display: flex;
+     align-items: center;
+     background: #4f4b67;
+ justify-content: space-between;
+ }
+ #healthPlansTWO{
+     background-color: #4b6757;
+     margin-top: 50px;
+ }
+ .healthHeading{
+     width: 403.19px;
+     height: 103px;
+     color:  #f7f7f7;
+ }
+ .healthHeading button{
+     padding: 14px 16px 12px;
+     font-size: 13px;
+     border-radius: 4px;
+     border: none;
+     margin-top: auto;
+     background-color: #fff;
+     color: #008382;
+     font-weight: 500;
+ }
+ .productsHeal{
+     width:604px;
+     height: 333px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .productsHeal>div{
+     width: 255px;
+     height: 333px;
+     border: 1px solid #f2f2f2;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+     margin-left: 30px;
+ }
+ .productsHeal>div >img{
+    height: 162px;
+    margin-left: auto;
+ }
+ h4,h3,h2{
+     padding-left: 20px;
+ }
+ h3{
+     font-size: 17px;
+     font-weight: 600;
+     color: #212121;
+ }
+ #fAQ{
+    height: 876px;
+    margin-top: 34px;
+    border: 1px solid #e0e0e0;
+    border-radius: 7px;
+    background: #fff;
+    justify-content: center;
+ }
+ #faq-wrapper{
+    width: 994px;
+    height: 778px;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .faq-title{
+     height: 36px;
+     margin-bottom: 52px;
+     font-size: 28px;
+     color: #111;
+     text-align: center;
+ }
+ .faq-content{
+     display: grid;
+     grid-template-columns: 45% 45%;
+     grid-gap:100px;
+     grid-row-gap: 80px;
+ }
+ .heading{
+    font-size: 18px;
+    line-height: 21px;
+    color: #19191b;
+   font-weight: 400;
+ }
+ .descrip{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 26px;
+ color: #696871;
+ }
+ .slider-Box{
+     position: relative;
+     overflow:hidden;
+ }
+ #slider{
+     width: 100%;
+     display: inline-flex;
+     transition: 0.7s;
+ }
+ #slider img{
+     width: 100%;
+ }
+ .indicators{
+     position: absolute;
+     left: 50%;
+     bottom:20px;
+     transform: translateX(-50%);
+ }
+ .indicators span{
+     display: inline-block;
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     background: rgba(255,255,255,0.5);
+     cursor: pointer;
+     margin: 2px;
+ }
+ 

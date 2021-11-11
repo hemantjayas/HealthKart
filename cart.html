@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="shortcut icon" href="https://www.healthkart.com/favicon.ico" type="image/x-icon">
+    
+</head>
+<style>
+    /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+*{
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+body{
+/* width: 100%; */
+background-color: #F7F7F7;
+}
+ul li{
+list-style: none;
+font-family: 'Source Sans Pro', sans-serif;
+color: #3C3C3C;
+}
+a{
+text-decoration: none;
+}
+ h1{
+font-family: 'Roboto', sans-serif;
+}
+h2{
+font-family: 'Roboto', sans-serif;
+}
+p{
+font-family: 'Roboto', sans-serif;
+    color: #3C3C3C;
+}
+#navbar{
+box-sizing: border-box;
+height: 70px;
+background-color:white ;
+width: 100%;
+border-bottom: 1px solid #D3CFCF;
+/* border: 1px solid red; */
+}
+#navbar .container{
+width: 65%;
+display: flex;
+/* border: 1px solid red; */
+margin-left: 350px;
+}
+#navbar .container .logo img {
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    }
+#navbar .process{
+display: flex;
+}
+#navbar .process img{
+width: 15px;
+}
+#navbar .process p{
+margin: 26px 5px;
+text-transform: uppercase;
+font-size: 12px;
+}
+#navbar .process .cartline{
+margin:32px 5px;
+width: 120px;
+height: 1px;
+background-color:  #5E5D5D;
+}
+/* cart item count */
+.allItems{
+margin: 40px ;
+display: flex;
+}
+.leftSide{
+width: 50%;
+/* border: 1px solid blueviolet; */
+margin-left: 10%;
+}
+#cartItem{
+/* border: 1px solid blueviolet; */
+box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+background-color: white;
+margin: 10px 10px 0px;
+font-size: 25px;
+padding: 15px ;
+width: 90%;
+}
+#cart_data{
+/* border: 1px solid blueviolet; */
+box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+margin: 0px 10px;
+font-size: 15px;
+padding: 15px;
+background-color: white;
+width: 90%;
+height: auto;
+}
+.rightSide{
+/* border: 1px solid blueviolet; */
+margin: 0px  0%  10% 10px;
+width: 23%;
+height: auto;
+}
+#proceedtopay{
+margin: 2px;
+border: 1px solid red;
+font-size: 15px;
+background-color: white;
+}
+#totalAmount{
+background-color: #fff;
+margin: 0px 5px;
+padding: 15px;
+color: #212121;
+}
+#pincode{
+margin: 10px 5px;
+border: 1px solid #fff;
+background-color: #fff;
+color: #212121;
+padding: 10px;
+}
+#coupon{
+background-color: #fff;
+border: 1px solid #fff;
+padding: 10px;
+margin: 10px 5px;
+color: #212121;
+}
+#proceedtopay{
+background-color: rgb(219, 90, 14);
+border: 1px solid rgb(219, 90, 14);
+border: 2px;
+padding: 13px;
+margin: 10px 5px;
+color: #fff;
+font-size: 16px;
+text-align: center;
+width: 98%;
+}
+#order{
+background-color: rgb(219, 254, 255);
+margin: 10px 5px 0px;
+padding: 13px;
+font-size:18px;
+}
+#shipping{
+background-color: #fff;
+margin: 0px 5px;
+padding: 15px;
+color: #212121;
+}
+#cart_data div {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: 10%; background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+}
+#cart_data >div:hover {
+    box-shadow: 0px 0px 18px rgba(33,33,33,.2);
+  }
+#cart_data > div > span {
+    display: grid
+}
+#cart_data div  p{
+    font-weight: 600;
+    font-size : 18px;
+}
+.quantity_btn{
+    width: 20px;
+    height: 20px;
+    color: blue;
+}
+</style>
+<body>
+    <!-- Navbar Start -->
+
+    <div id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="https://www.sofinagroup.com/wp-content/uploads/2019/07/Healthkart-transparent-logo.png"
+                    ></a>
+            </div>
+
+            <div class="process">
+                <img src="https://img5.hkrtcdn.com/react/static/media/checkout/blue-tick.svg" alt="">
+                <p>cart</p>
+                <p class="cartline"></p>
+                <img src="  https://img5.hkrtcdn.com/react/static/media/checkout/outline-tick.svg" alt="">
+                <p>address</p>
+                <p class="cartline"></p>
+                <img src="  https://img5.hkrtcdn.com/react/static/media/checkout/outline-tick.svg" alt="">
+                <p>payment</p>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <div class="allItems">
+        <div class="leftSide">
+            <div id="cartItem"></div>
+            <div id="cart_data">
+            </div>
+        </div>
+        <div class="rightSide">
+            <div id="pincode"></div>
+            <div id="coupon"></div>
+            <button id="proceedtopay"></button>
+            <div id="order"></div>
+            <div id="shipping"></div>
+            <div id="totalAmount"></div>
+        </div>
+    </div>
+    <!-- add products -->
+</body>
+    <script>
+        let cart_data = JSON.parse(localStorage.getItem("healthkart_cart"));
+// let data_div = document.querySelector("#cart_data");
+let totalAmount = document.getElementById('totalAmount');
+let proceedToPay = document.getElementById('proceedtopay');
+let cartItem = document.getElementById('cartItem');
+let pincode = document.getElementById('pincode');
+let coupon = document.getElementById('coupon');
+let order = document.getElementById('order');
+let shipping = document.getElementById('shipping');
+let count = 0;
+let datadiv = document.getElementById("cart_data");
+let total = 0;
+console.log(cart_data);
+function Cart_items() {
+        cart_data.forEach(function (product) {
+                let div = document.createElement("div");
+                let divtxt = document.createElement("span");
+                let m_name = document.createElement('b');
+                m_name.innerText = product.name;
+                let m_price1 = document.createElement('p');
+                m_price1.innerText = '₹ ' + product.price;
+                let m_quantity = document.createElement('div');
+                m_quantity.style.display = 'flex'
+                m_quantity.style.alignItems = 'center'
+                m_quantity.style.position = 'relative'
+                let quan = document.createElement('p')
+                let buttonMinus = document.createElement('button')
+                let buttonPlus = document.createElement('button')
+                buttonMinus.innerText = '-'
+                buttonPlus.innerText = '+'
+                buttonMinus.setAttribute('class','quantity_btn')
+                buttonPlus.setAttribute('class','quantity_btn')
+                quan.textContent = 'Quantity '+ product.quantity;
+                
+                m_quantity.append(quan,buttonMinus,buttonPlus)
+                buttonPlus.onclick = ()=>{
+                    
+                     product.quantity++;
+                     quan.textContent = 'Quantity '+ product.quantity;
+                     localStorage.setItem('healthkart_cart',JSON.stringify(cart_data))
+                     total += product.price;
+                     totalAmount.textContent= `Final Payable ₹ ${total} `;
+                }
+                buttonMinus.onclick = ()=>{
+                    
+                    product.quantity--;
+                    if(product.quantity < 2) {
+                        buttonMinus.disabled = true
+                    }
+                     quan.textContent = 'Quantity '+ product.quantity;
+                     localStorage.setItem('healthkart_cart',JSON.stringify(cart_data))
+                     total =  total -product.price;
+                     totalAmount.textContent= `Final Payable ₹ ${total}`;
+                } 
+                div.style.textAlign = 'center'
+                let imgProduct = document.createElement('img');
+                imgProduct.src = product.imgProduct;
+                divtxt.append(m_name, m_price1,m_quantity)
+                div.append(imgProduct, divtxt);
+                datadiv.append(div);
+                total += Number(product.price);
+        });
+        proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
+        proceedToPay.addEventListener('click', function(){
+                location.href = "#";
+        })
+        totalAmount.textContent = `Final Payable ₹ ${total} `;
+        cartItem.innerHTML = `My Cart`
+        pincode.innerHTML = 'Pincode'
+        coupon.innerHTML = 'Apply Code →'
+        order.innerHTML = "Order Summery";
+        shipping.innerHTML = "Shipping Charges - Free"
+}
+Cart_items()
+
+// function increaseQuan(product){
+    
+    
+// }
+function decreaseQuan(product){
+    product.quantity--;
+}
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
