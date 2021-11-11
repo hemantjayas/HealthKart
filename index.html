@@ -375,15 +375,7 @@
         box-sizing: border-box;
     }
 
-    #box_popular_in_weight {
-        margin-top: 3600px;
-        /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-        /* position: absolute;*/
-    }
+   
 
     .inner1_pop {
 
@@ -438,7 +430,7 @@
 
 
     /* trending css start here  */
-    #trending {
+    /* #trending {
         border: 2px solid red;
         display: flex;
         height: 300px;
@@ -453,16 +445,30 @@
         height: 100%;
         display: none;
 
+    } */
+
+   
+
+    /* popular in sports */
+
+    /* popular in health */
+    .popular{
+        margin: 50px auto;
+        /*  border: 1px solid black;*/
+        height: 249px;
+        width: 77%;
+        box-shadow: 1px 1px 5px 1px gray;
+        position: relative;
     }
 
-    #trendingLeftBtn_popular_in_weight {
+    .popularLeft{
         font-size: 100px;
         height: 25px;
         width: 25px;
         position: absolute;
-        top: 35%;
+        top: 50%;
         border: 5px solid #00AFAE;
-        left: 11.5%;
+        left: 1.5%;
         transform: translate(-50%, -50%) rotate(45deg);
         /* transform: rotate(45deg); */
         background-color: rgba(0, 0, 0, 0);
@@ -472,13 +478,13 @@
 
     }
 
-    #trendingRightBtn_popular_in_weight {
+    .popularRight{
         font-size: 100px;
         height: 25px;
         position: absolute;
         width: 25px;
-        top: 35%;
-        right: 10%;
+        top: 50%;
+        right: -0.6%;
         border: 5px solid #00AFAE;
         transform: translate(-50%, -50%) rotate(45deg);
         background-color: rgba(0, 0, 0, 0);
@@ -488,121 +494,6 @@
     }
 
    
-
-    /* popular in weights */
-
-    /* popular in fitness */
-    #box_popular_in_fitness {
-        margin-top: 100px;
-        /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-    }
-
-    /* popular in fitness */
-
-
-    /* popular in sports */
-    #box_popular_for_sport {
-        margin-top: 100px;
-        /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-    }
-
-    #trendingLeftBtn_popular_for_sport {
-        font-size: 100px;
-        height: 25px;
-        width: 25px;
-        position: absolute;
-        top: 35%;
-        border: 5px solid #00AFAE;
-        left: 11.5%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        /* transform: rotate(45deg); */
-        background-color: rgba(0, 0, 0, 0);
-        border-right: none;
-        border-top: none;
-        display: none;
-
-    }
-
-    #trendingRightBtn_popular_for_sport {
-        font-size: 100px;
-        height: 25px;
-        position: absolute;
-        width: 25px;
-        top: 35%;
-        right: 10%;
-        border: 5px solid #00AFAE;
-        transform: translate(-50%, -50%) rotate(45deg);
-        background-color: rgba(0, 0, 0, 0);
-        border-left: none;
-        border-bottom: none;
-
-    }
-
-    #trendingRightBtn_popular_for_sport img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-
-    /* popular in sports */
-
-    /* popular in health */
-    #box_popular_in_health {
-        margin-top: 100px;
-        /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-    }
-
-    #trendingLeftBtn_popular_in_health {
-        font-size: 100px;
-        height: 25px;
-        width: 25px;
-        position: absolute;
-        top: 35%;
-        border: 5px solid #00AFAE;
-        left: 11.5%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        /* transform: rotate(45deg); */
-        background-color: rgba(0, 0, 0, 0);
-        border-right: none;
-        border-top: none;
-        display: none;
-
-    }
-
-    #trendingRightBtn_popular_in_health {
-        font-size: 100px;
-        height: 25px;
-        position: absolute;
-        width: 25px;
-        top: 35%;
-        right: 10%;
-        border: 5px solid #00AFAE;
-        transform: translate(-50%, -50%) rotate(45deg);
-        background-color: rgba(0, 0, 0, 0);
-        border-left: none;
-        border-bottom: none;
-
-    }
-
-    #trendingRightBtn_popular_in_health img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
 
     
     /* #header-Navbar{
@@ -656,7 +547,6 @@
 
     <!-- trending Now -->
 
-    <div class="container">
 
         <div class="cont" id="box_trending_now">
             <div class="inner1_f">
@@ -669,14 +559,12 @@
             <button class="LEFTbtn" id="trendingLeftBtn_trendingNow"></button>
             <button class="RIGHTbtn" id="trendingRightBtn_trendingNow"> </button>
         </div>
-    </div>
 
     <!-- trending Now -->
 
 
     <!--- trending in whey -->
 
-    <div class="container">
 
         <div class="cont" id="box_trending_whey">
             <div class="inner1_f">
@@ -689,12 +577,10 @@
             <button class="LEFTbtn" id="trendingLeftBtn_whey_protiens"></button>
             <button class="RIGHTbtn" id="trendingRightBtn_whey_protiens"> </button>
         </div>
-    </div>
 
     <!--- trending in whey -->
 
     <!-- trending in Mass Gainer -->
-    <div class="container">
 
         <div class="cont" id="box_trending_in_massGainer">
             <div class="inner1_f">
@@ -707,14 +593,12 @@
             <button class="LEFTbtn" id="trendingLeftBtn_trending_in_massGainer"></button>
             <button class="RIGHTbtn" id="trendingRightBtn_trending_in_massGainer"> </button>
         </div>
-    </div>
 
 
     <!-- trending in Mass Gainer -->
 
     <!--- trending in Premium supliment-->
 
-    <div class="container">
 
         <div class="cont" id="box_trending_premium">
             <div class="inner1_f">
@@ -727,13 +611,11 @@
             <button class="LEFTbtn" id="trendingLeftBtn_trending_premium"></button>
             <button class="RIGHTbtn" id="trendingRightBtn_trending_premium"> </button>
         </div>
-    </div>
 
 
     <!--- trending in Premium supliment-->
 
     <!-- just launched -->
-    <div class="container">
 
         <div class="cont" id="box_just_Lanch">
             <div class="inner1_f">
@@ -746,19 +628,18 @@
             <button class="LEFTbtn" id="trendingLeftBtn_just_Lanch"></button>
             <button class="RIGHTbtn" id="trendingRightBtn_just_Lanch"> </button>
         </div>
-    </div>
 
 
     <!-- just launched -->
 
 
     <!-- popular in weight -->
-    <div id="box_popular_in_weight">
+    <div class="popular" id="box_popular_in_weight">
         <div class="inner1_pop"> Popular in Weight Loss</div>
         <div class="inner2_pop">
             <div class="inner2_1_pop" id="inner2_1_popular_in_weight">
-                <button id="trendingLeftBtn_popular_in_weight"></button>
-                <button id="trendingRightBtn_popular_in_weight"> </button>
+                <button class="popularLeft" id="trendingLeftBtn_popular_in_weight"></button>
+                <button class="popularRight" id="trendingRightBtn_popular_in_weight"> </button>
             </div>
         </div>
     </div>
@@ -768,7 +649,7 @@
 
     <!-- popular in fitness -->
 
-    <div id="box_popular_in_fitness">
+    <div class="popular" id="box_popular_in_fitness">
         <div class="inner1_pop">Popular in Fitness</div>
         <div class="inner2_pop">
             <div class="inner2_1_pop" id="inner2_1_popular_in_fitness">
@@ -784,12 +665,12 @@
 
     <!-- popular in sports -->
 
-    <div id="box_popular_for_sport">
+    <div class="popular" id="box_popular_for_sport">
         <div class="inner1_pop"> Popular in Sports Nutrition</div>
         <div class="inner2_pop">
             <div class="inner2_1_pop" id="inner2_1_popular_for_sport">
-                <button id="trendingLeftBtn_popular_for_sport"></button>
-                <button id="trendingRightBtn_popular_for_sport"> </button>
+                <button class="popularLeft" id="trendingLeftBtn_popular_for_sport"></button>
+                <button class="popularRight" id="trendingRightBtn_popular_for_sport"> </button>
             </div>
 
         </div>
@@ -801,12 +682,12 @@
 
     <!---  popular in health -->
 
-    <div id="box_popular_in_health">
+    <div class="popular" id="box_popular_in_health">
         <div class="inner1_pop"> Popular in Health Foods & Drinks</div>
         <div class="inner2_pop">
             <div class="inner2_1_pop" id="inner2_1_popular_in_health">
-                <button id="trendingLeftBtn_popular_in_health"></button>
-                <button id="trendingRightBtn_popular_in_health"> </button>
+                <button class="popularLeft" id="trendingLeftBtn_popular_in_health"></button>
+                <button class="popularRight" id="trendingRightBtn_popular_in_health"> </button>
             </div>
         </div>
     </div>
