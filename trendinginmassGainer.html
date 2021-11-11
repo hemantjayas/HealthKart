@@ -154,7 +154,7 @@
 
         }
 
-        #trendingLeftBtn {
+        #trendingLeftBtn_trending_in_massGainer {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_trending_in_massGainer {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,7 +185,7 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_trending_in_massGainer img{
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -204,11 +204,11 @@
             <div>  Trending in Mass Gainers </div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_f">
+        <div class="inner2_f" id="inner2_trending_in_massGainer">
 
         </div>
-        <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"> </button>
+        <button id="trendingLeftBtn_trending_in_massGainer"></button>
+        <button id="trendingRightBtn_trending_in_massGainer"> </button>
     </div>
 
 
@@ -222,7 +222,7 @@
 
     /// show product in flash card ////
 
-    let protiens = [
+    let trending_in_massGainer_protiens = [
         {
             
             product_img: "https://img10.hkrtcdn.com/9679/prd_967839_c_s.jpg",
@@ -298,9 +298,9 @@
 
     ]
 
-    let inner2_f = document.getElementById('inner2_f')
+    let inner2_trending_in_massGainer = document.getElementById('inner2_trending_in_massGainer')
 
-    function flashProduct(protiens) {
+    function trending_in_massGainer_Product(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -389,7 +389,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_f.append(inner2_1_f)
+            inner2_trending_in_massGainer.append(inner2_1_f)
         })
 
 
@@ -399,31 +399,8 @@
     }
 
 
-    flashProduct(protiens)
+    trending_in_massGainer_Product(trending_in_massGainer_protiens)
 
-
-    ///     timer of product //////
-    const startingMinutes = 59;
-    let time = startingMinutes * 60;
-
-    const countdownEl = document.getElementById('timers')
-    // const countdownEl = document.getElementsByClassName('timer')
-
-    setInterval(updateCountdown, 1000)
-
-
-    function updateCountdown() {
-        const minutes = Math.floor(time / 60)
-        let seconds = time % 60
-        // let seconds = seconds <10 ? '0' + seconds : seconds;
-
-        countdownEl.innerHTML = `12:${minutes}:${seconds}`;
-        time--;
-
-        if (time === 0) {
-            time = startingMinutes * 60
-        }
-    }
 
 
 
@@ -434,58 +411,58 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_f')
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+   
+    let trendingLeftBtn_trending_in_massGainer = document.getElementById('trendingLeftBtn_trending_in_massGainer');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_trending_in_massGainer = document.getElementById('trendingRightBtn_trending_in_massGainer')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_trending_in_massGainer = 0;
+    let rightTrending_trending_in_massGainer = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_f>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_trending_in_massGainer = document.querySelectorAll('#inner2_trending_in_massGainer>div')
+    console.log(divsTrending_trending_in_massGainer);
+    function trendingSlide_trending_in_massGainer() {
+        for (let i = leftTrending_trending_in_massGainer; i < rightTrending_trending_in_massGainer; i++) {
+            divsTrending_trending_in_massGainer[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    trendingSlide_trending_in_massGainer()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_trending_in_massGainer.onclick = function () {
+        divsTrending_trending_in_massGainer[leftTrending_trending_in_massGainer].style.display = 'none'
+        leftTrending_trending_in_massGainer++
+        rightTrending_trending_in_massGainer++
+        trendingSlide_trending_in_massGainer()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_trending_in_massGainer > 0) {
+            trendingLeftBtn_trending_in_massGainer.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_trending_in_massGainer === divsTrending_trending_in_massGainer.length) {
+            trendingRightBtn_trending_in_massGainer.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_trending_in_massGainer.onclick = function () {
+        leftTrending_trending_in_massGainer--
+        rightTrending_trending_in_massGainer--
+        divsTrending_trending_in_massGainer[rightTrending_trending_in_massGainer].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        trendingSlide_trending_in_massGainer()
+        if (leftTrending_trending_in_massGainer == 0) {
+            trendingLeftBtn_trending_in_massGainer.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_trending_in_massGainer < divsTrending_trending_in_massGainer.length) {
+            trendingRightBtn_trending_in_massGainer.style.display = 'block'
         }
     }
 
