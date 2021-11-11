@@ -11,8 +11,7 @@ function startSlide() {
 
 
 }
-startSlide()
-
+export {startSlide}
 let btnRight = document.getElementById('right');
 
 btnRight.onclick = function () {
@@ -126,7 +125,7 @@ function trendingSlide() {
 
 
 }
-trendingSlide()
+export {trendingSlide} 
 
 
 trendingRightBtn.onclick = function () {
