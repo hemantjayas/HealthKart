@@ -153,8 +153,8 @@
             display: none;
 
         }
-
-        #trendingLeftBtn {
+/*   */
+        #trendingLeftBtn_trendingNow {
             font-size: 100px;
             height: 25px;
             width: 25px;
@@ -171,7 +171,7 @@
             
         }
 
-        #trendingRightBtn {
+        #trendingRightBtn_trendingNow {
             font-size: 100px;
             height: 25px;
             position: absolute;
@@ -185,13 +185,13 @@
             border-bottom: none;
             
         }
-        #trendingRightBtn img{
+        #trendingRightBtn_trendingNow img{
              width: 100%;
              height: 100%;
              object-fit: cover;
              
         }
-
+/*     */
         /* trending css ends here  */
     </style>
 </head>
@@ -204,11 +204,11 @@
             <div>  Trending Now</div>
             <button class="view_btn_f">View All</button>
         </div>
-        <div class="inner2_f" id="inner2_f">
+        <div class="inner2_f" id="inner2_trendingNow">
 
         </div>
-        <button id="trendingLeftBtn"></button>
-        <button id="trendingRightBtn"> </button>
+        <button id="trendingLeftBtn_trendingNow"></button>
+        <button id="trendingRightBtn_trendingNow"> </button>
     </div>
 
 
@@ -222,7 +222,7 @@
 
     /// show product in flash card ////
 
-    let protiens = [
+    let trendingNow_protiens = [
         {
             
             product_img: "https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
@@ -298,9 +298,9 @@
 
     ]
 
-    let inner2_f = document.getElementById('inner2_f')
+    let inner2_trendingNow = document.getElementById('inner2_trendingNow')
 
-    function flashProduct(protiens) {
+    function trendingNow_Product(protiens) {
 
         protiens.forEach((protien) => {
 
@@ -389,7 +389,7 @@
 
             inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
 
-            inner2_f.append(inner2_1_f)
+            inner2_trendingNow.append(inner2_1_f)
         })
 
 
@@ -399,9 +399,9 @@
     }
 
 
-    flashProduct(protiens)
+    trendingNow_Product(trendingNow_protiens)
 
-
+/*
     ///     timer of product //////
     const startingMinutes = 59;
     let time = startingMinutes * 60;
@@ -425,7 +425,7 @@
         }
     }
 
-
+*/
 
 
 
@@ -434,58 +434,58 @@
 
     //  slide script for multiple products
 
-    let parent = document.getElementById('inner2_f')
+    //let parent = document.getElementById('inner2_f')
    
-    let trendingLeftBtn = document.getElementById('trendingLeftBtn');
+    let trendingLeftBtn_trendingNow = document.getElementById('trendingLeftBtn_trendingNow');
 
 
-    let trendingRightBtn = document.getElementById('trendingRightBtn')
+    let trendingRightBtn_trendingNow = document.getElementById('trendingRightBtn_trendingNow')
 
-    let leftTrending = 0;
-    let rightTrending = 4;
+    let leftTrending_trendingNow = 0;
+    let rightTrending_trendingNow = 4;
 
-    let divsTrending = document.querySelectorAll('#inner2_f>div')
-    console.log(divsTrending);
-    function trendingSlide() {
-        for (let i = leftTrending; i < rightTrending; i++) {
-            divsTrending[i].style.display = 'block'
+    let divsTrending_trendingNow = document.querySelectorAll('#inner2_trendingNow>div')
+    console.log(divsTrending_trendingNow);
+    function trendingSlide_trendingNow() {
+        for (let i = leftTrending_trendingNow; i < rightTrending_trendingNow; i++) {
+            divsTrending_trendingNow[i].style.display = 'block'
 
         }
 
 
 
     }
-    trendingSlide()
+    trendingSlide_trendingNow()
 
 
-    trendingRightBtn.onclick = function () {
-        divsTrending[leftTrending].style.display = 'none'
-        leftTrending++
-        rightTrending++
-        trendingSlide()
+    trendingRightBtn_trendingNow.onclick = function () {
+        divsTrending_trendingNow[leftTrending_trendingNow].style.display = 'none'
+        leftTrending_trendingNow++
+        rightTrending_trendingNow++
+        trendingSlide_trendingNow()
 
-        if (leftTrending > 0) {
-            trendingLeftBtn.style.display = 'block'
+        if (leftTrending_trendingNow > 0) {
+            trendingLeftBtn_trendingNow.style.display = 'block'
         }
-        if (rightTrending === divsTrending.length) {
-            trendingRightBtn.style.display = 'none'
+        if (rightTrending_trendingNow === divsTrending_trendingNow.length) {
+            trendingRightBtn_trendingNow.style.display = 'none'
 
         }
 
     }
 
-    trendingLeftBtn.onclick = function () {
-        leftTrending--
-        rightTrending--
-        divsTrending[rightTrending].style.display = 'none'
+    trendingLeftBtn_trendingNow.onclick = function () {
+        leftTrending_trendingNow--
+        rightTrending_trendingNow--
+        divsTrending_trendingNow[rightTrending_trendingNow].style.display = 'none'
 
-        trendingSlide()
-        if (leftTrending == 0) {
-            trendingLeftBtn.style.display = 'none'
+        trendingSlide_trendingNow()
+        if (leftTrending_trendingNow == 0) {
+            trendingLeftBtn_trendingNow.style.display = 'none'
         }
 
-        if (rightTrending < divsTrending.length) {
-            trendingRightBtn.style.display = 'block'
+        if (rightTrending_trendingNow < divsTrending_trendingNow.length) {
+            trendingRightBtn_trendingNow.style.display = 'block'
         }
     }
 
