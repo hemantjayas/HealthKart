@@ -50,7 +50,7 @@ function addDropDwn(x) {
         }
         function makeNavbar(){
             let hCons = getElement('hk');
-            let myDIV = getElement('myDIV'); 
+            let myDIV = getElement('myDIV');
             onMouseIn(hCons,myDIV)
             onMouserOut(hCons,myDIV)
         
@@ -79,6 +79,10 @@ function addDropDwn(x) {
        let gendDroDwn = document.getElementById('gend-DroDwn')
        gendDroDwn.style.display = 'none'
   }
+  let Crt = document.getElementById('cart');
+  Crt.onclick = ()=>{
+    window.location.href = 'cart.html'
+  }
    
   let div_cat_Men = document.getElementById('div_cat_Men');
   let div_cat_Women = document.getElementById('div_cat_Women');
@@ -96,5 +100,6 @@ function addDropDwn(x) {
 {
   window.location.href = 'navbar.html'
 }
-    }
+
+  }
 export {makeNavbar}

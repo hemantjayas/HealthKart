@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #page_container{
+            width: 1170px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 21% 79%;
+            grid-gap:30px;
+            margin-top: 30px;
+        }
+
+        #sort_funcs{
+            display: inline-block;
+            vertical-align: top;
+            height: 300px;
+            border: 2px solid #f6f6f7;
+        }
+        #products_Cont{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap:2%;
+        }
+        #products_Cont>div{
+            width: 270px;
+        }
+        #products_Cont>div:hover{
+            box-shadow: 0 3px 26px rgb(0 0 0 / 16%);
+            transition: 0.2s;
+        }
+       .discount{
+         background: #e35a5a;
+         border-radius: 2px;
+         font-size: 12px;
+         font-weight: 500;
+         line-height: 23px;
+         text-align: center;
+         color: #fff;
+         top: 0;
+         width: 52px;
+       }
+       .img_Cont{
+           width: fit-content;
+           margin: auto;
+       }
+       .rating_text{
+           margin-left: 5px;
+           margin-top: 5px;
+           margin-bottom: 10px;
+       }
+       .quick_btn{
+           margin-left: auto;
+           margin-right: 5px;
+           color:#008497;
+           border:0.5px solid #008497;
+           background-color: transparent;
+           padding: 8px;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+       .price_Pro{
+        font-size: 20px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #212121;
+    margin-right: 5px;
+       }
+       .block{
+           display: inline-block;
+           color: #212121;
+       }
+       #sorts{
+          display: inline-block;
+           margin-bottom: 50px;
+       }
+    </style>
+</head>
+<body>
+    <div id='page_container'>
+        <div id='sort_funcs'>
+            <div id='sort_By_Price'>
+                
+            </div>
+        </div>
+        <div id ='products_Container'>
+            <div class='block'>Sort By</div>
+            <select name="" id="sorts">
+                <option value="">Popularity</option>
+                <option value="htoL">Price-High To Low</option>
+                <option value="ltoH">Price-Low To High</option>
+                <option value="r_ltoH">Rating-Low To High</option>
+                <option value="r_htoL">Rating-High To Low</option>
+            </select>
+            <div id="products_Cont"></div> 
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import {appendProducts} from './scripts/menWomen.js'
+     let products_Cont = document.getElementById('products_Cont');
+     let sort_By_Price = document.getElementById('sorts');
+     appendProducts(products_Cont ,sort_By_Price.value)
+     sort_By_Price.onchange =()=>
+     {
+         products_Cont.innerHTML = '';
+        appendProducts(products_Cont ,sort_By_Price.value)
+     }
+</script>
