@@ -186,21 +186,26 @@
 
     }
 
-   
+
 
     /* flash sale */
     * {
         box-sizing: border-box;
     }
 
-    #box_flash_sale {
-        margin-top: 50px;
-        /*  border: 1px solid black;*/
+    /* #box_flash_sale {
+        margin: 50px auto;
+        width: 77%;
         height: 508px;
-        margin-left: 12%;
-        margin-right: 10%;
         box-shadow: 1px 1px 5px 1px gray;
-        position: absolute;
+        position: relative;
+    } */
+    .cont {
+        margin: 50px auto;
+        width: 77%;
+        height: 508px;
+        box-shadow: 1px 1px 5px 1px gray;
+        position: relative;
     }
 
     .inner1_f {
@@ -329,7 +334,7 @@
 
     }
 
-    #trendingLeftBtn {
+    .LEFTbtn{
         font-size: 100px;
         height: 25px;
         width: 25px;
@@ -345,8 +350,9 @@
         display: none;
 
     }
+   
 
-    #trendingRightBtn {
+    .RIGHTbtn{
         font-size: 100px;
         height: 25px;
         position: absolute;
@@ -361,34 +367,102 @@
 
     }
 
-    #trendingRightBtn img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  
 
+
+    /* popular in weights */
+    * {
+        box-sizing: border-box;
     }
 
-    /* flash sale */
-
-    /*  trending now */
-    #box_trending_now {
-        margin-top: 600px;
+    #box_popular_in_weight {
+        margin-top: 3600px;
         /*  border: 1px solid black;*/
-        height: 508px;
+        height: 249px;
         margin-left: 12%;
-        margin-right: 10%;
+        margin-right: 11%;
         box-shadow: 1px 1px 5px 1px gray;
-        position: absolute;
+        /* position: absolute;*/
     }
 
-    #trendingLeftBtn_trendingNow {
+    .inner1_pop {
+
+        /* border: 1px solid red;*/
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0%;
+        padding: 1% 3%;
+        background-color: white;
+    }
+
+    .inner2_pop {
+
+        /*  border: 1px solid  blue;*/
+        background-color: #E0E0E0;
+        padding: 1% 2%;
+    }
+
+    .inner2_1_pop {
+
+        display: flex;
+        justify-content: space-between;
+        /*  border: 1px solid black;*/
+        background-color: white;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .img1_pop {
+        /*  border: 1px solid black;*/
+
+    }
+
+    .p_pop {
+        font-weight: 700;
+        /* border: 1px solid black;*/
+    }
+
+    .B_pop {
+        border: 1px solid #BDBDBD;
+        background-color: #BDBDBD;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /**/
+
+
+    /* trending css start here  */
+    #trending {
+        border: 2px solid red;
+        display: flex;
+        height: 300px;
+        font-size: 3em;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    #trending>div {
+        border: 2px solid red;
+        width: 22%;
+        height: 100%;
+        display: none;
+
+    }
+
+    #trendingLeftBtn_popular_in_weight {
         font-size: 100px;
         height: 25px;
         width: 25px;
         position: absolute;
-        top: 50%;
+        top: 35%;
         border: 5px solid #00AFAE;
-        left: 1.5%;
+        left: 11.5%;
         transform: translate(-50%, -50%) rotate(45deg);
         /* transform: rotate(45deg); */
         background-color: rgba(0, 0, 0, 0);
@@ -398,13 +472,13 @@
 
     }
 
-    #trendingRightBtn_trendingNow {
+    #trendingRightBtn_popular_in_weight {
         font-size: 100px;
         height: 25px;
         position: absolute;
         width: 25px;
-        top: 50%;
-        right: -.6%;
+        top: 35%;
+        right: 10%;
         border: 5px solid #00AFAE;
         transform: translate(-50%, -50%) rotate(45deg);
         background-color: rgba(0, 0, 0, 0);
@@ -413,503 +487,129 @@
 
     }
 
-    #trendingRightBtn_trendingNow img {
+   
+
+    /* popular in weights */
+
+    /* popular in fitness */
+    #box_popular_in_fitness {
+        margin-top: 100px;
+        /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 12%;
+        margin-right: 11%;
+        box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    /* popular in fitness */
+
+
+    /* popular in sports */
+    #box_popular_for_sport {
+        margin-top: 100px;
+        /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 12%;
+        margin-right: 11%;
+        box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    #trendingLeftBtn_popular_for_sport {
+        font-size: 100px;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 35%;
+        border: 5px solid #00AFAE;
+        left: 11.5%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        /* transform: rotate(45deg); */
+        background-color: rgba(0, 0, 0, 0);
+        border-right: none;
+        border-top: none;
+        display: none;
+
+    }
+
+    #trendingRightBtn_popular_for_sport {
+        font-size: 100px;
+        height: 25px;
+        position: absolute;
+        width: 25px;
+        top: 35%;
+        right: 10%;
+        border: 5px solid #00AFAE;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: rgba(0, 0, 0, 0);
+        border-left: none;
+        border-bottom: none;
+
+    }
+
+    #trendingRightBtn_popular_for_sport img {
         width: 100%;
         height: 100%;
         object-fit: cover;
 
     }
 
-    /*trending now */
+    /* popular in sports */
+
+    /* popular in health */
+    #box_popular_in_health {
+        margin-top: 100px;
+        /*  border: 1px solid black;*/
+        height: 249px;
+        margin-left: 12%;
+        margin-right: 11%;
+        box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    #trendingLeftBtn_popular_in_health {
+        font-size: 100px;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 35%;
+        border: 5px solid #00AFAE;
+        left: 11.5%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        /* transform: rotate(45deg); */
+        background-color: rgba(0, 0, 0, 0);
+        border-right: none;
+        border-top: none;
+        display: none;
+
+    }
+
+    #trendingRightBtn_popular_in_health {
+        font-size: 100px;
+        height: 25px;
+        position: absolute;
+        width: 25px;
+        top: 35%;
+        right: 10%;
+        border: 5px solid #00AFAE;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: rgba(0, 0, 0, 0);
+        border-left: none;
+        border-bottom: none;
+
+    }
+
+    #trendingRightBtn_popular_in_health img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
     
-    #box_trending_now {
-            margin-top: 600px;
-            /*  border: 1px solid black;*/
-            height: 508px;
-            margin-left: 12%;
-            margin-right: 10%;
-            box-shadow: 1px 1px 5px 1px gray;
-            position: absolute;
-        }
-        #trendingLeftBtn_trendingNow {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            border: 5px solid #00AFAE;
-            left: 1.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
+    /* #header-Navbar{
+            width: 100%;
+        } */
 
-        #trendingRightBtn_trendingNow {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 50%;
-            right: -.6%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_trendingNow img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-    /*  trending now */   
-    
-    
-    /*trending in whey */
-
-    #box_trending_whey {
-            margin-top: 1200px;
-            /*  border: 1px solid black;*/
-            height: 508px;
-            margin-left: 12%;
-            margin-right: 10%;
-            box-shadow: 1px 1px 5px 1px gray;
-            position: absolute;
-        }
-     
-        #trendingLeftBtn_whey_protiens {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            border: 5px solid #00AFAE;
-            left: 1.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_whey_protiens {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 50%;
-            right: -.6%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_whey_protiens img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }   
-     /*trending in whey */
-
-
-
-
-     /*  trending in Mass Gainer */ 
-     #box_trending_in_massGainer {
-            margin-top: 1800px;
-            /*  border: 1px solid black;*/
-            height: 508px;
-            margin-left: 12%;
-            margin-right: 10%;
-            box-shadow: 1px 1px 5px 1px gray;
-            position: absolute;
-        }
-
-        #trendingLeftBtn_trending_in_massGainer {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            border: 5px solid #00AFAE;
-            left: 1.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_trending_in_massGainer {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 50%;
-            right: -.6%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_trending_in_massGainer img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-     /*  trending in Mass Gainer */ 
-
-
-     /* trending in premium supply */
-     #box_trending_premium {
-            margin-top: 2400px;
-            /*  border: 1px solid black;*/
-            height: 508px;
-            margin-left: 12%;
-            margin-right: 10%;
-            box-shadow: 1px 1px 5px 1px gray;
-            position: absolute;
-        }
-
-        #trendingLeftBtn_trending_premium {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            border: 5px solid #00AFAE;
-            left: 1.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_trending_premium {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 50%;
-            right: -.6%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_trending_premium img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-
-     /* trending in premium supply */
-
-
-     /* just Launched */
-     #box_just_Lanch {
-            margin-top: 3000px;
-            /*  border: 1px solid black;*/
-            height: 508px;
-            margin-left: 12%;
-            margin-right: 10%;
-            box-shadow: 1px 1px 5px 1px gray;
-            position: absolute;
-        }
-
-        #trendingLeftBtn_just_Lanch {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 50%;
-            border: 5px solid #00AFAE;
-            left: 1.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_just_Lanch {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 50%;
-            right: -.6%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_just_Lanch img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-
-     
-     /* just Launched */
-
-
-     /* popular in weights */
-     *{
-            box-sizing: border-box;
-        }
-        #box_popular_in_weight{
-           margin-top: 3600px ;
-      /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-       /* position: absolute;*/
-        }
-        .inner1_pop{
-           
-           /* border: 1px solid red;*/
-            font-size: 25px;
-            font-weight: 700;
-            margin: 0%;
-            padding: 1% 3%;
-            background-color: white;
-        }
-        
-        .inner2_pop{
-           
-          /*  border: 1px solid  blue;*/
-            background-color: #E0E0E0;
-            padding: 1% 2%;
-        }
-       .inner2_1_pop{
-           
-           display: flex;
-           justify-content: space-between;
-         /*  border: 1px solid black;*/
-           background-color: white;
-           text-align: center;
-           padding-left: 5% ;
-           padding-right: 5%;
-       }
-       .img1_pop{
-         /*  border: 1px solid black;*/
-           
-       }
-      
-      .p_pop{
-          font-weight: 700;
-         /* border: 1px solid black;*/
-      }
-      .B_pop{
-          border: 1px solid #BDBDBD; 
-          background-color: #BDBDBD;
-          margin-top: 5%;
-          margin-bottom: 5%;
-      }
-      .hide{
-          display: none;
-      }
-      /**/
-
-
-        /* trending css start here  */
-        #trending {
-            border: 2px solid red;
-            display: flex;
-            height: 300px;
-            font-size: 3em;
-            justify-content: space-around;
-            position: relative;
-        }
-
-        #trending>div {
-            border: 2px solid red;
-            width: 22%;
-            height: 100%;
-            display: none;
-
-        }
-
-        #trendingLeftBtn_popular_in_weight {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 35%;
-            border: 5px solid #00AFAE;
-            left: 11.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_popular_in_weight {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 35%;
-            right: 10%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_popular_in_weight img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-
-      /* popular in weights */
-
-/* popular in fitness */
-#box_popular_in_fitness{
-           margin-top: 100px ;
-      /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-        }
-/* popular in fitness */
-
-
-/* popular in sports */
-#box_popular_for_sport{
-           margin-top: 100px ;
-      /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-        }
-
-        #trendingLeftBtn_popular_for_sport {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 35%;
-            border: 5px solid #00AFAE;
-            left: 11.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_popular_for_sport {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 35%;
-            right: 10%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_popular_for_sport img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-/* popular in sports */
-
-/* popular in health */
-#box_popular_in_health{
-           margin-top: 100px ;
-      /*  border: 1px solid black;*/
-        height: 249px;
-        margin-left: 12%;
-        margin-right: 11%;
-        box-shadow: 1px 1px 5px 1px gray;
-        }
-
-        #trendingLeftBtn_popular_in_health {
-            font-size: 100px;
-            height: 25px;
-            width: 25px;
-            position: absolute;
-            top: 35%;
-            border: 5px solid #00AFAE;
-            left: 11.5%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            /* transform: rotate(45deg); */
-            background-color: rgba(0, 0, 0, 0);
-            border-right: none;
-            border-top: none;
-            display: none;
-            
-        }
-
-        #trendingRightBtn_popular_in_health {
-            font-size: 100px;
-            height: 25px;
-            position: absolute;
-            width: 25px;
-            top: 35%;
-            right: 10%;
-            border: 5px solid #00AFAE;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: rgba(0, 0, 0, 0);
-            border-left: none;
-            border-bottom: none;
-            
-        }
-        #trendingRightBtn_popular_in_health img{
-             width: 100%;
-             height: 100%;
-             object-fit: cover;
-             
-        }
-
-
-/* popular in health */
+    /* popular in health */
 </style>
 
 <body>
@@ -934,9 +634,9 @@
     </div>
 
     <!--- flash sale -->
-    <div>
+   
 
-        <div id="box_flash_sale">
+        <div class="cont" id="box_flash_sale">
             <div class="inner1_f">
                 <div><i class="fas fa-bolt"></i> Flash Sale</div>
                 <button class="view_btn_f">View All</button>
@@ -944,163 +644,175 @@
             <div class="inner2_f" id="inner2_f">
 
             </div>
-            <button id="trendingLeftBtn"></button>
-            <button id="trendingRightBtn"> </button>
+            <button class="LEFTbtn" id="trendingLeftBtn"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn"> </button>
         </div>
-    </div>
+    
 
 
 
 
     <!--- flash sale -->
 
-<!-- trending Now -->
+    <!-- trending Now -->
 
+    <div class="container">
 
-<div id="box_trending_now">
-    <div class="inner1_f">
-        <div>  Trending Now</div>
-        <button class="view_btn_f">View All</button>
+        <div class="cont" id="box_trending_now">
+            <div class="inner1_f">
+                <div> Trending Now</div>
+                <button class="view_btn_f">View All</button>
+            </div>
+            <div class="inner2_f" id="inner2_trendingNow">
+
+            </div>
+            <button class="LEFTbtn" id="trendingLeftBtn_trendingNow"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn_trendingNow"> </button>
+        </div>
     </div>
-    <div class="inner2_f" id="inner2_trendingNow">
+
+    <!-- trending Now -->
+
+
+    <!--- trending in whey -->
+
+    <div class="container">
+
+        <div class="cont" id="box_trending_whey">
+            <div class="inner1_f">
+                <div> Trending in Whey Protien </div>
+                <button class="view_btn_f">View All</button>
+            </div>
+            <div class="inner2_f" id="inner2_trending_whey">
+
+            </div>
+            <button class="LEFTbtn" id="trendingLeftBtn_whey_protiens"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn_whey_protiens"> </button>
+        </div>
+    </div>
+
+    <!--- trending in whey -->
+
+    <!-- trending in Mass Gainer -->
+    <div class="container">
+
+        <div class="cont" id="box_trending_in_massGainer">
+            <div class="inner1_f">
+                <div> Trending in Mass Gainers </div>
+                <button class="view_btn_f">View All</button>
+            </div>
+            <div class="inner2_f" id="inner2_trending_in_massGainer">
+
+            </div>
+            <button class="LEFTbtn" id="trendingLeftBtn_trending_in_massGainer"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn_trending_in_massGainer"> </button>
+        </div>
+    </div>
+
+
+    <!-- trending in Mass Gainer -->
+
+    <!--- trending in Premium supliment-->
+
+    <div class="container">
+
+        <div class="cont" id="box_trending_premium">
+            <div class="inner1_f">
+                <div> Trending in Premium Supplements </div>
+                <button class="view_btn_f">View All</button>
+            </div>
+            <div class="inner2_f" id="inner2_trending_premium">
+
+            </div>
+            <button class="LEFTbtn" id="trendingLeftBtn_trending_premium"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn_trending_premium"> </button>
+        </div>
+    </div>
+
+
+    <!--- trending in Premium supliment-->
+
+    <!-- just launched -->
+    <div class="container">
+
+        <div class="cont" id="box_just_Lanch">
+            <div class="inner1_f">
+                <div>Just Launched Product </div>
+                <button class="view_btn_f">View All</button>
+            </div>
+            <div class="inner2_f" id="inner2_just_Lanch">
+
+            </div>
+            <button class="LEFTbtn" id="trendingLeftBtn_just_Lanch"></button>
+            <button class="RIGHTbtn" id="trendingRightBtn_just_Lanch"> </button>
+        </div>
+    </div>
+
+
+    <!-- just launched -->
+
+
+    <!-- popular in weight -->
+    <div id="box_popular_in_weight">
+        <div class="inner1_pop"> Popular in Weight Loss</div>
+        <div class="inner2_pop">
+            <div class="inner2_1_pop" id="inner2_1_popular_in_weight">
+                <button id="trendingLeftBtn_popular_in_weight"></button>
+                <button id="trendingRightBtn_popular_in_weight"> </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- popular in weight -->
+
+    <!-- popular in fitness -->
+
+    <div id="box_popular_in_fitness">
+        <div class="inner1_pop">Popular in Fitness</div>
+        <div class="inner2_pop">
+            <div class="inner2_1_pop" id="inner2_1_popular_in_fitness">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- popular in fitness -->
+
+
+    <!-- popular in sports -->
+
+    <div id="box_popular_for_sport">
+        <div class="inner1_pop"> Popular in Sports Nutrition</div>
+        <div class="inner2_pop">
+            <div class="inner2_1_pop" id="inner2_1_popular_for_sport">
+                <button id="trendingLeftBtn_popular_for_sport"></button>
+                <button id="trendingRightBtn_popular_for_sport"> </button>
+            </div>
+
+        </div>
 
     </div>
-    <button id="trendingLeftBtn_trendingNow"></button>
-    <button id="trendingRightBtn_trendingNow"> </button>
-</div>
-
-<!-- trending Now -->
 
 
-<!--- trending in whey -->
+    <!-- popular in sports -->
 
+    <!---  popular in health -->
 
-<div id="box_trending_whey">
-    <div class="inner1_f">
-        <div>  Trending in Whey Protien </div>
-        <button class="view_btn_f">View All</button>
+    <div id="box_popular_in_health">
+        <div class="inner1_pop"> Popular in Health Foods & Drinks</div>
+        <div class="inner2_pop">
+            <div class="inner2_1_pop" id="inner2_1_popular_in_health">
+                <button id="trendingLeftBtn_popular_in_health"></button>
+                <button id="trendingRightBtn_popular_in_health"> </button>
+            </div>
+        </div>
     </div>
-    <div class="inner2_f" id="inner2_trending_whey">
-
-    </div>
-    <button id="trendingLeftBtn_whey_protiens"></button>
-    <button id="trendingRightBtn_whey_protiens"> </button>
-</div>
-
-<!--- trending in whey -->
-
-<!-- trending in Mass Gainer -->
-
-<div id="box_trending_in_massGainer">
-    <div class="inner1_f">
-        <div>  Trending in Mass Gainers </div>
-        <button class="view_btn_f">View All</button>
-    </div>
-    <div class="inner2_f" id="inner2_trending_in_massGainer">
-
-    </div>
-    <button id="trendingLeftBtn_trending_in_massGainer"></button>
-    <button id="trendingRightBtn_trending_in_massGainer"> </button>
-</div>
-
-<!-- trending in Mass Gainer -->
-
-<!--- trending in Premium supliment-->
 
 
-<div id="box_trending_premium">
-    <div class="inner1_f">
-        <div>  Trending in Premium Supplements </div>
-        <button class="view_btn_f">View All</button>
-    </div>
-    <div class="inner2_f" id="inner2_trending_premium">
-
-    </div>
-    <button id="trendingLeftBtn_trending_premium"></button>
-    <button id="trendingRightBtn_trending_premium"> </button>
-</div>
-
-
-<!--- trending in Premium supliment-->
-
-<!-- just launched -->
-<div id="box_just_Lanch">
-    <div class="inner1_f">
-        <div>Just Launched Product </div>
-        <button class="view_btn_f">View All</button>
-    </div>
-    <div class="inner2_f" id="inner2_just_Lanch">
-
-    </div>
-    <button id="trendingLeftBtn_just_Lanch"></button>
-    <button id="trendingRightBtn_just_Lanch"> </button>
-</div>
-
-
-<!-- just launched -->
-  
-
-<!-- popular in weight -->
-<div id="box_popular_in_weight">
-    <div class="inner1_pop"> Popular in Weight Loss</div> 
-    <div class="inner2_pop" >
-          <div class="inner2_1_pop" id="inner2_1_popular_in_weight">
-            <button id="trendingLeftBtn_popular_in_weight"></button>
-            <button id="trendingRightBtn_popular_in_weight"> </button>
-          </div>
-    </div>
-</div>
-
-
-<!-- popular in weight -->
-
-<!-- popular in fitness -->
-
-<div id="box_popular_in_fitness">
-    <div class="inner1_pop">Popular in Fitness</div> 
-    <div class="inner2_pop" >
-          <div class="inner2_1_pop" id="inner2_1_popular_in_fitness">
-
-          </div>
-    </div>
-</div>
-
-
-
-<!-- popular in fitness -->
-
-
-<!-- popular in sports -->
-
-<div id="box_popular_for_sport">
-    <div class="inner1_pop"> Popular in Sports Nutrition</div> 
-    <div class="inner2_pop" >
-          <div class="inner2_1_pop" id="inner2_1_popular_for_sport">
-            <button id="trendingLeftBtn_popular_for_sport"></button>
-            <button id="trendingRightBtn_popular_for_sport"> </button>
-          </div>
-        
-    </div>
-    
-</div>
-
-
-<!-- popular in sports -->
-
-<!---  popular in health -->
-
-<div id="box_popular_in_health">
-    <div class="inner1_pop"> Popular in Health Foods & Drinks</div> 
-    <div class="inner2_pop" >
-          <div class="inner2_1_pop" id="inner2_1_popular_in_health">
-            <button id="trendingLeftBtn_popular_in_health"></button>
-            <button id="trendingRightBtn_popular_in_health"> </button>
-          </div>
-    </div>
-</div>
-
-
-<!---  popular in health -->
+    <!---  popular in health -->
 
     <div id="category">
         <h1>What are you looking for, User?</h1>
@@ -1455,7 +1167,7 @@
 
     let trendingNow_protiens = [
         {
-            
+
             product_img: "https://img10.hkrtcdn.com/12134/prd_1213319-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
@@ -1464,7 +1176,7 @@
             premium_price: "₹4,849",
         },
         {
-            
+
             product_img: "https://img2.hkrtcdn.com/11963/prd_1196281-MuscleTech-NitroTech-Performance-Series-4-lb-Milk-Chocolate_c_s.jpg",
             price_off: "24% off",
             product_name: "MuscleTech NitroTech Performance Series,4 lb Milk Chocolate",
@@ -1473,7 +1185,7 @@
             premium_price: "₹4,745",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1482,7 +1194,7 @@
             premium_price: "₹364",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1491,7 +1203,7 @@
             premium_price: "₹6,499",
         },
         {
-           
+
             product_img: "https://img6.hkrtcdn.com/12134/prd_1213315-MuscleBlaze-Whey-Performance-70-Protein-8.8-lb-Chocolate_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1500,7 +1212,7 @@
             premium_price: "₹364",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1509,7 +1221,7 @@
             premium_price: "₹6,499",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1518,7 +1230,7 @@
             premium_price: "₹364",
         },
         {
-          
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1539,7 +1251,7 @@
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-           
+
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -1612,13 +1324,13 @@
 
             div4.append(div4_1, div4_2)
 
-          
+
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append(inner2_1_2_f, inner2_1_3_f)
 
             inner2_trendingNow.append(inner2_1_f)
         })
@@ -1640,7 +1352,7 @@
     //  slide script for multiple products
 
     //let parent = document.getElementById('inner2_f')
-   
+
     let trendingLeftBtn_trendingNow = document.getElementById('trendingLeftBtn_trendingNow');
 
 
@@ -1697,13 +1409,13 @@
 
 
 
-   /////////////// trending  now ///////////
+    /////////////// trending  now ///////////
 
-//////////////////trending in whey ///////////////
+    //////////////////trending in whey ///////////////
 
-let trending_whey_protiens = [
+    let trending_whey_protiens = [
         {
-            
+
             product_img: "https://img10.hkrtcdn.com/12133/prd_1213269-MuscleBlaze-Whey-Protein-8.8-lb-Rich-Milk-Chocolate_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
@@ -1712,7 +1424,7 @@ let trending_whey_protiens = [
             premium_price: "₹4,849",
         },
         {
-            
+
             product_img: "https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_c_s.jpg",
             price_off: "24% off",
             product_name: "MuscleTech NitroTech Performance Series,4 lb Milk Chocolate",
@@ -1721,7 +1433,7 @@ let trending_whey_protiens = [
             premium_price: "₹4,745",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1730,7 +1442,7 @@ let trending_whey_protiens = [
             premium_price: "₹364",
         },
         {
-           
+
             product_img: "https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1739,7 +1451,7 @@ let trending_whey_protiens = [
             premium_price: "₹6,499",
         },
         {
-           
+
             product_img: "https://img1.hkrtcdn.com/1691/prd_169080_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1748,7 +1460,7 @@ let trending_whey_protiens = [
             premium_price: "₹364",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1757,7 +1469,7 @@ let trending_whey_protiens = [
             premium_price: "₹6,499",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
             price_off: "46% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -1766,7 +1478,7 @@ let trending_whey_protiens = [
             premium_price: "₹364",
         },
         {
-          
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -1787,7 +1499,7 @@ let trending_whey_protiens = [
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-           
+
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -1798,7 +1510,7 @@ let trending_whey_protiens = [
             let inner2_1_3_f = document.createElement('div')
 
             let div1 = document.createElement('div')
-          //  div1.setAttribute('class',)
+            //  div1.setAttribute('class',)
 
             let span1 = document.createElement('span')
             span1.innerText = protien.price_off
@@ -1862,13 +1574,13 @@ let trending_whey_protiens = [
 
             div4.append(div4_1, div4_2)
 
-          
+
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append(inner2_1_2_f, inner2_1_3_f)
 
             inner2_trending_whey.append(inner2_1_f)
         })
@@ -1891,8 +1603,8 @@ let trending_whey_protiens = [
 
     //  slide script for multiple products
 
-   // let parent = document.getElementById('inner2_f')
-   
+    // let parent = document.getElementById('inner2_f')
+
     let trendingLeftBtn_whey_protiens = document.getElementById('trendingLeftBtn_whey_protiens');
 
 
@@ -1949,18 +1661,18 @@ let trending_whey_protiens = [
 
 
 
-///////////////// trending in whey ////////////////
+    ///////////////// trending in whey ////////////////
 
 
 
 
 
 
-///////////////// trending in Mass Gainer //////////////
+    ///////////////// trending in Mass Gainer //////////////
 
-let trending_in_massGainer_protiens = [
+    let trending_in_massGainer_protiens = [
         {
-            
+
             product_img: "https://img10.hkrtcdn.com/9679/prd_967839_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleBlaze BOld Gainer XXL, $.4 lbRich Chocolate",
@@ -1969,7 +1681,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹3,849",
         },
         {
-            
+
             product_img: "https://img8.hkrtcdn.com/6173/prd_617297-Labrada-Muscle-Mass-Gainer-6-lb-Chocolate_c_s.jpg",
             price_off: "14% off",
             product_name: "Labrada Muscle Mass Gainer Series,4 lb Milk Chocolate",
@@ -1978,7 +1690,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹3,345",
         },
         {
-           
+
             product_img: "https://img10.hkrtcdn.com/12080/prd_1207919-MuscleBlaze-Mass-Gainer-XXL-6.6-lb-Chocolate_c_s.jpg",
             price_off: "46% off",
             product_name: "MuscleBlazer Mass Gainer XXL, 6 lb ",
@@ -1987,7 +1699,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹5,364",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/11957/prd_1195643-MuscleBlaze-Super-Gainer-XXL-11-lb-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "MuscleBlazer super  Mass Gainer XXL, 11 lb ",
@@ -1996,7 +1708,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹3,499",
         },
         {
-           
+
             product_img: "https://img10.hkrtcdn.com/2377/prd_237659_c_s.jpg",
             price_off: "26% off",
             product_name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
@@ -2005,7 +1717,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹1364",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "Dynamite Super Mass Gainer ,6 lb Rich Chocolate",
@@ -2014,7 +1726,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹6,499",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
             price_off: "46% off",
             product_name: " muscleBlazer High Protien with Multiminiral, Amino Acids",
@@ -2023,7 +1735,7 @@ let trending_in_massGainer_protiens = [
             premium_price: "₹4,364",
         },
         {
-          
+
             product_img: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: " Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -2044,7 +1756,7 @@ let trending_in_massGainer_protiens = [
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-           
+
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -2117,13 +1829,13 @@ let trending_in_massGainer_protiens = [
 
             div4.append(div4_1, div4_2)
 
-          
+
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append(inner2_1_2_f, inner2_1_3_f)
 
             inner2_trending_in_massGainer.append(inner2_1_f)
         })
@@ -2147,8 +1859,8 @@ let trending_in_massGainer_protiens = [
 
     //  slide script for multiple products
 
-   
-   
+
+
     let trendingLeftBtn_trending_in_massGainer = document.getElementById('trendingLeftBtn_trending_in_massGainer');
 
 
@@ -2203,15 +1915,15 @@ let trending_in_massGainer_protiens = [
     }
 
 
-///////////////// trending in Mass Gainer //////////////
+    ///////////////// trending in Mass Gainer //////////////
 
 
-///////////////////  trending in premium supliment //////////
+    ///////////////////  trending in premium supliment //////////
 
 
-let trending_premium_protiens = [
+    let trending_premium_protiens = [
         {
-            
+
             product_img: "https://img8.hkrtcdn.com/11795/prd_1179417-TrueBasics-Ultra-Omega3-Fatty-Acids-Triple-Strength-with-1250mg-Fish-oil-EPA-460-mg-DHA-380-mg-90-capsules_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
@@ -2220,7 +1932,7 @@ let trending_premium_protiens = [
             premium_price: "₹4,849",
         },
         {
-            
+
             product_img: "https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics Ultra Omega-3(EPA 525mg & DHA 400mg),90 capsules",
@@ -2229,7 +1941,7 @@ let trending_premium_protiens = [
             premium_price: "₹1,445",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/6865/prd_686463-TrueBasics-Multivit-Sport-90-tablets-Unflavoured_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics MUltivit Sport one Daily Multivitamins ,90 tablets",
@@ -2238,7 +1950,7 @@ let trending_premium_protiens = [
             premium_price: "₹1,364",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/7691/prd_769051-TrueBasics-Advanced-Calcium-90-tablets-Unflavoured_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasic Multivit Sport One Daily Multivitamin,90 tablets",
@@ -2247,7 +1959,7 @@ let trending_premium_protiens = [
             premium_price: "₹1,499",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/7694/prd_769311-TrueBasics-Joint-Gold-with-1500mg-of-Glucosamine-1200mg-of-Chondroitin-90-tablets_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics Advance Calcium Vitamin D3 & K2MK7,90 tablets",
@@ -2256,7 +1968,7 @@ let trending_premium_protiens = [
             premium_price: "₹764",
         },
         {
-           
+
             product_img: "https://img6.hkrtcdn.com/9597/prd_959655-TrueBasics-Liver-Detox-90-tablets_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics Ashwagandha with 600 mg of KSM-66",
@@ -2265,7 +1977,7 @@ let trending_premium_protiens = [
             premium_price: "₹599",
         },
         {
-           
+
             product_img: "https://img8.hkrtcdn.com/7953/prd_795247-TrueBasics-UC-II-Collagen-30-capsules_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics Vegan Omega 3 6 9",
@@ -2274,7 +1986,7 @@ let trending_premium_protiens = [
             premium_price: "₹1364",
         },
         {
-          
+
             product_img: "https://img10.hkrtcdn.com/10574/prd_1057329-TrueBasics-Vegan-Omega-870mg-of-Vegetarian-Omega-Fatty-Acids-90-softgels_c_s.jpg",
             price_off: "10% off",
             product_name: "TrueBasics Liver with Silybin milk Thirstle Exact",
@@ -2295,7 +2007,7 @@ let trending_premium_protiens = [
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-           
+
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -2368,13 +2080,13 @@ let trending_premium_protiens = [
 
             div4.append(div4_1, div4_2)
 
-          
+
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append(inner2_1_2_f, inner2_1_3_f)
 
             inner2_trending_premium.append(inner2_1_f)
         })
@@ -2397,7 +2109,7 @@ let trending_premium_protiens = [
 
     //  slide script for multiple products
 
-    
+
     let trendingLeftBtn_trending_premium = document.getElementById('trendingLeftBtn_trending_premium');
 
 
@@ -2451,14 +2163,14 @@ let trending_premium_protiens = [
         }
     }
 
-///////////////////  trending in premium supliment //////////
+    ///////////////////  trending in premium supliment //////////
 
 
-/////////////////////   just Launched /////////////////
+    /////////////////////   just Launched /////////////////
 
-let just_Lanch_protiens = [
+    let just_Lanch_protiens = [
         {
-            
+
             product_img: "https://img3.hkrtcdn.com/16537/prd_1653642-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Kesar-Thandai_c_s.jpg",
             price_off: "19% off",
             product_name: "MuscleBlaze Biozyme Whey Protien, $.4 lbRich Chocolate",
@@ -2467,7 +2179,7 @@ let just_Lanch_protiens = [
             premium_price: "₹4,849",
         },
         {
-            
+
             product_img: "https://img9.hkrtcdn.com/16151/prd_1615078-MuscleBlaze-Biozyme-Performance-Whey-8.8-lb-Rich-Chocolate_c_s.jpg",
             price_off: "16% off",
             product_name: "MuscleTech BIozyme Performance Whey,4 lb Milk Chocolate",
@@ -2476,7 +2188,7 @@ let just_Lanch_protiens = [
             premium_price: "₹7,245",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/14637/prd_1463611-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_c_s.jpg",
             price_off: "19% off",
             product_name: "MuscleBlaze Biozyme  Multivitamin with Multiminiral, Amino Acids",
@@ -2485,7 +2197,7 @@ let just_Lanch_protiens = [
             premium_price: "₹3864",
         },
         {
-           
+
             product_img: "https://img8.hkrtcdn.com/14207/prd_1420687-MuscleBlaze-Biozyme-Performance-Whey-2.2-lb-Rich-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "MuscleBlaze Biozyme Performance Whey Protien,5 lb Double Rich",
@@ -2494,7 +2206,7 @@ let just_Lanch_protiens = [
             premium_price: "₹2,000",
         },
         {
-           
+
             product_img: "https://img4.hkrtcdn.com/13528/prd_1352733_c_s.jpg",
             price_off: "13% off",
             product_name: "MuscleBlaze Raw Whey Isolate,with Amino Acids",
@@ -2503,7 +2215,7 @@ let just_Lanch_protiens = [
             premium_price: "₹1,764",
         },
         {
-           
+
             product_img: "https://img6.hkrtcdn.com/14889/prd_1488805-MB-Fuel-One-Whey-Protein-Immunity-8.8-lb-Chocolate_c_s.jpg",
             price_off: "10% off",
             product_name: "MB Fuel One Whey Protien Immunity+,8 lb",
@@ -2512,7 +2224,7 @@ let just_Lanch_protiens = [
             premium_price: "₹6,299",
         },
         {
-           
+
             product_img: "https://img2.hkrtcdn.com/14645/prd_1464451-MuscleBlaze-Raw-Whey-Isolate-4.4-lb-Unflavoured_c_s.jpg",
             price_off: "11% off",
             product_name: "MuscleBlaze Raw Whey Isolate,4.4 lb ",
@@ -2521,7 +2233,7 @@ let just_Lanch_protiens = [
             premium_price: "₹3364",
         },
         {
-          
+
             product_img: "https://img2.hkrtcdn.com/13488/prd_1348781-MB-Fuel-One-Whey-Protein-Immunity-2.2-lb-Chocolate_c_s.jpg",
             price_off: "15% off",
             product_name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
@@ -2542,7 +2254,7 @@ let just_Lanch_protiens = [
             inner2_1_f.setAttribute('class', 'inner2_1_f')
             inner2_1_f.setAttribute('id', 'inner2_1_f')
 
-           
+
 
             let inner2_1_2_f = document.createElement('div')
 
@@ -2615,13 +2327,13 @@ let just_Lanch_protiens = [
 
             div4.append(div4_1, div4_2)
 
-          
+
 
             inner2_1_2_f.append(product_imgs)
 
             inner2_1_3_f.append(div1, div2, small, div3, div4)
 
-            inner2_1_f.append( inner2_1_2_f, inner2_1_3_f)
+            inner2_1_f.append(inner2_1_2_f, inner2_1_3_f)
 
             inner2_just_Lanch.append(inner2_1_f)
         })
@@ -2693,86 +2405,86 @@ let just_Lanch_protiens = [
 
 
 
-/////////////////////   just Launched /////////////////
+    /////////////////////   just Launched /////////////////
 
-////////////////  popular in weight ////////////////
-
-
-let popular_in_weights=[
-      {
-          img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png"    , 
-          name: "Meal Replacement"  ,
-      },
-      {
-          img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png"    , 
-          name: "Energy Drinks"  ,
-      },
-      {
-          img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png"    , 
-          name: "Green coffee Bean Extract"  ,
-      },
-      {
-          img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png"    , 
-          name: "Garcinia Cambogia"  ,
-      },
-      {
-          img: "https://img10.hkrtcdn.com/6543/bnr_654229_o.png"    , 
-          name: "Fat Loss Supplements"  ,
-      },
-      {
-          img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png"    , 
-          name: "Energy Drinks"  ,
-      },
-      {
-          img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png"    , 
-          name: "Green coffee Bean Extract"  ,
-      },
-      {
-          img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png"    , 
-          name: "Garcinia Cambogia"  ,
-      },
-      {
-          img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png"    , 
-          name: "Meal Replacement"  ,
-      },
-  ]
-  
-  let inner2_1_popular_in_weight = document.getElementById('inner2_1_popular_in_weight')
-    function show_popular_in_weight(products ){
-
-      products.forEach((product)=>{
-           
-        let divmain = document.createElement('div')
-        divmain.setAttribute('class','hide')
-
-        let img = document.createElement('img')
-        img.src = product.img
-        img.setAttribute('class','img1_pop')
-
-        let div1 = document.createElement('div')
-        div1.innerText = product.name
-        div1.setAttribute('class','p_pop')
-
-        divmain.append(img,div1)
+    ////////////////  popular in weight ////////////////
 
 
-      //  let div2 =document.createElement('div')
-       // div2.setAttribute('class','B_pop')
+    let popular_in_weights = [
+        {
+            img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png",
+            name: "Meal Replacement",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png",
+            name: "Energy Drinks",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png",
+            name: "Green coffee Bean Extract",
+        },
+        {
+            img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png",
+            name: "Garcinia Cambogia",
+        },
+        {
+            img: "https://img10.hkrtcdn.com/6543/bnr_654229_o.png",
+            name: "Fat Loss Supplements",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/9523/bnr_952235_o.png",
+            name: "Energy Drinks",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/4045/bnr_404407_o.png",
+            name: "Green coffee Bean Extract",
+        },
+        {
+            img: "https://img4.hkrtcdn.com/6543/bnr_654213_o.png",
+            name: "Garcinia Cambogia",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/6542/bnr_654165_o.png",
+            name: "Meal Replacement",
+        },
+    ]
 
-       inner2_1_popular_in_weight.append(divmain)
-        
-      })   
+    let inner2_1_popular_in_weight = document.getElementById('inner2_1_popular_in_weight')
+    function show_popular_in_weight(products) {
+
+        products.forEach((product) => {
+
+            let divmain = document.createElement('div')
+            divmain.setAttribute('class', 'hide')
+
+            let img = document.createElement('img')
+            img.src = product.img
+            img.setAttribute('class', 'img1_pop')
+
+            let div1 = document.createElement('div')
+            div1.innerText = product.name
+            div1.setAttribute('class', 'p_pop')
+
+            divmain.append(img, div1)
+
+
+            //  let div2 =document.createElement('div')
+            // div2.setAttribute('class','B_pop')
+
+            inner2_1_popular_in_weight.append(divmain)
+
+        })
     }
-    show_popular_in_weight(popular_in_weights )
+    show_popular_in_weight(popular_in_weights)
 
 
-/// 
+    /// 
 
-   
+
     //  slide script for multiple products
 
-  
-   
+
+
     let trendingLeftBtn_popular_in_weight = document.getElementById('trendingLeftBtn_popular_in_weight');
 
 
@@ -2827,56 +2539,56 @@ let popular_in_weights=[
     }
 
 
-////////////////  popular in weight ////////////////
+    ////////////////  popular in weight ////////////////
 
 
-//////////////  popular in fitness ///////////////
+    //////////////  popular in fitness ///////////////
 
-let popular_in_Fitness=[
-      {
-          img: "https://img2.hkrtcdn.com/3802/bnr_380131_o.png"    , 
-          name: "Gym Essentials"  ,
-      },
-      {
-          img: "https://img2.hkrtcdn.com/3801/bnr_380091_o.png"    , 
-          name: "Fitness Equipment"  ,
-      },
-      {
-          img: "https://img6.hkrtcdn.com/3802/bnr_380125_o.png"    , 
-          name: "Gym Accessories"  ,
-      },
-      {
-          img: "https://img10.hkrtcdn.com/3802/bnr_380129_o.png"    , 
-          name: "Gym Supports"  ,
-      },
-     
-  ]
+    let popular_in_Fitness = [
+        {
+            img: "https://img2.hkrtcdn.com/3802/bnr_380131_o.png",
+            name: "Gym Essentials",
+        },
+        {
+            img: "https://img2.hkrtcdn.com/3801/bnr_380091_o.png",
+            name: "Fitness Equipment",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/3802/bnr_380125_o.png",
+            name: "Gym Accessories",
+        },
+        {
+            img: "https://img10.hkrtcdn.com/3802/bnr_380129_o.png",
+            name: "Gym Supports",
+        },
 
- 
-  let inner2_1_popular_in_fitness = document.getElementById('inner2_1_popular_in_fitness')
-    function popular_in_Fitnes(products ){
-
-      products.forEach((product)=>{
-           
-        let divmain = document.createElement('div')
-
-        let img = document.createElement('img')
-        img.src = product.img
-        img.setAttribute('class','img1_pop')
-
-        let div1 = document.createElement('div')
-        div1.innerText = product.name
-        div1.setAttribute('class','p_pop')
-
-        divmain.append(img,div1)
+    ]
 
 
-        let div2 =document.createElement('div')
-        div2.setAttribute('class','B_pop')
+    let inner2_1_popular_in_fitness = document.getElementById('inner2_1_popular_in_fitness')
+    function popular_in_Fitnes(products) {
 
-       inner2_1_popular_in_fitness.append(divmain,div2)
-        
-      })   
+        products.forEach((product) => {
+
+            let divmain = document.createElement('div')
+
+            let img = document.createElement('img')
+            img.src = product.img
+            img.setAttribute('class', 'img1_pop')
+
+            let div1 = document.createElement('div')
+            div1.innerText = product.name
+            div1.setAttribute('class', 'p_pop')
+
+            divmain.append(img, div1)
+
+
+            let div2 = document.createElement('div')
+            div2.setAttribute('class', 'B_pop')
+
+            inner2_1_popular_in_fitness.append(divmain, div2)
+
+        })
     }
     popular_in_Fitnes(popular_in_Fitness)
 
@@ -2884,74 +2596,74 @@ let popular_in_Fitness=[
 
 
 
-//////////////// popular in fitness ////////////
+    //////////////// popular in fitness ////////////
 
 
-//////////////// popular in sports ///////////
+    //////////////// popular in sports ///////////
 
-let popular_in_sports_nutrition=[
-{
-    img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png"    , 
-    name: "Whey Protiens"  ,
-},
-{
-    img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png"    , 
-    name: "Whey Protein Isolate"  ,
-},
-{
-    img: "https://img4.hkrtcdn.com/6544/bnr_654343_o.png"    , 
-    name: "Mass Gainers"  ,
-},
-{
-    img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png"    , 
-    name: "Amino Acids"  ,
-},
-{
-    img: "https://img10.hkrtcdn.com/6544/bnr_654349_o.png"    , 
-    name: "Pre-Workout"  ,
-},
-{
-    img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png"    , 
-    name: "Whey Protein Isolate"  ,
-},
-{
-    img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png"    , 
-    name: "Amino Acids"  ,
-},
-{
-    img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png"    , 
-    name: "Whey Protiens"  ,
-},
-]
-
-
-let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_sport')
-    function  popular_in_sports_nutritions(products ){
-
-      products.forEach((product)=>{
-           
-        let divmain = document.createElement('div')
-        divmain.setAttribute('class','hide')
-
-        let img = document.createElement('img')
-        img.src = product.img
-        img.setAttribute('class','img1_pop')
-
-        let div1 = document.createElement('div')
-        div1.innerText = product.name
-        div1.setAttribute('class','p_pop')
-
-        divmain.append(img,div1)
+    let popular_in_sports_nutrition = [
+        {
+            img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png",
+            name: "Whey Protiens",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png",
+            name: "Whey Protein Isolate",
+        },
+        {
+            img: "https://img4.hkrtcdn.com/6544/bnr_654343_o.png",
+            name: "Mass Gainers",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png",
+            name: "Amino Acids",
+        },
+        {
+            img: "https://img10.hkrtcdn.com/6544/bnr_654349_o.png",
+            name: "Pre-Workout",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/6544/bnr_654345_o.png",
+            name: "Whey Protein Isolate",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/6544/bnr_654347_o.png",
+            name: "Amino Acids",
+        },
+        {
+            img: "https://img2.hkrtcdn.com/6544/bnr_654341_o.png",
+            name: "Whey Protiens",
+        },
+    ]
 
 
-       // let div2 =document.createElement('div')
-     //  div2.setAttribute('class','B_pop')
+    let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_sport')
+    function popular_in_sports_nutritions(products) {
 
-       inner2_1_popular_for_sport.append(divmain)
-        
-      })   
+        products.forEach((product) => {
+
+            let divmain = document.createElement('div')
+            divmain.setAttribute('class', 'hide')
+
+            let img = document.createElement('img')
+            img.src = product.img
+            img.setAttribute('class', 'img1_pop')
+
+            let div1 = document.createElement('div')
+            div1.innerText = product.name
+            div1.setAttribute('class', 'p_pop')
+
+            divmain.append(img, div1)
+
+
+            // let div2 =document.createElement('div')
+            //  div2.setAttribute('class','B_pop')
+
+            inner2_1_popular_for_sport.append(divmain)
+
+        })
     }
-    popular_in_sports_nutritions( popular_in_sports_nutrition )
+    popular_in_sports_nutritions(popular_in_sports_nutrition)
 
 
 
@@ -2959,7 +2671,7 @@ let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_s
 
     //  slide script for multiple products
 
-   
+
     let trendingLeftBtn_popular_for_sport = document.getElementById('trendingLeftBtn_popular_for_sport');
 
 
@@ -3014,79 +2726,79 @@ let inner2_1_popular_for_sport = document.getElementById('inner2_1_popular_for_s
     }
 
 
-//////////////// popular in sports ///////////
+    //////////////// popular in sports ///////////
 
 
-///////////////////// popular in health ///////
+    ///////////////////// popular in health ///////
 
 
-let popular_in_Health_Foods_Drinks=[
-      {
-          img: "https://img2.hkrtcdn.com/6543/bnr_654291_o.png"    , 
-          name: "Apple Cider Vinegar"  ,
-      },
-      {
-          img: "https://img4.hkrtcdn.com/6543/bnr_654293_o.png"    , 
-          name: "Peanut Butter"  ,
-      },
-      {
-          img: "https://img2.hkrtcdn.com/6544/bnr_654301_o.png"    , 
-          name: "Protien Bars"  ,
-      },
-      {
-          img: "https://img10.hkrtcdn.com/6543/bnr_654299_o.png"    , 
-          name: "Cereals"  ,
-      },
-      {
-          img: "https://img6.hkrtcdn.com/6543/bnr_654295_o.png"    , 
-          name: "Nutrition for Children"  ,
-      },
-      {
-          img: "https://img8.hkrtcdn.com/9523/bnr_952247_o.png"    , 
-          name: "Protien Shake"  ,
-      },
-      {
-          img: "https://img8.hkrtcdn.com/4044/bnr_404387_o.png"    , 
-          name: "Pressed Oil"  ,
-      },
-  ]
+    let popular_in_Health_Foods_Drinks = [
+        {
+            img: "https://img2.hkrtcdn.com/6543/bnr_654291_o.png",
+            name: "Apple Cider Vinegar",
+        },
+        {
+            img: "https://img4.hkrtcdn.com/6543/bnr_654293_o.png",
+            name: "Peanut Butter",
+        },
+        {
+            img: "https://img2.hkrtcdn.com/6544/bnr_654301_o.png",
+            name: "Protien Bars",
+        },
+        {
+            img: "https://img10.hkrtcdn.com/6543/bnr_654299_o.png",
+            name: "Cereals",
+        },
+        {
+            img: "https://img6.hkrtcdn.com/6543/bnr_654295_o.png",
+            name: "Nutrition for Children",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/9523/bnr_952247_o.png",
+            name: "Protien Shake",
+        },
+        {
+            img: "https://img8.hkrtcdn.com/4044/bnr_404387_o.png",
+            name: "Pressed Oil",
+        },
+    ]
 
-  let inner2_1_popular_in_health = document.getElementById('inner2_1_popular_in_health')
-    function  popular_in_Health_Foods_Drink(products ){
+    let inner2_1_popular_in_health = document.getElementById('inner2_1_popular_in_health')
+    function popular_in_Health_Foods_Drink(products) {
 
-      products.forEach((product)=>{
-           
-        let divmain = document.createElement('div')
-        divmain.setAttribute('class','hide')
-        
-        let img = document.createElement('img')
-        img.src = product.img
-        img.setAttribute('class','img1_pop')
+        products.forEach((product) => {
 
-        let div1 = document.createElement('div')
-        div1.innerText = product.name
-        div1.setAttribute('class','p_pop')
+            let divmain = document.createElement('div')
+            divmain.setAttribute('class', 'hide')
 
-        divmain.append(img,div1)
+            let img = document.createElement('img')
+            img.src = product.img
+            img.setAttribute('class', 'img1_pop')
+
+            let div1 = document.createElement('div')
+            div1.innerText = product.name
+            div1.setAttribute('class', 'p_pop')
+
+            divmain.append(img, div1)
 
 
-       // let div2 =document.createElement('div')
-      //  div2.setAttribute('class','B_pop')
+            // let div2 =document.createElement('div')
+            //  div2.setAttribute('class','B_pop')
 
-       inner2_1_popular_in_health.append(divmain)
-        
-      })   
+            inner2_1_popular_in_health.append(divmain)
+
+        })
     }
-    popular_in_Health_Foods_Drink( popular_in_Health_Foods_Drinks )
+    popular_in_Health_Foods_Drink(popular_in_Health_Foods_Drinks)
 
 
-/**/
+    /**/
 
 
     //  slide script for multiple products
 
-    
-   
+
+
     let trendingLeftBtn_popular_in_health = document.getElementById('trendingLeftBtn_popular_in_health');
 
 
