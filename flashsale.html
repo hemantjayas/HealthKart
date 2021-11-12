@@ -385,6 +385,9 @@
 
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
+            add_to_cart_btn.onclick= ()=>{
+                add_to_cart(protien)
+            }
 
             div3.append(div3_1, add_to_cart_btn)
 
@@ -420,6 +423,28 @@
 
 
     flashProduct(protiens)
+
+    
+
+////  add_to_cart function ////////////
+
+
+function add_to_cart(p){
+
+if(JSON.parse(localStorage.getItem('Health_cart')) === null){
+    localStorage.setItem('Health_cart',JSON.stringify([]))
+}
+
+let array = JSON.parse(localStorage.getItem(''))
+
+array.push(p)
+
+localStorage.setItem('Health_cart',JSON.stringify(array))
+}
+
+///////   add_to_cart  function ///////////////
+
+
 
 
     ///     timer of product //////
@@ -510,5 +535,6 @@
     }
 
 // java scrpit ending for multiple objects 
+
 
 </script>
