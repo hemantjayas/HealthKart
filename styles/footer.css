@@ -40,7 +40,7 @@ a {
 }
 
 
-button {
+.subcribe_btn {
     width: 27%;
     height: 36px;
     margin-top: -1%;
@@ -53,7 +53,7 @@ button {
     border: none;
 }
 
-button:hover {
+.subcribe_btn:hover {
 
     background-color: #1ba59e;
 
