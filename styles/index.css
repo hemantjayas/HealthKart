@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-   /* background-color: #f6f6f7;*/
 }
 
 /*
@@ -61,7 +60,6 @@
     background-color: rgba(0, 0, 0, 0);
     border-left: none;
     border-bottom: none;
-
 }
 
 /* sliding image css ends here  */
@@ -221,7 +219,7 @@
     display: flex;
     justify-content: space-between;
     /* border: 1px solid  blue;*/
-    background-color: #f6f6f7;
+    background-color: #E0E0E0;
     padding: 1% 2%;
     column-gap: 14px;
 }
@@ -248,16 +246,14 @@
     padding-right: 5%;
 }
 
-.DIV1{
-   margin: 100px;
-}
+
 
 
 #inner2_1_3_1_fl {
-    border: 1px solid red;
+    border: 1px solid goldenrod;
     color: red;
     padding: 1%;
-
+    line-height:40px;
 }
 
 .inner2_1_3_2_f {
@@ -279,7 +275,6 @@
     padding: 4%;
     background-color: #BBDEFB;
     border: none;
-
 }
 
 #inner2_1_3_4_2_f:hover {
@@ -340,8 +335,6 @@
     display: none;
 
 }
-
-
 .RIGHTbtn {
     font-size: 100px;
     height: 25px;
