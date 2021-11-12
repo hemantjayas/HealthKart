@@ -2821,6 +2821,26 @@
 
 
 //////////////////popular in health //////////////
+
+
+///////   add_to_cart  function ///////////////
+
+function add_to_cart(p){
+
+if(JSON.parse(localStorage.getItem('healthkart_cart')) === null){
+    localStorage.setItem('healthkart_cart',JSON.stringify([]))
+}
+
+let array = JSON.parse(localStorage.getItem('healthkart_cart'))
+
+array.push(p)
+
+localStorage.setItem('healthkart_cart',JSON.stringify(array))
+}
+
+///////   add_to_cart  function ///////////////
+
+
 </script>
 
 <script type="module">
