@@ -6,7 +6,7 @@
         units: "148 units left",
         imgProduct: "https://img2.hkrtcdn.com/12133/prd_1213281-MuscleBlaze-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
         price_off: "21% off",
-        name: "MuscleBlaze Whey Protein, 4.4 lb Rich Milk Chocolate",
+        name: "MuscleBlaze Whey Protein, 4.4 lb Rich Milk",
         rating: " 4.4 (3,547)",
         price: 4499,
         premium_price: "₹4,364",
@@ -36,7 +36,7 @@
         units: "5 units left",
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -76,7 +76,7 @@
         units: "5 units left",
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -161,10 +161,20 @@ function flashProduct(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+   
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -327,7 +337,7 @@ let trendingNow_protiens = [
 
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -336,7 +346,7 @@ let trendingNow_protiens = [
 
         imgProduct: "https://img6.hkrtcdn.com/12134/prd_1213315-MuscleBlaze-Whey-Performance-70-Protein-8.8-lb-Chocolate_c_s.jpg",
         price_off: "46% off",
-        name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+        name: "HealthKart HK Vitals Multivitamin with Multiminiral",
         rating: "  4.7 (1,547)",
         price: 499,
         premium_price: "₹364",
@@ -345,7 +355,7 @@ let trendingNow_protiens = [
 
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -354,7 +364,7 @@ let trendingNow_protiens = [
 
         imgProduct: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
         price_off: "46% off",
-        name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+        name: "HealthKart HK Vitals Multivitamin with Multiminiral",
         rating: "  4.7 (1,547)",
         price: 499,
         premium_price: "₹364",
@@ -363,7 +373,7 @@ let trendingNow_protiens = [
 
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -436,10 +446,19 @@ function trendingNow_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -578,7 +597,7 @@ let trending_whey_protiens = [
 
        imgProduct: "https://img8.hkrtcdn.com/12133/prd_1213267-MuscleBlaze-Biozyme-Whey-Protein-4.4-lb-Cafe-Mocha_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -596,7 +615,7 @@ let trending_whey_protiens = [
 
        imgProduct: "https://img2.hkrtcdn.com/12134/prd_1213301-MuscleBlaze-Whey-Gold-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -605,7 +624,7 @@ let trending_whey_protiens = [
 
        imgProduct: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
         price_off: "46% off",
-        name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+        name: "HealthKart HK Vitals Multivitamin with Multiminiral",
         rating: "  4.7 (1,547)",
         price: 499,
         premium_price: "₹364",
@@ -614,7 +633,7 @@ let trending_whey_protiens = [
 
        imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -689,10 +708,19 @@ function trending_whey(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -847,7 +875,7 @@ let trending_in_massGainer_protiens = [
 
         imgProduct: "https://img10.hkrtcdn.com/2377/prd_237659_c_s.jpg",
         price_off: "26% off",
-        name: "HealthKart HK Vitals Multivitamin with Multiminiral, Amino Acids",
+        name: "HealthKart HK Vitals Multivitamin with Multiminiral",
         rating: "  4.7 (1,547)",
         price: 1499,
         premium_price: "₹1364",
@@ -865,7 +893,7 @@ let trending_in_massGainer_protiens = [
 
         imgProduct: "https://img4.hkrtcdn.com/14378/prd_1437793-HealthKart-Multivitamin-with-Multimineral-Amino-Acids-Taurine-Ginseng-Extract-60-tablets-Unflavoured_c_s.jpg",
         price_off: "46% off",
-        name: " muscleBlazer High Protien with Multiminiral, Amino Acids",
+        name: " muscleBlazer High Protien with Multiminiral",
         rating: "  4.7 (1,547)",
         price: 5499,
         premium_price: "₹4,364",
@@ -947,10 +975,19 @@ function trending_in_massGainer_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -1201,10 +1238,19 @@ function trending_premium_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -1451,10 +1497,21 @@ function just_Lanch_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -2004,6 +2061,8 @@ trendingLeftBtn_popular_in_health.onclick = function () {
 ///////   add_to_cart  function ///////////////
 
 function addtoCart(product) {
+      
+
 
 if (localStorage.getItem("healthkart_cart") === null) {
     localStorage.setItem("healthkart_cart", JSON.stringify([]));
@@ -2028,3 +2087,11 @@ localStorage.setItem("healthkart_cart", JSON.stringify(array));
 }
 }
 ///////   add_to_cart  function ///////////////
+
+///// product page /////////
+
+function productPage(){
+    window.location.href = 'products.html'
+}
+
+/// product page //////////
