@@ -2031,6 +2031,8 @@ trendingLeftBtn_popular_in_health.onclick = function () {
 
 function addtoCart(product) {
 
+
+    
 if (localStorage.getItem("healthkart_cart") === null) {
     localStorage.setItem("healthkart_cart", JSON.stringify([]));
 }
