@@ -2029,3 +2029,15 @@ localStorage.setItem("healthkart_cart", JSON.stringify(array));
 }
 }
 ///////   add_to_cart  function ///////////////
+
+
+
+///////// productPage  ///////////
+
+function productPage(){
+    window.location.href = "products.html"
+}
+
+
+
+///////// productPage  ///////////
