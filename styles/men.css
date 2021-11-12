@@ -5,6 +5,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(247,247,247);
+    width: 100%;
 }
 
 #personalInfo {
@@ -290,6 +291,7 @@ body {
  .slider-Box{
 position: relative;
 overflow:hidden;
+width: 100% !important;
 }
 #slider{
 width: 100%;
@@ -297,7 +299,7 @@ display: inline-flex;
 transition: 0.7s;
 }
 #slider img{
-width: 100%;
+min-width: 100%;
 }
 .indicators{
 position: absolute;

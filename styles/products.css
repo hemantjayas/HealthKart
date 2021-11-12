@@ -17,6 +17,7 @@
     vertical-align: top;
     height: 300px;
     border: 2px solid #f6f6f7;
+    overflow-y: scroll;
 }
 #products_Cont{
     display: grid;
@@ -81,4 +82,50 @@ margin-right: 5px;
     position: sticky;
   top: 0;
   background-color: #fff;
+}
+#cont_Page{
+    width: 1170px;
+    font-size: 14px;
+    margin: auto;
+    color: gray;
+}
+#cont_Page p{
+   margin:15px 0 15px 0;
+}
+#top_Page{
+    display: grid;
+    grid-template-columns: 21% 79%;
+    grid-gap: 35px;
+    width: 1170px;
+    margin: auto;
+}
+#image_Head{
+    width: 895px;
+    height: 186px;
+}
+#image_Head img{
+    width: 100%;
+    border-radius: 5px;
+}
+#top_Page h1{
+    font-weight:500;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+    color: #1a1a1a;
+}
+#sort_By_Price>div
+{
+   line-height: 40px;
+   margin: auto;
+   width: 80%;
+}
+#gola{
+    background-color: #fff;
+    border: 1px solid #929495;
+    border-radius: 50%;
+    display: inline-block;
+    content: " ";
+    width: 12px;
+    height: 12px;
 }

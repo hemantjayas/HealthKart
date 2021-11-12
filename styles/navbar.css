@@ -85,7 +85,7 @@ body{
 }
 
 #store{
-    display: flex;
+    display: flex; 
     margin-left: auto;
     align-items: center;
     width: 224px;
@@ -109,6 +109,7 @@ body{
     font-size: 12px;
     text-align: left;
     width: 160px;
+    margin-top: 10px;
 }
 
 #myDIV p{
@@ -257,3 +258,4 @@ body{
 #hk:hover{
    background-color: rgb(60, 187, 238) !important;
 }
+
