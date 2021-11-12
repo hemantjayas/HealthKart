@@ -25,6 +25,9 @@ body{
     margin-top: 1%
 }
 
+#footer .col h4 {
+    margin: 20px auto;
+}
 a {
     text-decoration: none;
     color: #525151;
