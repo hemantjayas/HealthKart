@@ -12,9 +12,7 @@
 
 </head>
 <body>
-    <div>
-
-    </div>
+   
     
     <div>
         <!-- Navbar Start -->
@@ -40,14 +38,25 @@
   </div>
 
 
-    <h2>Enter your address</h2>
+    <h3>Enter your address</h3>
 <div id="checkout"> 
     <form action="#">
-        <input type="text" id="name" placeholder="Enter Name" required>
-        <input type="email" id="email" placeholder="Enter Email" required>
-        <input type="mobile" id="mob" placeholder="Mobile Number" required>
-        <input type="address" id="Enter Addresse" placeholder="Enter Address" required>
-        <input type="city" id="city" placeholder="City" required>
+        
+        <lable for="fname" id="na">First Name</lable>
+        <input type="text" id="name" placeholder="Enter First Name" required>
+        <lable for="Lname" id="na">Last Name</lable>
+        <input type="text" id="name" placeholder="Enter Last Name" required>
+        <lable for="email" id="na">Email</lable>
+        <input type="email" id="email" placeholder="helloworld@gmail.com" required>
+        <lable for="mobile" id="na">Mobile Number</lable>
+        <input type="mobile" id="mob" placeholder="9876543210" required>
+        <lable for="address1" id="na">Address1</lable>
+        <input type="address" id="Enter Addresse" placeholder="1-86 vivek colony" required>
+        <lable for="address2" id="na">Address2</lable>
+        <input type="address" id="Enter Addresse" placeholder="gurudwar" required>
+        <lable for="city" id="na">City</lable>
+        <input type="city" id="city" placeholder="vishakapatnam" required>
+        <lable for="state" id="na">State</lable>
         <select name="state" id="state" placeholder="State" required>
             <option selected>choose...</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -87,7 +96,8 @@
             <option value="Uttarakhand">Uttarakhand</option>
             <option value="West Bengal">West Bengal</option>
             </select>
-        <input type="pin" id="pin" placeholder="Pin Code" required>
+            <lable for="pincode" id="na">Zip</lable>
+        <input type="pin" id="pin" placeholder="10001" required>
         <input id="btn" type="submit" value="Save & Deliver">
     </form>
 

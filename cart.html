@@ -109,6 +109,8 @@ height: auto;
 margin: 0px  0%  10% 10px;
 width: 23%;
 height: auto;
+position:fixed;
+margin-left: 65%;
 }
 #proceedtopay{
 margin: 2px;
@@ -125,7 +127,7 @@ color: #212121;
 #pincode{
 margin: 10px 5px;
 border: 1px solid #fff;
-background-color: #fff;
+background-color: rgb(161, 155, 155);
 color: #212121;
 padding: 10px;
 }
@@ -251,21 +253,17 @@ function Cart_items() {
                 let quan = document.createElement('p')
                 let buttonMinus = document.createElement('button')
                 let buttonPlus = document.createElement('button')
+                let buttonDelete = document.createElement('button')
                 buttonMinus.innerText = '-'
                 buttonPlus.innerText = '+'
+                buttonDelete.innerText = 'delete'
                 buttonMinus.setAttribute('class','quantity_btn')
                 buttonPlus.setAttribute('class','quantity_btn')
+                buttonDelete.setAttribute('class','quantity_btn')
                 quan.textContent = 'Quantity '+ product.quantity;
                 
                 m_quantity.append(quan,buttonMinus,buttonPlus)
-                buttonPlus.onclick = ()=>{
-                    
-                     product.quantity++;
-                     quan.textContent = 'Quantity '+ product.quantity;
-                     localStorage.setItem('healthkart_cart',JSON.stringify(cart_data))
-                     total += product.price;
-                     totalAmount.textContent= `Final Payable ₹ ${total} `;
-                }
+               
                 buttonMinus.onclick = ()=>{
                     
                     product.quantity--;
@@ -287,7 +285,7 @@ function Cart_items() {
         });
         proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
         proceedToPay.addEventListener('click', function(){
-                location.href = "#";
+                location.href = "address.html";
         })
         totalAmount.textContent = `Final Payable ₹ ${total} `;
         cartItem.innerHTML = `My Cart`
@@ -298,13 +296,6 @@ function Cart_items() {
 }
 Cart_items()
 
-// function increaseQuan(product){
-    
-    
-// }
-function decreaseQuan(product){
-    product.quantity--;
-}
     </script>
 </html>
 
