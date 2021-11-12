@@ -123,7 +123,27 @@ function addresss_to_cart(e){
      pincode:form.pin.value ,
 
    }
-  console.log( user_address)
+  console.log(user_address)
+
+  let ARRAY = JSON.parse(localStorage.getItem('healthkart_address'))
+
+ARRAY.push(user_address)
+
+localStorage.setItem('healthkart_address',JSON.stringify(ARRAY))
+  
+
 }
+
+function tolocalStorage(){
+    if(localStorage.getItem('healthkart_address') === null){
+
+    localStorage.setItem('healthkart_address', JSON.stringify([]));
+}
+
+
+
+}
+tolocalStorage()
+
 
 </script>
