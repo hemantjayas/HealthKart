@@ -101,5 +101,13 @@ function addDropDwn(x) {
   window.location.href = 'navbar.html'
 }
 
+const sign = document.getElementById('sI')
+  sign.onclick = ()=>{
+    window.location.href = 'login.html'
+  }
+  const signUp = document.getElementById('lO')
+  signUp.onclick = ()=>{
+    window.location.href = 'signup.html'
+  }
   }
 export {makeNavbar}
