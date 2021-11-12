@@ -9,6 +9,7 @@
     <title>HealthKart</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 
@@ -291,6 +292,13 @@
         </div>
 
     </div>
+    <!-- footer -->
+    <div id="main">
+    </div>
+
+    <!--- footer -->
+
+
 </body>
 
 </html>
@@ -302,7 +310,9 @@
     import { makeNavbar } from './scripts/navbar.js'
     makeNavbar();
 
-   
+    import {footer} from './components/footer.js'
+    let main = document.getElementById('main')
+    main.innerHTML = footer();
 
 
 </script>
