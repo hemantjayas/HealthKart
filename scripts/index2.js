@@ -1353,7 +1353,7 @@ let just_Lanch_protiens = [
 
         imgProduct: "https://img2.hkrtcdn.com/14637/prd_1463611-MuscleBlaze-Biozyme-Performance-Whey-4.4-lb-Chocolate-Hazelnut_c_s.jpg",
         price_off: "19% off",
-        name: "MuscleBlaze Biozyme  Multivitamin with Multiminiral, Amino Acids",
+        name: "MuscleBlaze Biozyme  Multivitamin with Multiminiral",
         rating: "  4.5 (1,547)",
         price: 3999,
         premium_price: "₹3864",
@@ -1362,7 +1362,7 @@ let just_Lanch_protiens = [
 
         imgProduct: "https://img8.hkrtcdn.com/14207/prd_1420687-MuscleBlaze-Biozyme-Performance-Whey-2.2-lb-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "MuscleBlaze Biozyme Performance Whey Protien,5 lb Double Rich",
+        name: "MuscleBlaze Biozyme Performance Whey Protien",
         rating: " 4.5 (5,547)",
         price: 2199,
         premium_price: "₹2,000",
@@ -1398,7 +1398,7 @@ let just_Lanch_protiens = [
 
         imgProduct: "https://img2.hkrtcdn.com/13488/prd_1348781-MB-Fuel-One-Whey-Protein-Immunity-2.2-lb-Chocolate_c_s.jpg",
         price_off: "15% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey",
         rating: " 4.5 (547)",
         price: 1599,
         premium_price: "₹1,499",
