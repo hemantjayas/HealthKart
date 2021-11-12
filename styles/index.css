@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+   /* background-color: #f6f6f7;*/
 }
 
 /*
@@ -220,7 +221,7 @@
     display: flex;
     justify-content: space-between;
     /* border: 1px solid  blue;*/
-    background-color: #E0E0E0;
+    background-color: #f6f6f7;
     padding: 1% 2%;
     column-gap: 14px;
 }
