@@ -11,7 +11,9 @@ function startSlide() {
 
 
 }
+
 export {startSlide}
+startSlide()
 let btnRight = document.getElementById('right');
 
 btnRight.onclick = function () {

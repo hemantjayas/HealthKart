@@ -65,27 +65,22 @@ function footer(){
             <h4>CONNECT WITH US</h4>
             <div>
 
-                <a href="https://www.facebook.com/healthkart" class="fa fa-facebook"
-                    style="font-size:24px;"><img
+                <a href="https://www.facebook.com/healthkart" ><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/facebook.svg"
                         alt=""></a>
-                <a href="https://www.instagram.com/healthkart/?hl=en" class="fa fa-instagram"
-                    style="font-size:24px;"><img
+                <a href="https://www.instagram.com/healthkart/?hl=en"><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/instagram.svg"
                         alt=""></a>
-                <a href="https://www.linkedin.com/company/healthkart/" class="fa fa-linkedin"
-                    style="font-size:24px;"><img
+                <a href="https://www.linkedin.com/company/healthkart/" ><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/linkedIn_logo.png"
                         alt=""></a>
-                <a href="https://twitter.com/healthkart" class="fa fa-twitter" style="font-size:24px;"><img
+                <a href="https://twitter.com/healthkart"  ><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/twitter.svg"
                         alt=""></a>
-                <a href="https://www.youtube.com/user/healthkart" class="fa fa-youtube"
-                    style="font-size:24px;"><img
+                <a href="https://www.youtube.com/user/healthkart" ><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/youtube.svg"
                         alt=""></a>
-                <a href="https://in.pinterest.com/healthkart/" class="fa fa-pinterest"
-                    style="font-size:24px;"><img
+                <a href="https://in.pinterest.com/healthkart/" ><img
                         src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pinterest.svg"
                         alt=""></a>
             </div>

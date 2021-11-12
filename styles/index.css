@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+a{
+    cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
 /*
 #navbar {
     background-color: rgb(134, 118, 118);

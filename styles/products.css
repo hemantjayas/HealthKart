@@ -11,6 +11,12 @@
     grid-gap:30px;
     margin-top: 30px;
 }
+a{
+    cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
 
 #sort_funcs{
     display: inline-block;

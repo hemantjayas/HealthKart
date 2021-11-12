@@ -6,6 +6,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f6f6f7;
 }
+a{
+    cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
+
 .topCatogCont{ 
    width: 1170px;
    height: 330px; 

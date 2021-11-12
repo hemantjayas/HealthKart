@@ -7,7 +7,12 @@ body {
     background-color: rgb(247,247,247);
     width: 100%;
 }
-
+a{
+    cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
 #personalInfo {
     max-width: 1250px;
     height: 140px;

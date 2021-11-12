@@ -10,6 +10,12 @@
   /* width: 100%; */
   background-color: #F7F7F7;
   }
+  a{
+    cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
   ul li{
   list-style: none;
   font-family: 'Source Sans Pro', sans-serif;

@@ -1,5 +1,5 @@
 * {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     color: #212121;
     outline: none;
@@ -7,7 +7,16 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-    #loginpopup,#backimg,#box{
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+#loginpopup, #backimg, #box {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -16,32 +25,37 @@
     left: 0;
     right: 0;
     bottom: 0;
-   }
-   #backimg,#box{
-    background: rgba(0,0,0,.7);
+}
+
+#backimg, #box {
+    background: rgba(0, 0, 0, .7);
     position: absolute;
-   }
-   #scale{
+}
+
+#scale {
     width: 100%;
     height: 100%;
-   }
-   #box{
-       top:50%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-       max-width: 700px;
-       height: 550px;
-       background:#fff;
-       border-radius: 4px solid rgb(255, 255, 255);
-       overflow: hidden;
-       display: flex;
-    }
-    #left{
+}
+
+#box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    height: 550px;
+    background: #fff;
+    border-radius: 4px solid rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+}
+
+#left {
     width: 312px;
     height: 100%;
-    display:flex;
-    }
-    #leftimg{
+    display: flex;
+}
+
+#leftimg {
     background-image: url("https://static1.hkrtcdn.com/hknext/static/media/signupFlow/login-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,28 +63,32 @@
     position: relative;
     width: 100%;
     padding: 25.2px 14px 35px 32px;
-    }
-    #leftimg>h4{
-    font-family: Source Sans Pro,sans-serif;
+}
+
+#leftimg>h4 {
+    font-family: Source Sans Pro, sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 40px;
     color: #fff;
     margin: 0 0 20px;
-    }
-    #desc{
-        display:flex;
-        position: relative;
-    }
-    #desc>img{
+}
+
+#desc {
+    display: flex;
+    position: relative;
+}
+
+#desc>img {
     height: 16px;
     width: 16px;
     position: absolute;
     top: 2px;
     left: 0;
     border-style: none;
-    }
-    #desc>div{
+}
+
+#desc>div {
     margin-left: 28px;
     font-weight: 500;
     font-size: 16px;
@@ -78,8 +96,9 @@
     line-height: 21px;
     color: #fff;
     margin-bottom: 18px;
-    }
-    #right{
+}
+
+#right {
     overflow-y: hidden;
     width: 388px;
     border-radius: 0;
@@ -88,18 +107,21 @@
     display: inline-block;
     height: 100%;
     overflow-x: hidden;
-    }
-    #login{
-        height: 100%;
-        position: relative;
-    }
-    #login>div:nth-child(1){
+}
+
+#login {
+    height: 100%;
+    position: relative;
+}
+
+#login>div:nth-child(1) {
     left: 0;
     padding-left: 32px;
     padding-right: 31px;
     padding-top: 25px;
-    }
-    #login2>img{
+}
+
+#login2>img {
     width: 20px;
     height: 20px;
     border: 0;
@@ -111,15 +133,17 @@
     position: absolute;
     font-weight: 100;
     cursor: pointer;
-    }
-    #login2>ul{
+}
+
+#login2>ul {
     border-bottom: 3px solid #f4f4f4;
     list-style: none;
     margin: 0 0 30px;
     padding: 0;
     display: block;
-    }
-    #login2>ul>li{
+}
+
+#login2>ul>li {
     display: inline-block;
     width: inherit;
     font-size: 16px;
@@ -130,9 +154,9 @@
     position: relative;
     letter-spacing: .32px;
     font-weight: 500;
-    }
-   
-    #errortext>p{
+}
+
+#errortext>p {
     text-transform: none;
     font-size: 11px;
     line-height: 15px;
@@ -141,23 +165,27 @@
     letter-spacing: .11px;
     color: #da1e28;
     margin-bottom: 5px;
-    }
-    #parent{
+}
+
+#parent {
     position: relative;
     height: auto;
     width: 100%;
     padding: 0 0 24px;
-    }
-    #parent>div{
+}
+
+#parent>div {
     font-size: 14px;
     line-height: 19px;
     color: #393939;
     margin-bottom: 10px;
-    }
-    #relative{
-        position: relative;
-    }
-    #relative>input{
+}
+
+#relative {
+    position: relative;
+}
+
+#relative>input {
     z-index: 88;
     width: 100%;
     font-size: 14px;
@@ -176,16 +204,18 @@
     -webkit-transition: all .1s ease;
     transition: all .1s ease;
     overflow: visible;
-    }
-    #parentfield{
+}
+
+#parentfield {
     width: 100%;
     display: -moz-box;
     display: flex;
     -moz-box-align: center;
     align-items: center;
     position: relative;
-    }
-    #submit{
+}
+
+#submit {
     color: #fff;
     padding: 0;
     height: 40px;
@@ -204,13 +234,15 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    }
-    #or{
+}
+
+#or {
     margin: 24px auto 16px;
     text-align: center;
     position: relative;
-    }
-    #or>span{
+}
+
+#or>span {
     margin: 24px auto 16px;
     text-align: center;
     position: relative;
@@ -222,15 +254,17 @@
     background-color: #fff;
     position: relative;
     z-index: 2;
-    }
-    #or>div{
+}
+
+#or>div {
     position: absolute;
     border-bottom: 1px solid #cdcfd2;
     width: 100%;
     height: 2px;
     bottom: 9px;
-    }
-    #google>div{
+}
+
+#google>div {
     border-radius: 4px;
     cursor: pointer;
     display: -moz-box;
@@ -241,22 +275,25 @@
     align-items: center;
     padding: 12px 0;
     border: 1px solid #e0e0e0;
-    }
-    #google>div>span{
+}
+
+#google>div>span {
     font-size: 14px;
     letter-spacing: .28px;
     color: #525252;
     margin-left: 8px;
-    }
-    #bottom{
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-    }
-    #bottom>p{
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+#bottom>p {
     padding-top: 14px;
     border-top: 1px solid #c6c6c6;
     font-size: 12px;
@@ -269,11 +306,12 @@
     content: "";
     margin-top: 24px;
     margin-bottom: 12px;
-    }
-    #bottom>p>a{
+}
+
+#bottom>p>a {
     color: #0043ce;
     font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
     background-color: transparent;
-    }
+}
