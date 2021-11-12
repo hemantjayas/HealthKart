@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthKart</title>
+</head>
+
+
+
+
+    <style>
+        
+
+        #main {
+            background-color: #f9f9f9;
+            width: 61%;
+            margin: auto;
+            padding: 40px 0 20px 0;
+        }
+
+        #footer {
+            display: grid;
+            grid-template-columns: 15% 12% 14% 14% 14% 29%;
+        }
+
+        #footer .col {
+            font-size: 14px;
+            color: #525151;
+        }
+
+        #footer .col .text {
+            font-weight: 100;
+            line-height: 1.7em;
+            margin-top: 1%
+        }
+
+        a {
+            text-decoration: none;
+            color: #525151;
+            font-size: 15px;
+        }
+
+        #footer .col .input {
+            width: 64%;
+            height: 32px;
+            border-radius: 5px;
+            border: 1px solid #ddd7d7;
+            outline: none;
+        }
+
+
+        button {
+            width: 27%;
+            height: 36px;
+            margin-top: -1%;
+            background-color: #198b86;
+            color: white;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 12px;
+            margin-left: 8px;
+            border: none;
+        }
+
+        button:hover {
+
+            background-color: #1ba59e;
+
+        }
+
+        .upper {
+            margin-top: -2%
+        }
+
+        p {
+            margin-top: -3%;
+            line-height: 1.6em;
+        }
+
+        .fa {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 4px;
+            font-size: 30px;
+            width: 33px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+            border-radius: 10%;
+        }
+
+        #socialMedia div {
+            display: flex;
+            column-gap: 7px;
+        }
+
+       
+    </style>
+
+    
+<body>
+
+    <div id="main">
+        <footer id="footer">
+           
+        </footer>
+    </div>
+</body>
+
+</html>
+<script type="module">
+    import {footer} from "./components/footer.js"
+    let f = document.getElementById("footer")
+    f.innerHTML = footer()
+</script>
