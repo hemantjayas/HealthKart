@@ -269,14 +269,12 @@
 .inner2_1_3_4_1_f {
     font-weight: 700;
     padding-top: 4%;
-    font-size: 20px;
 }
 
 #inner2_1_3_4_2_f {
     padding: 4%;
     background-color: #BBDEFB;
     border: none;
-    color: #008497;
 }
 
 #inner2_1_3_4_2_f:hover {
@@ -389,12 +387,6 @@
     padding-left: 5%;
     padding-right: 5%;
 }
-
-.img1_pop {
-    /*  border: 1px solid black;*/
-
-}
-
 .p_pop {
     font-weight: 700;
     /* border: 1px solid black;*/
@@ -410,6 +402,7 @@
 .hide {
     display: none;
 }
+
 
 /**/
 
@@ -539,9 +532,3 @@
     border: 2px solid gray;
 }
 /* trueBasic part */
-.fa-star{
-  color: #008497;
-}
-.fa-star-half-alt{
-    color: #008497;
-}

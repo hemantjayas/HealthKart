@@ -125,7 +125,8 @@ function navbar(){
                     <p><span class="ic"><img src="https://static1.hkrtcdn.com/hknext/static/media/common/misc/consult-health-profile-icon.svg" alt=""></span>&nbsp;&nbsp;Workout at Home</p>
                  </div>
             </div>
-            <div><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/location-pin.svg" alt="" srcset="">&nbsp;Find a Store</div>
+            <div id='st_store'><img src="https://static1.hkrtcdn.com/hknext/static/media/common/header/location-pin.svg" alt="" srcset="">&nbsp;Find a Store
+            </div>
         </div>
      </div>
 </section>

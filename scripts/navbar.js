@@ -98,7 +98,7 @@ function addDropDwn(x) {
   let healthLogo = document.getElementById('logo');
   healthLogo.onclick= ()=>
 {
-  window.location.href = 'navbar.html'
+  window.location.href = 'index.html'
 }
 
 const sign = document.getElementById('sI')
@@ -108,6 +108,10 @@ const sign = document.getElementById('sI')
   const signUp = document.getElementById('lO')
   signUp.onclick = ()=>{
     window.location.href = 'signup.html'
+  }
+  const catigg = document.getElementById('catagfirst');
+  catigg.onclick= ()=>{
+    window.location.href = 'products.html'
   }
   }
 export {makeNavbar}

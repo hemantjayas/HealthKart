@@ -36,7 +36,7 @@
         units: "5 units left",
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -56,7 +56,7 @@
         units: "5 units left",
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -76,7 +76,7 @@
         units: "5 units left",
         imgProduct: "https://img2.hkrtcdn.com/14968/prd_1496701-ON-Optimum-Nutrition-Gold-Standard-100-Whey-Protein-5-lb-Double-Rich-Chocolate_c_s.jpg",
         price_off: "10% off",
-        name: "ON(Optimum Nutrition) Gold Standard 100% Whey ",
+        name: "ON(Optimum Nutrition) Gold Standard 100% Whey Protien,5 lb Double Rich",
         rating: " 4.5 (547)",
         price: 6599,
         premium_price: "₹6,499",
@@ -161,13 +161,8 @@ function flashProduct(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-
-
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -441,12 +436,8 @@ function trendingNow_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-
-        
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -698,12 +689,8 @@ function trending_whey(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-
-
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -960,12 +947,8 @@ function trending_in_massGainer_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-        
-
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -1218,11 +1201,8 @@ function trending_premium_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -1427,7 +1407,6 @@ function just_Lanch_Product(protiens) {
         let inner2_1_3_f = document.createElement('div')
 
         let div1 = document.createElement('div')
-        div1.setAttribute('class', 'DIV1')
         let span1 = document.createElement('span')
         span1.innerText = protien.price_off
         span1.setAttribute('id', 'inner2_1_3_1_fl')
@@ -1472,12 +1451,8 @@ function just_Lanch_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        let div_add= document.createElement('div')
-        div_add.innerText = "ADD"
-        add_to_cart_btn.style.display = "flex"
-
-
-        add_to_cart_btn.append(shop_font,div_add)
+        add_to_cart_btn.innerText = 'ADD'
+        add_to_cart_btn.append(shop_font)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -2053,15 +2028,3 @@ localStorage.setItem("healthkart_cart", JSON.stringify(array));
 }
 }
 ///////   add_to_cart  function ///////////////
-
-
-
-///////// productPage  ///////////
-
-function productPage(){
-    window.location.href = "products.html"
-}
-
-
-
-///////// productPage  ///////////
