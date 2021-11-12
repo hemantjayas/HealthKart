@@ -1407,6 +1407,7 @@ function just_Lanch_Product(protiens) {
         let inner2_1_3_f = document.createElement('div')
 
         let div1 = document.createElement('div')
+        div1.setAttribute('class', 'DIV1')
         let span1 = document.createElement('span')
         span1.innerText = protien.price_off
         span1.setAttribute('id', 'inner2_1_3_1_fl')
