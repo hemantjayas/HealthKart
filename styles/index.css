@@ -275,6 +275,7 @@
     padding: 4%;
     background-color: #BBDEFB;
     border: none;
+    color: #008497;
 }
 
 #inner2_1_3_4_2_f:hover {
@@ -537,3 +538,9 @@
     border: 2px solid gray;
 }
 /* trueBasic part */
+.fa-star{
+  color: #008497;
+}
+.fa-star-half-alt{
+    color: #008497;
+}
