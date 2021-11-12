@@ -6,7 +6,7 @@
         units: "148 units left",
         imgProduct: "https://img2.hkrtcdn.com/12133/prd_1213281-MuscleBlaze-Whey-Protein-4.4-lb-Rich-Milk-Chocolate_c_s.jpg",
         price_off: "21% off",
-        name: "MuscleBlaze Whey Protein, 4.4 lb Rich Milk Chocolate",
+        name: "MuscleBlaze Whey Protein, 4.4 lb Rich Milk",
         rating: " 4.4 (3,547)",
         price: 4499,
         premium_price: "₹4,364",
