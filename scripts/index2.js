@@ -170,6 +170,11 @@ function flashProduct(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -449,6 +454,11 @@ function trendingNow_Product(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -706,6 +716,11 @@ function trending_whey(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -968,6 +983,11 @@ function trending_in_massGainer_Product(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -1226,6 +1246,11 @@ function trending_premium_Product(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -1481,6 +1506,12 @@ function just_Lanch_Product(protiens) {
         add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
+            
+            add_to_cart_btn.innerText = "CART →"
+
+            add_to_cart_btn.onclick = ()=>{
+                window.location.href ="cart.html"
+            }
         }
 
         div3.append(div3_1, add_to_cart_btn)
@@ -2030,9 +2061,9 @@ trendingLeftBtn_popular_in_health.onclick = function () {
 ///////   add_to_cart  function ///////////////
 
 function addtoCart(product) {
+      
 
 
-    
 if (localStorage.getItem("healthkart_cart") === null) {
     localStorage.setItem("healthkart_cart", JSON.stringify([]));
 }
