@@ -1004,7 +1004,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -1279,7 +1279,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -1532,7 +1532,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -1790,7 +1790,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -2044,7 +2044,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -2294,7 +2294,7 @@
             add_to_cart_btn.innerText = 'ADD'
             add_to_cart_btn.append(shop_font)
             add_to_cart_btn.onclick = ()=>{
-                add_to_cart(protien)
+                addtoCart(protien)
             }
 
             div3.append(div3_1, add_to_cart_btn)
@@ -2843,19 +2843,30 @@
 
 ///////   add_to_cart  function ///////////////
 
-function add_to_cart(p){
+function addtoCart(product) {
+    
+    if (localStorage.getItem("healthkart_cart") === null) {
+        localStorage.setItem("healthkart_cart", JSON.stringify([]));
+    }
+    let array = JSON.parse(localStorage.getItem("healthkart_cart"));
+    let present  = false;
 
-if(JSON.parse(localStorage.getItem('healthkart_cart')) === null){
-    localStorage.setItem('healthkart_cart',JSON.stringify([]))
+      array.forEach((pro)=>{
+        if(pro.name == product.name)
+        {  
+            pro["quantity"]++;
+            present = true;
+        }
+     })
+   if(present)
+   {
+    localStorage.setItem("healthkart_cart", JSON.stringify(array));
+   }else{
+      product["quantity"] = 1;
+      array.push(product);
+      localStorage.setItem("healthkart_cart", JSON.stringify(array));
+   }
 }
-
-let array = JSON.parse(localStorage.getItem('healthkart_cart'))
-
-array.push(p)
-
-localStorage.setItem('healthkart_cart',JSON.stringify(array))
-}
-
 ///////   add_to_cart  function ///////////////
 
 
