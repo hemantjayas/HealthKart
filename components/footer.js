@@ -60,7 +60,7 @@ function footer(){
             <p>Be the first one to receive amazing offers, deals and news</p>
         </div>
         <input class="input" type="text" placeholder="Enter your email">
-        <span><button>SUBSCRIBE</button></span>
+        <span><button class = "subcribe_btn">SUBSCRIBE</button></span>
         <div id="socialMedia">
             <h4>CONNECT WITH US</h4>
             <div>

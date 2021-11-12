@@ -428,3 +428,16 @@
 }
 
 /* trueBasic part */
+
+
+/*  star and cart css  do not remove */
+.fa-star{
+    color: #008497;
+}
+.fa-star-half-alt{
+    color: #008497;
+}
+.add_to_cart_btn{
+    color: #008497;
+}
+/*  star and cart css */
