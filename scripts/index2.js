@@ -441,8 +441,12 @@ function trendingNow_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -694,8 +698,12 @@ function trending_whey(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -952,8 +960,12 @@ function trending_in_massGainer_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -1206,8 +1218,12 @@ function trending_premium_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
@@ -1456,8 +1472,13 @@ function just_Lanch_Product(protiens) {
         let shop_font = document.createElement('i')
         shop_font.setAttribute('class', 'fas fa-shopping-cart')
 
-        add_to_cart_btn.innerText = 'ADD'
-        add_to_cart_btn.append(shop_font)
+        let div_add = document.createElement('div') 
+        div_add.innerText="ADD"    
+        add_to_cart_btn.style.display ="flex"
+        add_to_cart_btn.setAttribute("class","add_to_cart_btn")
+
+
+        add_to_cart_btn.append(shop_font,div_add)
         add_to_cart_btn.onclick = ()=>{
             addtoCart(protien)
         }
