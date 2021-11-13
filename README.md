@@ -98,3 +98,5 @@ Download the project repo and open the main.html file in the browser or you can 
 ### [Click Here!](https://github.com/hemantjayas/HealthKart)
 
 ### [Blog link!](https://medium.com/@arpitshrivastava764/clone-of-healthkart-com-by-using-html-css-and-javascript-7d5d31a08143)
+
+### [Youtube link!](https://www.youtube.com/watch?v=ZX50fhQZ_2w)
