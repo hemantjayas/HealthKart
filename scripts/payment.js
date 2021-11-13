@@ -157,14 +157,14 @@ codCheckbox.onclick = function () {
         buttoncod.style.backgroundColor = 'orangered'
     }
 
+    buttoncod.onclick = function () {
+        let thankyou = document.getElementById('thankyou')
+        thankyou.style.display = 'block'
+    }
 
 }
 console.log(codCheckbox);
 
-buttoncod.onclick = function () {
-    let thankyou = document.getElementById('thankyou')
-    thankyou.style.display = 'block'
-}
 
 
 // address//
