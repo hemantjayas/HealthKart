@@ -24,7 +24,7 @@ let a=document.getElementById("cross");
                 eror.append(wrong);
             }
             else{
-                window.location.href='index.html';
+                window.location.href='login.html';
             }
             /// get arr from local storage 
             let arr =  JSON.parse(localStorage.getItem("users"));
