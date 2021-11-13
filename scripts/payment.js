@@ -119,7 +119,7 @@ let finalAmount = document.getElementById('finalAmount')
 let dis = document.getElementById('dis')
 let tot = document.getElementById('total')
 
-if(discount_health == false)
+if(discount_health == "false")
 {
     finalAmount.textContent = Math.floor(+amount);
     tot.textContent = amount;
