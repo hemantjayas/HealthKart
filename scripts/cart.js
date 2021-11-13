@@ -101,7 +101,7 @@ function Cart_items() {
         
         cartItem.innerHTML = `My Cart`
         pincode.innerHTML = 'Pincode'
-        coupon.innerHTML = 'Apply Code →'
+        coupon.innerHTML = 'Apply Code'
         coupon.setAttribute('id','code_APP')
         coupon.onclick = ()=>{
             applyCODE()
