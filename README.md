@@ -7,12 +7,12 @@
 ## Contributors
 ---
 
-+[Vinay Makade]()
-+[Srinivas Gokarla]()
-+[Hemant Jayas]()
-+[Abhishek Singh]()
-+[Arpit Shrivastava]()
-+[Santosh Konappanavar]()
++ [Vinay Makade]()
++ [Srinivas Gokarla]()
++ [Hemant Jayas]()
++ [Abhishek Singh]()
++ [Arpit Shrivastava]()
++ [Santosh Konappanavar]()
 
 ----
 ## Tech Stack
