@@ -96,3 +96,6 @@ The idea was to make a payment page that is not functional, but the carrier can 
 Download the project repo and open the main.html file in the browser or you can directly:-
 
 ### [Click Here!](https://github.com/hemantjayas/HealthKart)
+
+### [Blog link](https://medium.com/@arpitshrivastava764/clone-of-healthkart-com-by-using-html-css-and-javascript-7d5d31a08143
+)
