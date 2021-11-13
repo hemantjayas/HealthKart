@@ -33,6 +33,9 @@ let datadiv = document.getElementById("cart_data");
 cart_data = filter(cart_data);
 console.log(cart_data);
 function Cart_items() {
+    proceedToPay.onclick = ()=>{
+        window.location.href = 'address.html'
+    }
         cart_data.forEach(function (product) {
                 let div = document.createElement("div");
                 let divtxt = document.createElement("span");

@@ -219,6 +219,9 @@ a{
 }
 .price{
     width: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    color: #25292b;
 }
 
 #marg{

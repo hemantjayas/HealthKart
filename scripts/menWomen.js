@@ -266,7 +266,7 @@ function appendProductForMen(homeWigCar,trend)
          priceCont.setAttribute('id','priceCont')
          let price = document.createElement('div');
          price.setAttribute('class', 'price');
-         price.textContent = ' RS.'+ product.price + '/';
+         price.textContent = '₹'+ product.price;
     
          var button = document.createElement('div');
          button.setAttribute('class','addCart');
@@ -361,7 +361,7 @@ function appendProductForWomen(prodDesc){
          reviewStars.textContent = "Rating: " +product.rating;
          reviewStars.setAttribute('class', 'reviewStars')
 
-         prise.textContent = 'Rs. '+ product.price;
+         prise.textContent = '₹'+ product.price;
          prise.setAttribute('class','price')
 
          container.append(image,title,reviewStars,prise)

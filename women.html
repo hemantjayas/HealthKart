@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/women.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
     <div id='header-Navbar'>
@@ -155,13 +156,17 @@
                </div>
             </div>
        </div>
+       <div id="main">
+       </div>
     </div>
-    <script type="module">
-        let nav_div = document.getElementById("header-Navbar");
-      import navbar from './components/navbar.js'
-    nav_div.innerHTML = navbar();
-    import {makeNavbar} from './scripts/navbar.js'
-    makeNavbar();
+</body>
+</html>
+<script type="module">
+    let nav_div = document.getElementById("header-Navbar");
+  import navbar from './components/navbar.js'
+nav_div.innerHTML = navbar();
+import {makeNavbar} from './scripts/navbar.js'
+makeNavbar();
 
 var prodDesc = document.getElementById('proDesc');
 
@@ -169,36 +174,36 @@ import {appendProductForWomen} from './scripts/menWomen.js'
 
 appendProductForWomen(prodDesc)
 
-        var i =0;
-        let slide = document.getElementById('slider')
-         let btn1 = document.getElementById('btn1')
-         let btn2 = document.getElementById('btn2')
-         let btn3 = document.getElementById('btn3')
-         let btn4 = document.getElementById('btn4')
-         
-         let interval =setInterval(translate, 3000)
-         let arr = ["0px","-100%","-200%","-300%"]
-         function translate(){
-             if(i==4)
-             {
-                 clearInterval(interval)
-             }
-            slide.style.transform = `translateX(${arr[i]})`
-            i++;
+    var i =0;
+    let slide = document.getElementById('slider')
+     let btn1 = document.getElementById('btn1')
+     let btn2 = document.getElementById('btn2')
+     let btn3 = document.getElementById('btn3')
+     let btn4 = document.getElementById('btn4')
+     
+     let interval =setInterval(translate, 3000)
+     let arr = ["0px","-100%","-200%","-300%"]
+     function translate(){
+         if(i==4)
+         {
+             clearInterval(interval)
          }
-           btn1.onclick =() =>{
-               slide.style.transform = 'translateX(0px)'
-           }
-           btn2.onclick =() =>{
-               slide.style.transform = 'translateX(-100%)'
-           }
-           btn3.onclick =() =>{
-               slide.style.transform = 'translateX(-200%)'
-           }
-           btn4.onclick =() =>{
-               slide.style.transform = 'translateX(-300%)'
-           }
-        
-    </script>
-</body>
-</html>
+        slide.style.transform = `translateX(${arr[i]})`
+        i++;
+     }
+       btn1.onclick =() =>{
+           slide.style.transform = 'translateX(0px)'
+       }
+       btn2.onclick =() =>{
+           slide.style.transform = 'translateX(-100%)'
+       }
+       btn3.onclick =() =>{
+           slide.style.transform = 'translateX(-200%)'
+       }
+       btn4.onclick =() =>{
+           slide.style.transform = 'translateX(-300%)'
+       }
+import {footer} from './components/footer.js'
+let main = document.getElementById('main')
+main.innerHTML = footer();
+</script>

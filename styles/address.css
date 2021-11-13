@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+    a{
+        cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+    body{
+    
+    background-color: #f7f7f7;
+    
+    }
+    ul li{
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3c3c3c;
+    }
+    a{
+    text-decoration: none;
+    }
+     h1{
+    font-family: 'Roboto', sans-serif;
+    }
+    h2{
+    font-family: 'Roboto', sans-serif;
+    }
+    p{
+    font-family: 'Roboto', sans-serif;
+        color: #3c3c3c;
+    }
+    #navbar{
+    box-sizing: border-box;
+    height: 70px;
+    background-color:white ;
+    width: 100%;
+    border-bottom: 1px solid #d3cfcf;
+   
+    }
+    #navbar .container{
+    
+    width: 50%;
+    display: flex;
+    margin-left: 300px;
+    }
+    #navbar .container .logo img {
+    
+    width: 80%;
+    
+    }
+    #navbar .process{
+    display: flex;
+    }
+    #navbar .process img{
+    width: 15px;
+    }
+    #navbar .process p{
+    margin: 32px 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    }
+    #navbar .process .cartline{
+    margin:38px 5px;
+    width: 120px;
+    height: 1px;
+    background-color:  #5e5d5d;
+    }
+    
+    body  h3{
+        
+            opacity: 0.9;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            margin: 30PX auto;
+        
+        } 
+    
+        #checkout{
+           
+             width: 30%;
+            height: 700px;
+            margin: auto auto;
+            padding: 10px;
+            box-shadow: 0px 0px 18px rgba(33,33,33,.2);
+          } 
+    
+          form{
+            display: grid;
+            grid-gap: 2%;
+            align-items: center;
+            margin: auto auto;
+            justify-content: center;
+            }
+            #na {
+                font-size: 18px;
+                font-weight:300;
+                font-family: 'Times New Roman', Times, serif;
+            }
+    
+            input{
+            font-size: 16px;
+            padding: 5px;
+            border-width:0px;
+            border:none;
+            outline:none;
+            opacity: 0.8;
+            border: 0.1em solid rgba(64, 70, 70, 0.2);
+            border:  0.1em solid  rgba(33,33,33,.2);
+            border-radius: 4px;
+            
+            }
+            input:hover {
+                opacity: 1;
+            }
+             
+            #btn{
+                background-color: rgb(204, 218, 218);
+                color: white;
+                height: 40px;
+                border-radius: 2px;
+                border: none;
+                color: whitesmoke;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color:  #00c2c1;
+                font-size: 22px;
+            }
+            input, select {
+                font-size: 14px;
+                padding: 5px;
+            }
+            
+            select{
+                opacity: 0.8;
+                color: #5e5d5d;
+                border:  0.1em solid  rgba(33,33,33,.2);
+            }
+           
+            #btn:hover{
+                color: white;
+                background-color:  #00c2c1;
+                font-size: 24px;
+                
+            } 
