@@ -144,5 +144,12 @@
     }
     console.log(codCheckbox);
 
-    // #df4622
-    // #8e8d8d
+   
+
+// address//
+
+let address = JSON.parse(localStorage.getItem('healthkart_address'))
+console.log(address[address.length-1]);
+
+
+// address//
