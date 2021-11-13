@@ -29,7 +29,7 @@ let order = document.getElementById('order');
 let shipping = document.getElementById('shipping');
 let count = 0;
 let datadiv = document.getElementById("cart_data");
-
+let data = []
 cart_data = filter(cart_data);
 console.log(cart_data);
 function Cart_items() {
@@ -86,12 +86,16 @@ function Cart_items() {
         proceedToPay.addEventListener('click', function(){
                 location.href = "#";
         })
-        
+        localStorage.setItem('total_health',total)
         if(localStorage.getItem('code_Health') == "true")
                      {
                          total = Math.floor(total*0.7);
                          document.getElementById('app').textContent = 'Code Applied! Click Here to Remove'
                          proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
+                         
+                         localStorage.setItem('discount_health',Math.floor(total*0.3))
+                     }else{
+                        localStorage.setItem('discount_health',false)
                      }
         totalAmount.textContent = `Final Payable ₹ ${total} `;
         

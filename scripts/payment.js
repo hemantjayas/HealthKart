@@ -113,6 +113,21 @@ upiPara.onclick = function () {
     upiPara.style.borderRight = '5px solid #00c0bf'
 
 }
+let amount = localStorage.getItem('total_health')
+let discount_health = localStorage.getItem('discount_health')
+let finalAmount = document.getElementById('finalAmount')
+let dis = document.getElementById('dis')
+let tot = document.getElementById('total')
+
+if(discount_health == false)
+{
+    finalAmount.textContent = Math.floor(+amount);
+    tot.textContent = amount;
+}else{
+    tot.textContent = amount;
+    finalAmount.textContent = Math.floor(+amount*0.7);
+    dis.textContent = discount_health;
+}
 
 /// upi ki javascript ///
 
