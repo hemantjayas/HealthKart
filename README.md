@@ -63,7 +63,7 @@ After the successful completion of the signup, your mobile number, username and 
 The product page contains various products from various categories which could be filtered using multiple filters present on-page to select from.
   
 
-![landing page](https://github.com/hemantjayas/HealthKart/blob/main/image/healthkart_Mens_page.png  "Logo Title Text 1")
+![landing page](https://github.com/hemantjayas/HealthKart/blob/main/image/healthkart_product_page.png  "Logo Title Text 1")
 
 ## Cart with some products.
 ------
