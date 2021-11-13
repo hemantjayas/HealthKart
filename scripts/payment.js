@@ -146,3 +146,25 @@
 
     // #df4622
     // #8e8d8d
+
+    ///////  payment address /////////
+
+  let  payment_address = document.getElementById("paymPrice")
+   let address = JSON.parse( localStorage.getItem('healthkart_address'))
+   console.log('address:', address)
+   let last_address = address[address.length -1]
+   console.log('last_address:', last_address)
+   
+   let add_del = document.getElementById("add_del")
+   add_del.innerText ="Delivery to "+ last_address.pincode+","+last_address.state
+
+   let add_name = document.getElementById("add_name")
+   add_name.innerText = last_address.first_name
+
+   let add_other = document.getElementById("add_other")
+   add_other.innerText = last_address.Address1+","+last_address.city+","+last_address.state+","+last_address.pincode+","+"Phone:"+last_address.mobile 
+   
+   
+   
+   ///////  payment address /////////
+
