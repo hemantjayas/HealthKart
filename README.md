@@ -39,14 +39,14 @@ We used javascript to append various products in HTML page using an array of obj
 
 Men's section contains products specifically  for men's  
 
-image of mens Page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 ## Women page 
 -----
 
 The women's section contains products specifically  for women  
 
-image of women page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 
 
@@ -55,7 +55,7 @@ image of women page
 
 After the successful completion of the signup, your mobile number, username and password are stored in the local storage and you can log in with that credentials, if the mobile number and password are incorrect it will fail the validation and you cannot log in to the website.
 
-img of the login page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 ## Product page 
 -----
@@ -63,7 +63,7 @@ img of the login page
 The product page contains various products from various categories which could be filtered using multiple filters present on-page to select from.
   
 
-image of the product page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 ## Cart with some products.
 ------
@@ -72,21 +72,21 @@ whenever any product is added to the cart, the Cart page display no. of products
  From where you can change the quantity of a particular product. It also has a  coupon code section where you can get a 30% discount by typing " masai30 " on the product.
 Besides that, you can place an order by clicking on the "Place Order" button.
 
-img of the cart with products
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 ## Address Page 
 -----
 
 The address is taken from the user and sent to localStorage so this address could be used further used in the payment page to select from multiple addresses entered.
 
-image of Address Page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1") 
 
 ## Payment Page 
 ------
 
 The idea was to make a payment page that is not functional, but the carrier can take the dummy input that the user provides. basically, it was just a dummy Static page with a minimum amount of CSS present.
 
-image of Payment Page 
+![landing page](https://github.com/Vinay2603/purple.com/blob/main/img/landing_page1.png  "Logo Title Text 1")
 
 
 
