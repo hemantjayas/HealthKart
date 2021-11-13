@@ -5,9 +5,7 @@
 }
 
 body {
-
     background-color: #f7f7f7;
-
 }
 
 ul li {
@@ -39,20 +37,16 @@ p {
     background-color: white;
     width: 100%;
     border-bottom: 1px solid #d3cfcf;
-
 }
 
 #navbar .container {
-
     width: 50%;
     display: flex;
     margin-left: 300px;
 }
 
 #navbar .container .logo img {
-
     width: 80%;
-
 }
 
 #navbar .process {
@@ -90,16 +84,11 @@ p {
     width: 57%;
     margin-top: 10px;
     box-shadow: 2px 2px 5px 2px grey;
-   
     background-color: rgb(255, 255, 255);
-
-
 }
 
 #method {
     display: flex;
-
-
 }
 
 #paymOption>p {
@@ -112,9 +101,6 @@ p {
     border: 1px solid rgb(214, 211, 211);
     border-bottom: none;
     box-sizing: border-box;
-
-
-
 }
 
 #options {
@@ -135,7 +121,6 @@ p {
 #options p:nth-child(7) {
     /* padding: 8%; */
     border: 1px solid rgb(214, 211, 211);
-
     /* border-bottom: none; */
 }
 
@@ -143,10 +128,8 @@ p {
     width: 70%;
     /* background-color: slateblue;  */
     border: 1px solid rgb(214, 211, 211);
-
     border-left: none;
     position: relative;
-
 }
 
 .paymentBtn {
@@ -159,15 +142,10 @@ p {
     box-sizing: border-box;
 }
 
-
-
 #paymPrice {
     width: 23%;
     height: 400px;
     margin-top: 10px;
-
-   
-
 }
 
 #paymPrice>div:nth-child(1) {
@@ -179,9 +157,9 @@ p {
     padding: 15px;
     box-sizing: border-box;
     box-shadow: 2px 2px 5px 2px grey;
-   margin: 0 0 20px 0;
-
+    margin: 0 0 20px 0;
 }
+
 #paymPrice>div:nth-child(2) {
     width: 100%;
     height: 230px;
@@ -191,13 +169,11 @@ p {
     padding: 15px;
     box-sizing: border-box;
     box-shadow: 2px 2px 5px 2px grey;
-   margin: 0 0 20px 0;
-
+    margin: 0 0 20px 0;
 }
 
-
-
 /* upi ki css */
+
 #upi {
     /* background-color: slategray; */
     height: 100%;
@@ -215,7 +191,6 @@ p {
 #upi div {
     padding: 5%;
     box-sizing: border-box;
-
 }
 
 #inp {
@@ -225,9 +200,6 @@ p {
     margin: 10px 0 20px 0;
     border: 2px solid red;
     box-sizing: border-box;
-
-
-
 }
 
 #upi #btn1 {
@@ -257,6 +229,7 @@ p {
 }
 
 /* upi ki css */
+
 /* debit card  ki css */
 
 #debitCard {
@@ -278,16 +251,13 @@ p {
     /* row-gap: 1%; */
     column-gap: 3%;
     /* flex-direction: column; */
-
 }
-
 
 .inputCard {
     width: 100%;
     height: 45px;
     padding: 0 4%;
     border: 1px solid rgb(214, 211, 211);
-
     box-sizing: border-box;
 }
 
@@ -296,7 +266,6 @@ p {
     width: 39%;
     height: 45px;
     border: 1px solid rgb(214, 211, 211);
-
     box-sizing: border-box;
 }
 
@@ -306,9 +275,7 @@ p {
     text-align: center;
     border: 1px solid rgb(214, 211, 211);
     box-sizing: border-box;
-
 }
-
 
 #debitCard>div>div {
     /* border: 2px solid red; */
@@ -316,20 +283,16 @@ p {
     display: flex;
     width: 100%;
     column-gap: 2%;
-
 }
 
 #debitCard>div>div img {
     height: 100%;
     /* filter: saturate(50); */
     filter: grayscale();
-
-
 }
 
-
-
 /* debit card  ki css */
+
 #creditCard {
     background-color: rgb(72, 160, 32);
     height: 100%;
@@ -375,7 +338,6 @@ p {
     display: flex;
     align-items: center;
     column-gap: 10px;
-
 }
 
 #cod>div>div:nth-child(1) {
@@ -405,12 +367,10 @@ p {
     height: 100%;
     margin: 30px auto;
     row-gap: 3%;
-
 }
 
 #cod>div:nth-child(2) li {
     list-style-type: disc;
-
 }
 
 #cod>div:nth-child(2) button {
@@ -430,8 +390,41 @@ p {
     background-color: rgb(202, 87, 20);
     color: white;
 }
-.nA{
+
+.nA {
     text-align: center;
     font-size: xx-large;
     color: #d3cfcf;
+}
+
+#thankyou {
+    
+    width: 50%;
+    position: absolute;
+    background-color: #00bfbf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 175px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    box-shadow: 2px 2px 5px 2px grey ;
+}
+#thankyou >p {
+    font-size: 30px;
+    margin-top: 20px;
+  
+}
+#thankBtn{
+    background-color: #ce4928;
+    width: 40%;
+    /* margin: 30px 0; */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 45px;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
