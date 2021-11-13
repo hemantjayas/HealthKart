@@ -40,8 +40,7 @@
 
     <h3>Enter your address</h3>
 <div id="checkout"> 
-    <form action="#" onsubmit="addresss_to_cart(event)" id="form_data">
-        
+    <form action="#"  id="form_data" onsubmit="nextPage(event)">
         <lable for="fname" id="na">First Name</lable>
         <input type="text" id="first_name" placeholder="Enter First Name" required>
         <lable for="Lname" id="na">Last Name</lable>
@@ -98,7 +97,7 @@
             </select>
             <lable for="pincode" id="na">Zip</lable>
         <input type="pin" id="pin" placeholder="10001" required>
-        <input id="btn" type="submit" value="Save & Deliver">
+        <input type="submit" value="SAVE & PROCEED" id='btn'>
     </form>
 
 </body>

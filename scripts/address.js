@@ -1,7 +1,8 @@
 
 
-function addresss_to_cart(e){
+function nextPage(e){
     e.preventDefault()
+    console.log('hello');
    let form = document.getElementById("form_data")
 
    let user_address={
@@ -24,8 +25,7 @@ function addresss_to_cart(e){
 ARRAY.push(user_address)
 
 localStorage.setItem('healthkart_address',JSON.stringify(ARRAY))
-  
-
+window.location.href = 'payment.html'
 }
 
 function tolocalStorage(){
@@ -33,8 +33,6 @@ function tolocalStorage(){
 
     localStorage.setItem('healthkart_address', JSON.stringify([]));
 }
-
-
-
 }
+
 tolocalStorage()

@@ -90,7 +90,7 @@ function Cart_items() {
         if(localStorage.getItem('code_Health') == "true")
                      {
                          total = Math.floor(total*0.7);
-                         document.getElementById('app').textContent = 'Code Applied Click to Remove'
+                         document.getElementById('app').textContent = 'Code Applied! Click Here to Remove'
                          proceedToPay.innerHTML = `Proceed to Pay ₹ ${total} `;
                      }
         totalAmount.textContent = `Final Payable ₹ ${total} `;
@@ -98,6 +98,7 @@ function Cart_items() {
         cartItem.innerHTML = `My Cart`
         pincode.innerHTML = 'Pincode'
         coupon.innerHTML = 'Apply Code →'
+        coupon.setAttribute('id','code_APP')
         coupon.onclick = ()=>{
             applyCODE()
         }
