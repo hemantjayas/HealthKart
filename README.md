@@ -7,11 +7,11 @@
 ## Contributors
 ---
 
-+ [Vinay Makade]()
++ [Vinay Makade](https://github.com/Vinay2603)
 + [Srinivas Gokarla]()
-+ [Hemant Jayas]()
++ [Hemant Jayas](https://github.com/hemantjayas)
 + [Abhishek Singh]()
-+ [Arpit Shrivastava]()
++ [Arpit Shrivastava](https://github.com/arpit1024)
 + [Santosh Konappanavar]()
 
 ----
