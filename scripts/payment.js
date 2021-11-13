@@ -151,5 +151,17 @@
 let address = JSON.parse(localStorage.getItem('healthkart_address'))
 console.log(address[address.length-1]);
 
+let lastAddress = address[address.length-1];
+let addDel = document.getElementById('addDel');
+addDel.textContent = 'Delivery to ' + lastAddress.pincode + ','+ lastAddress.state
+let nameFirst = document.getElementById('nameFirst');
+nameFirst.textContent =  lastAddress.first_name
+
+let fullAddress = document.getElementById('fullAddress');
+fullAddress.textContent =  lastAddress.Address1+ ','+ lastAddress.city+','+lastAddress.state + ','+ lastAddress.pincode
+
+let phone = document.getElementById('phone');
+phone.textContent =  'Phone: ' + lastAddress.mobile
+
 
 // address//
