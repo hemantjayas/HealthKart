@@ -8,11 +8,11 @@
 ---
 
 + [Vinay Makade](https://github.com/Vinay2603)
-+ [Srinivas Gokarla]()
++ [Srinivas Gokarla](https://github.com/srinu217)
 + [Hemant Jayas](https://github.com/hemantjayas)
-+ [Abhishek Singh]()
++ [Abhishek Singh](https://github.com/Abhisingh755)
 + [Arpit Shrivastava](https://github.com/arpit1024)
-+ [Santosh Konappanavar]()
++ [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
 
 ----
 ## Tech Stack
