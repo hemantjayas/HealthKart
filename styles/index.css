@@ -447,3 +447,55 @@ a{
     color: #008497;
 }
 /*  star and cart css */
+
+
+/* disclaimer */
+
+#disc{
+    width: 77%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    align-items: center;
+    border-bottom: 1px solid #a8a4a4;
+    border-top: 1px solid #a8a4a4;
+    padding-top: 1.5%;
+}
+#discImg{
+    width: 8%;
+}
+#disclaimer{
+    width: 70%;
+
+}
+#disclaimer>p{
+    font-size: 12.5px;
+
+}
+
+#copyright{
+    width: 77%;
+    display: flex;
+    margin: 10px auto;
+    /* align-items: center; */
+}
+#copyright>p{
+   width: 52%;
+    margin: 0px;
+    font-size: 12px;
+    color: rgb(75, 73, 73);
+}
+
+#copyright img{
+    margin: 5px;
+    font-size: 12px;
+}
+#copyright h5{
+    width: 14%;
+    margin: auto 2px;
+}
+
+
+/* disclaimer */
