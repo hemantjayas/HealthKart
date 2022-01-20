@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./styles/signIn_Up.css" />
+    <style>
+    #login2>ul>li:nth-child(2)::after{
+    content: "";
+    background-color: #00aeae;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    border-radius: 4px;
+    }
+    </style>
+</head>
+<body>
+    <div id="loginpopup">
+        <div id="backimg"></div>
+        <img src="	https://static1.hkrtcdn.com/hknext/static/media/common/login/popUpDesktop.webp" alt="popup" id="scale" />
+        <div id="box">
+            <div id="left">
+                <div id="leftimg">
+                    <h4>Why Sign Up?</h4>
+                    <div id="desc">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"/>
+                        <div>Over 1.5 million satisfied customers</div>
+                    </div>
+                    <div id="desc">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"/>
+                        <div>Earn HK cash on every order</div>
+                    </div>
+                    <div id="desc">
+                        <img src="https://static1.hkrtcdn.com/hknext/static/media/signupFlow/white-bg-tick.svg"/>
+                        <div>Get personal fitness expert advice</div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="login">
+                    <div>
+                        <div id="login2">
+                            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/login/Closs.svg" id="cross"/>
+                            <ul>
+                                <li id="tab-1" class="set">Login</li>
+                                <li id="tab-2" class="set">Signup</li>
+                            </ul>
+                            <div id="loginsection">
+                                <!-- <p id="errortext"></p> -->
+                                <form onsubmit="Signup(event)" id="signup-form">
+                                    <div id="parent">
+                                        <div>Mobile Number</div>
+                                        <div id="relative">
+                                            <input id="mobile" type="tel" tabindex="0" placeholder="Enter 10 digit no.">
+                                        </div>
+                                        <p id="errortext"></p>
+                                    </div>
+                                    <div id="parentfield" style="justify-content: center;">
+                                        <input type="submit" value="Signup" id="submit"/>
+                                    </div>
+                                </form>
+                                <div id="or">
+                                    <span>or</span>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <div id="google">
+                                        <div>
+                                        <img src="https://static1.hkrtcdn.com/hknext/static/media/common/Logo%20Google.svg" />
+                                        <span>Google</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div id="bottom">
+                                    <p>By logging in you agree to our<a href="https://www.healthkart.com/hk/TermsConditions.action" tabindex="0">Terms & Conditions</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="./scripts/log.js">
+</script>

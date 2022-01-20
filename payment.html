@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payment.css">
+</head>
+
+<body>
+    <div>
+        <!-- Navbar Start -->
+        <div id="navbar">
+            <div class="container">
+                <div class="logo">
+
+                    <a href="index.html"><img
+                            src="https://www.sofinagroup.com/wp-content/uploads/2019/07/Healthkart-transparent-logo.png"></a>
+                </div>
+                <div class="process">
+                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/blue-tick.svg" alt="">
+                    <p>cart</p>
+                    <p class="cartline"></p>
+                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/blue-tick.svg" alt="">
+                    <p>address</p>
+                    <p class="cartline"></p>
+                    <img src="https://img5.hkrtcdn.com/react/static/media/checkout/blue-tick.svg" alt="">
+
+                    <p> <strong>payment</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="payment">
+        <div id="paymOption">
+            <p>Choose Payment Options</p>
+            <div id="method">
+                <div id="options">
+                    <p id="upiPara">Pay Using UPI</p>
+                    <p id="dcPara">Debit Card</p>
+                    <p id="ccPara">Credit Card</p>
+                    <p id="walletPara">Wallets</p>
+                    <p id="ibPara">Internet Banking</p>
+                    <p id="emiPara">EMI or Pay Later </p>
+                    <p id="codPara">Cash On Delivery</p>
+                </div>
+                <div id="process">
+                    <div id="upi">
+                        <p>Please enter your UPI ID</p>
+                        <div>
+
+                            <img src="https://img1.hkrtcdn.com/1179/paytm-upi.png" alt="">
+                            <br>
+                            <input id="inp" type="text" placeholder="MobileNumber@upi">
+                            <button id="btn1">Verify</button>
+                            <p id="valid">Please enter a valid UPI ID</p>
+                            <br>
+                            <input type="checkbox">
+                            <span>Securely saved for faster payments</span>
+                            <br>
+                            <button id="btn2">Pay Securely</button>
+                        </div>
+
+                    </div>
+                    <div id="debitCard">
+                        <div>
+                            <p>Enter Card Details</p>
+                            <input class="inputCard" type="text" placeholder="Card holder name">
+
+                            <input class="inputCard" type="text" placeholder="Card Number">
+
+                            <select class="expiry" name="" id="">
+                                <option value="Expiry MM">Expiry MM</option>
+                            </select>
+
+                            <select class="expiry" name="" id="">
+                                <option value="Expiry YY">Expiry YY</option>
+                            </select>
+
+                            <input id="cvv" type="text" placeholder="CVV">
+                            <input type="checkbox">
+                            <span>Securely saved for faster payments</span>
+
+                            <div>
+                                <img src="https://img1.hkrtcdn.com/1718/RuPay-Icon.png" alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383075_o.png"
+                                    alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383073_o.png"
+                                    alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/ic_maestro.png"
+                                    alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/Maestro_logo.png"
+                                    alt="">
+                            </div>
+                            <button class="paymentBtn">Pay Securely</button>
+
+                        </div>
+
+                    </div>
+                    <div id="creditCard" class="nA">NOT AVAILABLE</div>
+                    <div id="wallet" class="nA">NOT AVAILABLE</div>
+                    <div id="iBanking" class="nA">NOT AVAILABLE</div>
+                    <div id="emi" class="nA">NOT AVAILABLE</div>
+                    <div id="cod">
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <span>CASH ON DELIVERY</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>You will not earn any HK Cash through COD</li>
+                                <li>Pay through online and earn ₹20 HK Cash</li>
+                                <li>For order below ₹500, we charge ₹30 for COD</li>
+                            </ul>
+                            <p>Your delivery address seems incomplete or invalid.</p>
+                            <p>Please enter a valid address.
+
+                            </p>
+
+                            <h4>Sure about the address?</h4>
+                            <p>
+                                <input id="codCheckbox" type="checkbox">
+                                <span>Check the box here to confirm & complete your purchase through Cash On Delivery
+                                    option.</span>
+                            </p>
+                            <p>Avoid out of cash & change problems. Use Credit/Debit card, Internet banking, Wallets or
+                                UPI for convenient experience.</p>
+                            <p>HK Cash is not valid on Cash on Delivery orders. Use Prepaid Payment Mode to Earn &
+                                Redeem HK Cash.</p>
+                            <button id="codButton">Pay Later</button>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="paymPrice">
+            <div>
+                <h3>Address</h3>
+                <p id="addDel"></p>
+                <strong id="nameFirst"></strong>
+                <p id="fullAddress"></p>
+                <p id="phone"></p>
+            </div>
+            <div>
+                <h3>Order Summary</h3>
+
+                <p>Total MRP <span id='total'></span></p>
+                <p>Total Discount <span id='dis'></span></p>
+                <p>Shipping Charges 1000</p>
+                <hr>
+                <p>Final Payable <span id='finalAmount'></span></p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="thankyou">
+        <h3>Congratulations! You Have Successfully Made Your Order</h3>
+        <div>Your Order ID: <span id="orderNo"></span></div>
+        <p>Thank You! </p>
+        <div>Be Safe, Be Healthy</div>
+        <button id="thankBtn">Continue Shopping</button>
+
+    </div>
+
+</body>
+
+</html>
+<script src="./scripts/payment.js"></script>

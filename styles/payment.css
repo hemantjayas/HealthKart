@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #3c3c3c;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #3c3c3c;
+}
+
+#navbar {
+    box-sizing: border-box;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #d3cfcf;
+}
+
+#navbar .container {
+    width: 50%;
+    display: flex;
+    margin-left: 300px;
+}
+
+#navbar .container .logo img {
+    width: 80%;
+}
+
+#navbar .process {
+    display: flex;
+}
+
+#navbar .process img {
+    width: 15px;
+}
+
+#navbar .process p {
+    margin: 32px 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#navbar .process .cartline {
+    margin: 38px 5px;
+    width: 120px;
+    height: 1px;
+    background-color: #5e5d5d;
+}
+
+#payment {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    /* height: 400px; */
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#paymOption {
+    width: 57%;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px 2px grey;
+    background-color: rgb(255, 255, 255);
+}
+
+#method {
+    display: flex;
+}
+
+#paymOption>p {
+    width: 100%;
+    /* background-color: rgb(240, 240, 240); */
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 19px;
+    padding: 3% 4%;
+    border: 1px solid rgb(214, 211, 211);
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+#options {
+    width: 30%;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+}
+
+#options p {
+    padding: 12% 8%;
+    border: 1px solid rgb(214, 211, 211);
+    font-weight: bold;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+#options p:nth-child(7) {
+    /* padding: 8%; */
+    border: 1px solid rgb(214, 211, 211);
+    /* border-bottom: none; */
+}
+
+#process {
+    width: 70%;
+    /* background-color: slateblue;  */
+    border: 1px solid rgb(214, 211, 211);
+    border-left: none;
+    position: relative;
+}
+
+.paymentBtn {
+    background-color: #ce4928;
+    width: 100%;
+    /* margin: 30px 0; */
+    border: none;
+    color: white;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#paymPrice {
+    width: 23%;
+    height: 400px;
+    margin-top: 10px;
+}
+
+#paymPrice>div:nth-child(1) {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px grey;
+    margin: 0 0 20px 0;
+}
+
+#paymPrice>div:nth-child(2) {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px grey;
+    margin: 0 0 20px 0;
+}
+
+/* upi ki css */
+
+#upi {
+    /* background-color: slategray; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#upi>p {
+    color: #f5c8bd;
+}
+
+#upi div {
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#inp {
+    width: 50%;
+    height: 45px;
+    padding: 0 5%;
+    margin: 10px 0 20px 0;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+#upi #btn1 {
+    background-color: #e1edf4;
+    width: 25%;
+    border: none;
+    color: #014b5d;
+    font-weight: bold;
+    height: 45px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#upi #valid {
+    color: red;
+}
+
+#upi #btn2 {
+    background-color: #f5c8bd;
+    width: 75%;
+    margin: 30px 0;
+    border: none;
+    color: white;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+/* upi ki css */
+
+/* debit card  ki css */
+
+#debitCard {
+    /* background-color: rgb(32, 96, 160); */
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+#debitCard>div {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100%;
+    /* row-gap: 1%; */
+    column-gap: 3%;
+    /* flex-direction: column; */
+}
+
+.inputCard {
+    width: 100%;
+    height: 45px;
+    padding: 0 4%;
+    border: 1px solid rgb(214, 211, 211);
+    box-sizing: border-box;
+}
+
+.expiry {
+    padding: 0 4%;
+    width: 39%;
+    height: 45px;
+    border: 1px solid rgb(214, 211, 211);
+    box-sizing: border-box;
+}
+
+#cvv {
+    width: 14%;
+    height: 45px;
+    text-align: center;
+    border: 1px solid rgb(214, 211, 211);
+    box-sizing: border-box;
+}
+
+#debitCard>div>div {
+    /* border: 2px solid red; */
+    height: 30px;
+    display: flex;
+    width: 100%;
+    column-gap: 2%;
+}
+
+#debitCard>div>div img {
+    height: 100%;
+    /* filter: saturate(50); */
+    filter: grayscale();
+}
+
+/* debit card  ki css */
+
+#creditCard {
+    background-color: rgb(72, 160, 32);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#wallet {
+    background-color: rgb(50, 61, 44);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#iBanking {
+    background-color: rgb(51, 32, 160);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#emi {
+    background-color: rgb(230, 97, 97);
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#cod {
+    /* background-color: rgb(109, 7, 7); */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    padding: 4%;
+}
+
+#cod>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#cod>div>div:nth-child(1) {
+    /* background-color: red; */
+    border: 2px solid green;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 4px;
+    /* justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#cod>div>div:nth-child(1)>div {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#cod>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 30px auto;
+    row-gap: 3%;
+}
+
+#cod>div:nth-child(2) li {
+    list-style-type: disc;
+}
+
+#cod>div:nth-child(2) button {
+    width: 80%;
+    height: 45px;
+    box-sizing: border-box;
+    border: none;
+    background-color: darkgray;
+    color: white;
+}
+
+#codCheck {
+    width: 80%;
+    height: 45px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(202, 87, 20);
+    color: white;
+}
+
+.nA {
+    text-align: center;
+    font-size: xx-large;
+    color: #d3cfcf;
+}
+
+#thankyou {
+    
+    width: 50%;
+    position: absolute;
+    background-color: #00bfbf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 175px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    box-shadow: 2px 2px 5px 2px grey ;
+}
+#thankyou >p {
+    font-size: 30px;
+    margin-top: 20px;
+  
+}
+#thankBtn{
+    background-color: #ce4928;
+    width: 40%;
+    /* margin: 30px 0; */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 45px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
