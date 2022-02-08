@@ -15,7 +15,7 @@
 + [Santosh Konappanavar](https://github.com/Santosh-Konappanavar)
 
 ----
-## Tech Stack
+## Tech Stack 
 
 The tech Stack we used for creating this webiste are:-
 + HTML

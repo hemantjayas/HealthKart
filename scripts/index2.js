@@ -19,7 +19,7 @@
         name: "MuscleBlaze BCAA Gold, 0.99 lb 30 Servings ",
         rating: "4.6 (2,476)",
         price: 1949,
-        premium_price: "₹1,745",
+        premium_price: "₹1,745", 
     },
     {
         flash_sale_img: "https://static1.hkrtcdn.com/hknext/static/media/common/variant/flash-icon.svg",

@@ -18,7 +18,7 @@ a{
    height: 330px; 
    margin: auto;
    border-radius: 7px;
-   background-color: white;
+   background-color: white; 
    display: flex;
 }
 .container{

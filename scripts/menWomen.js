@@ -9,7 +9,7 @@ let productsMen = [
         cartImg:"https://img2.hkrtcdn.com/react/static/media/common/new_cart.svg",
         premiumPrice:1600
          
-    },
+    }, 
     {
         imgflash: 'https://img10.hkrtcdn.com/react/static/media/common/variant/flash-icon.svg',
         imgheart:'https://img10.hkrtcdn.com/react/static/media/common/variant/wishlist/hover-heart.svg',

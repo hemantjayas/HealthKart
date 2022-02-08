@@ -3,7 +3,7 @@ let a=document.getElementById("cross");
         function goto(){
             window.location.href="index.html"
         }
-
+ 
         var flag=false;
         function Signup(e){
             e.preventDefault();

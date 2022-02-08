@@ -1,7 +1,7 @@
 function footer(){
     return `<footer id="footer">
     <div class="col">
-        <h4>HEALTHKART</h4>
+        <h4>HEALTHKART</h4> 
         <div class="text"> <a href="about.html">About Us</a> </div>
         <div class="text"> <a href="#"> Contact Us</a> </div>
         <div class="text"> <a href="#">Refer & Earn</a> </div>

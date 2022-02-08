@@ -17,7 +17,7 @@ let codPara = document.getElementById('codPara')
 
 let processDivs = document.querySelectorAll('#process>div')
 let optionsPs = document.querySelectorAll('#options>p')
-console.log(processDivs.length);
+console.log(processDivs.length); 
 
 // for (let i = 0; i < processDivs.length; i++) {
 //     processDivs[i].style.display = 'none'

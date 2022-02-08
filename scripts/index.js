@@ -20,8 +20,8 @@ btnRight.onclick = function () {
     if (count < slide.length - 1) {
 
         slide[count].style.display = 'none'
-        count++
-        startSlide()
+        count++ 
+        startSlide() 
     }
 }
 

@@ -28,7 +28,7 @@ let coupon = document.getElementById('coupon');
 let order = document.getElementById('order');
 let shipping = document.getElementById('shipping');
 let count = 0;
-let datadiv = document.getElementById("cart_data");
+let datadiv = document.getElementById("cart_data"); 
 let data = []
 cart_data = filter(cart_data);
 console.log(cart_data);

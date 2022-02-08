@@ -1,7 +1,7 @@
 function navbar(){
 
     return` <section>
-    <div id='navCont'>
+    <div id='navCont'> 
         <div id='logo'><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
             a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 179.3 43.7"
             enable-background="new 0 0 179.3 43.7" space="preserve">
