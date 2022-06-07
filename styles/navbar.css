@@ -94,7 +94,7 @@ button {
 }
 
 #catag>div:hover {
-    color: #007aff;
+    color: #009393;
 }
 
 #cataglast {
@@ -109,7 +109,7 @@ button {
     display: flex;
     margin-left: auto;
     align-items: center;
-    width: 224px;
+    width: 252px;
     font-weight: 600;
     justify-content: space-between;
     font-size: 14px;
@@ -117,10 +117,9 @@ button {
 }
 
 #store>div {
-    padding: 5px;
     background: #e3e3e3;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 #myDIV {
@@ -130,10 +129,10 @@ button {
 #myDIV {
     background: #fff;
     border: 1px solid transparent;
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
-    width: 160px;
-    margin-top: 10px;
+    width: 200px;
+    margin-top: 24px;
 }
 
 #myDIV p {
@@ -142,7 +141,7 @@ button {
 }
 
 #myDIV>p:hover {
-    color: #007aff;
+    color: #009393;
 }
 
 #myDIV h1 {
@@ -227,6 +226,7 @@ button {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0;
+    margin-top: 1px;
 }
 
 #catogBestSeller {
@@ -306,9 +306,23 @@ button {
 }
 
 #hk {
+    display: flex;
+    padding: 7px;
     background-color: #d8faf9 !important;
 }
 
 #hk:hover {
-    background-color: rgb(60, 187, 238) !important;
+    background-color: #00bfbf !important;
+}
+
+#st_store{
+    padding: 7px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#myDIV p{
+    display: flex;
+    font-weight: 500;
+    color: #696464;
 }

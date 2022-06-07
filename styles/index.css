@@ -80,13 +80,17 @@ a{
     justify-content: space-evenly;
 }
 
-#features>div {
-    border: 0.5px solid rgb(153, 149, 149);
+#features div {
+    border: 0.5px solid rgb(202, 197, 197);
     justify-content: space-around;
     width: 25%;
+    border-left: none;
     box-sizing: border-box;
     text-align: center;
     padding: 5px;
+}
+#features>:first-child{
+    border-left: 0.5px solid rgb(202, 197, 197);
 }
 
 .box h3 {
@@ -133,7 +137,7 @@ a{
     margin: 50px auto;
     width: 77%;
     height: 508px;
-    box-shadow: 1px 1px 5px 1px gray;
+    box-shadow: 1px 1px 2px 1px #c7c5c5;
     position: relative;
 }
 
@@ -177,7 +181,7 @@ a{
 }
 
 .inner2_1_f:hover {
-    box-shadow: 3px 3px 5px 3px gray;
+    box-shadow: 1px 1px 2px 1px rgb(182, 180, 180);
 }
 
 .inner2_1_1_f {
@@ -342,7 +346,7 @@ a{
     /*  border: 1px solid black;*/
     height: 249px;
     width: 77%;
-    box-shadow: 1px 1px 5px 1px gray;
+    box-shadow: 1px 1px 2px 1px #c7c5c5;
     position: relative;
 }
 
