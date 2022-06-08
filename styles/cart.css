@@ -2,6 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
   * {
       margin: 0;
       padding: 0;
@@ -15,7 +16,7 @@
 
   a {
       cursor: pointer;
-  } 
+  }
 
   button {
       cursor: pointer;
@@ -44,24 +45,61 @@
       color: #3C3C3C;
   }
 
+
   #navbar {
+    box-sizing: border-box;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #d3cfcf;
+}
+
+#navbar .container {
+    width: 50%;
+    display: flex;
+    margin-left: 300px;
+}
+
+#navbar .container .logo img {
+    width: 80%;
+}
+
+#navbar .process {
+    display: flex;
+}
+
+#navbar .process img {
+    width: 15px;
+}
+
+#navbar .process p {
+    margin: 32px 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#navbar .process .cartline {
+    margin: 38px 5px;
+    width: 120px;
+    height: 1px;
+    background-color: #5e5d5d;
+}
+
+  /* #navbar {
       box-sizing: border-box;
       height: 70px;
       background-color: white;
       width: 100%;
       border-bottom: 1px solid #D3CFCF;
-      /* border: 1px solid red; */
   }
 
   #navbar .container {
       width: 65%;
       display: flex;
-      /* border: 1px solid red; */
       margin-left: 350px;
   }
 
   #navbar .container .logo img {
-      /* border: 1px solid red; */
       width: 200px;
       height: 50px;
       margin-top: 10px;
@@ -86,7 +124,7 @@
       width: 120px;
       height: 1px;
       background-color: #5E5D5D;
-  }
+  } */
 
   /* cart item count */
 
@@ -138,13 +176,12 @@
 
   #totalAmount {
       background-color: #fff;
-      margin: 0px 5px;
-      padding: 15px;
+      padding: 10px;
       color: #212121;
   }
 
   #pincode {
-      margin: 10px 5px;
+      margin: 10px 0px;
       border: 1px solid #fff;
       background-color: #fff;
       color: #212121;
@@ -163,25 +200,25 @@
       background-color: rgb(219, 90, 14);
       border: 1px solid rgb(219, 90, 14);
       border: 2px;
-      padding: 13px;
-      margin: 10px 5px;
+      padding: 10px;
+      margin: 10px 0px;
       color: #fff;
       font-size: 16px;
       text-align: center;
-      width: 98%;
+      width: 100%;
   }
 
   #order {
-      background-color: rgb(219, 254, 255);
-      margin: 10px 5px 0px;
-      padding: 13px;
+      background-color: rgb(155, 240, 243);
+      margin: 5px 0px;
+      padding: 10px;
       font-size: 18px;
   }
 
   #shipping {
       background-color: #fff;
-      margin: 0px 5px;
-      padding: 15px;
+      margin: 10px 0px;
+      padding: 10px;
       color: #212121;
   }
 
@@ -230,21 +267,23 @@
       flex-direction: column;
       row-gap: 15px;
   }
+
   #code_Box>input {
-     width: 90%;
-     height: 35px;
-     box-sizing: border-box;
+      width: 90%;
+      height: 35px;
+      box-sizing: border-box;
 
   }
+
   #code_Box>button {
-     width: 90%;
-     height: 35px;
-     box-sizing: border-box;
+      width: 90%;
+      height: 35px;
+      box-sizing: border-box;
 
 
   }
 
-  
+
 
   #apply {
       border: none;
